@@ -1,0 +1,5 @@
+Đọc ghi chú này:
+
+
+Bài này là Laravel 7.30.
+Cách upload file khác với bản 5.4
