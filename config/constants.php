@@ -45,11 +45,9 @@ define('ITEM_PER_PAGE', 20);
 
 // === Category ===
 
-define('NO_CATEGORY', 1);
-define('WEBSITE_POST', 2);
-define('GAME_POST', 3);
-define('ANIME_POST', 4);
-define('THU_THUAT_IT_POST', 5);
+define('SINGLE', 1);
+define('DOUBLE', 2);
+define('DELUXE', 3);
 
 
 // === Hidden Post ===

@@ -14,8 +14,10 @@ class CreateDichvuTable extends Migration
     public function up()
     {
         Schema::create('dichvu', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->increments('iddichvu');
+            $table->string('tendichvu');
+            $table->integer('giadichvu');
+            $table->string('hinhanh');
         });
     }
 

@@ -10,7 +10,7 @@ class phong extends Model
     public $timestamps=false;
 
     protected $fillable=['maphong'
-    ,'tenphong','kichthuoc'
+    ,'tenphong','kichthuoc','mota','noidung'
     // ,'thoigian'
     ,'maloaiphong','phongnoibat','thumbnailphong'];
 }

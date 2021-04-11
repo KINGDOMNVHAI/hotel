@@ -15,6 +15,7 @@
             </div>
         </div>
     </div>
+    
     <nav id="mobile-menu"></nav>
     <div class="wrapper">
 
@@ -30,7 +31,7 @@
                             <div class="footer-widget">
                                 <img src="{{asset('feHotel/images/logo.svg')}}" class="footer-logo" alt="Hotel Himara">
                                 <div class="inner">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!</p>
+                                    <p>Lorem ipsum dolor NVHAI 1111111</p>
                                     <a href="https://www.tripadvisor.com/" target="_blank">
                                         <div class="tripadvisor-banner">
                                             <span class="review">Recommended</span>
@@ -131,7 +132,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="copyrights">&copy; 2018 Hotel Himara. Designed by
-                                <a href="{{route('hotel-home')}}" target="_blank">Eagle-Themes</a>.
+                                <a href="{{route('home')}}" target="_blank">Eagle-Themes</a>.
                             </div>
                         </div>
                         <div class="col-md-6">

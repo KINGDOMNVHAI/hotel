@@ -1,5 +1,7 @@
 Đọc ghi chú này:
 
-
 Bài này là Laravel 7.30.
 Cách upload file khác với bản 5.4
+
+Lenh xoa tat ca table va du lieu, lam moi hoan toan
+php artisan migrate:refresh --seed

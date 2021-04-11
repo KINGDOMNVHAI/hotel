@@ -3,60 +3,18 @@
 @section('NoiDung')
 
 <div class="slider">
-    <div id="rev-slider-1" class="rev_slider gradient-slider" style="display:none" data-version="5.4.5">
-        <ul>
-            <li data-transition="crossfade">
-
-                <img src="{{asset('feHotel/images/slider/slider1.jpg')}}" alt="Image" title="Image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
-
-                <h1 class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="320" data-voffset="" data-responsive_offset="on" data-fontsize="['80','50','40','30']" data-lineheight="['60','50','40','30']" data-whitespace="nowrap" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 5; color: #fff; font-weight: 900;">
-                    TOUCH THE DREAM</h1>
-
-                <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="410" data-voffset="" data-responsive_offset="on" data-fontsize="16" data-lineheight="16" data-whitespace="nowrap" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; color: #fff;">Live Your Myth In Hotel Himara</div>
-
-                <div class="tp-caption" data-x="center" data-hoffset="-120" data-y="480" data-voffset="" data-responsive_offset="on" data-whitespace="nowrap" data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 11;">
-                    <a class="btn" href="booking-form.html">
-                        <i class="fa fa-calendar"></i>BOOK A ROOM NOW</a>
+    
+    <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
+        <div class="inner gradient-overlay">
+            <div class="container">
+                <div class="video-popup">
+                    <a class="popup-vimeo" href="https://www.youtube.com/watch?v=BDDfopejpwk">
+                        <i class="fa fa-play"></i>
+                    </a>
                 </div>
-
-                <div class="tp-caption" data-x="center" data-hoffset="128" data-y="480" data-voffset="" data-responsive_offset="on" data-whitespace="nowrap" data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 11;">
-                    <a class="btn" href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i>CONTACT US NOW</a>
-                </div>
-
-                <div class="tp-caption tp_m_title tp-resizeme" data-x="center" data-hoffset="" data-y="200" data-voffset="" data-responsive_offset="on" data-fontsize="['18','18','16','16']" data-lineheight="['18','18','16','16']" data-whitespace="nowrap" data-frames='[{"delay":1800,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="color: #fff">
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-
-                <div class="tp-caption tp_m_title tp-resizeme" data-x="center" data-hoffset="" data-y="240" data-voffset="" data-responsive_offset="on" data-fontsize="['25','25','18','18']" data-lineheight="['25','25','18','18']" data-whitespace="nowrap" data-frames='[{"delay":1800,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="color: #fff">
-                    Star Luxury Hotel
-                </div>
-            </li>
-
-            <li data-transition="crossfade">
-                <img src="{{asset('feHotel/images/slider/slider3.jpg')}}" alt="Image" title="Image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
-
-                <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="320" data-voffset="" data-responsive_offset="on" data-fontsize="['70','50','40','25']" data-lineheight="['60','50','40','25']" data-whitespace="nowrap" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 5; color: #fff; font-weight: 900;">WHERE DREAMS COME TRUE
-                </div>
-
-                <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="410" data-voffset="" data-responsive_offset="on" data-fontsize="16" data-lineheight="16" data-whitespace="nowrap" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; color: #fff;">You'll Never Forget Your Stay
-                </div>
-            </li>
-
-            <li data-transition="crossfade">
-                <img src="{{asset('feHotel/images/slider/slider13.jpg')}}" alt="Image" title="Image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
-
-                <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="305" data-voffset="" data-responsive_offset="on" data-fontsize="['80','70','60','40']" data-lineheight="['80','70','60','40']" data-whitespace="nowrap" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 5; color: #fff; font-weight: 900;">ENJOY YOUR HOLIDAYS
-                </div>
-
-                <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="" data-y="410" data-voffset="" data-responsive_offset="on" data-fontsize="16" data-lineheight="16" data-whitespace="nowrap" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; color: #fff;">Family Room from €89 per night
-                </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+    </section>
 
     <div class="horizontal-booking-form">
         <div class="container">
@@ -240,11 +198,15 @@
         </div>
         <div class="row">
 
+            @foreach($listroom as $room)
+
+            @if($room->maloaiphong == 1)
+
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="room.html">
-                            <img src="{{asset('feHotel/images/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('upload/rooms/single/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
                             <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
@@ -255,57 +217,65 @@
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="room.html">Single Room</a>
+                            <a href="room.html">{{ $room->tenphong }}</a>
                         </h2>
-                        <p>Enjoy our single room</p>
+                        <p>{{ $room->mota }}</p>
                     </div>
                 </div>
             </div>
+
+            @elseif($room->maloaiphong == 2)
 
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="room.html">
-                            <img src="{{asset('feHotel/images/rooms/double/double.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('upload/rooms/double/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
                             <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
                             <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
                             <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
                         </div>
-                        <div class="room-price">€129 / night</div>
+                        <div class="room-price">€89 / night</div>
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="room.html">Double Room</a>
+                            <a href="room.html">{{ $room->tenphong }}</a>
                         </h2>
-                        <p>Enjoy our double room</p>
+                        <p>{{ $room->mota }}</p>
                     </div>
                 </div>
             </div>
+            
+            @elseif($room->maloaiphong == 3)
 
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="room.html">
-                            <img src="{{asset('feHotel/images/rooms/deluxe/deluxe.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('upload/rooms/deluxe/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
                             <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                            <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="2 Bathrooms" data-original-title="Bathroom"></i>
                             <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
                             <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
                         </div>
-                        <div class="room-price">€189 / night</div>
+                        <div class="room-price">€89 / night</div>
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="room.html">Deluxe Room</a>
+                            <a href="room.html">{{ $room->tenphong }}</a>
                         </h2>
-                        <p>Enjoy our delux room</p>
+                        <p>{{ $room->mota }}</p>
                     </div>
                 </div>
             </div>
+
+            @endif
+
+            @endforeach
+
         </div>
     </div>
 </section>
@@ -784,7 +754,7 @@
                 <div class="news-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="blog-post.html">
-                            <img src="images/blog/blog-post2.jpg" class="img-fluid" alt="Image">
+                            <img src="{{asset('feHotel/images/blog/blog-post2.jpg')}}" class="img-fluid" alt="Image">
                         </a>
                     </figure>
                     <div class="news-info">
@@ -842,19 +812,6 @@
         </div>
     </div>
 </section>
-
-<section class="video np parallax gradient-overlay op6" data-src="images/video.jpg" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
-    <div class="inner gradient-overlay">
-        <div class="container">
-            <div class="video-popup">
-                <a class="popup-vimeo" href="https://www.youtube.com/watch?v=BDDfopejpwk">
-                    <i class="fa fa-play"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 <section class="events">
     <div class="container">

@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        // Public Services
+        //  Services
         $listroom     = new RoomService;
         $viewListRoom = $listroom->listroom();
 

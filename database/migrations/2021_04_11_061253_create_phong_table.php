@@ -17,6 +17,8 @@ class CreatePhongTable extends Migration
             $table->increments('maphong');
             $table->string('tenphong');
             $table->string('kichthuoc');
+            $table->text('mota');
+            $table->text('noidung');
             // $table->date('thoigian');
             $table->integer('maloaiphong');
             $table->integer('phongnoibat')->default(0);
