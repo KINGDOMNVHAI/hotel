@@ -59,52 +59,19 @@
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
-                    <a href="#">ROOMS</a>
+                    <a href="{{route('list-room', 'all')}}">ROOMS</a>
                     <ul class="submenu">
                         <li class="menu-item dropdown">
                             <a href="#">Rooms</a>
                             <ul class="submenu">
                                 <li class="menu-item">
-                                    <a href="rooms-list.html">List View</a>
+                                    <a href="{{route('list-room', 'single')}}">SINGLE</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="rooms-grid.html">Grid View</a>
+                                    <a href="{{route('list-room', 'double')}}">DOUBLE</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="rooms-block.html">Block View</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item dropdown">
-                            <a href="#">Room Details</a>
-                            <ul class="submenu">
-                                <li class="menu-item dropdown">
-                                    <a href="#">Style 1</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="room.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="room-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="room-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item dropdown">
-                                    <a href="#">Style 2</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="room-style2.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="room-style2-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="room-style2-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
+                                    <a href="{{route('list-room', 'deluxe')}}">DELUXE</a>
                                 </li>
                             </ul>
                         </li>

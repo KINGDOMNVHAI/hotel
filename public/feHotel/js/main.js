@@ -1142,7 +1142,7 @@ Version:       1.1.0
         } else {
           revapi9 = tpj("#rev-slider-event").show().revolution({
             sliderType: "hero",
-            jsFileLocation: "revolution/js/", 
+            jsFileLocation: "revolution/js/",
             dottedOverlay: "twoxtwo",
             delay: 9000,
             navigation: {},
@@ -2065,7 +2065,7 @@ Version:       1.1.0
     masonry_container.masonry({
       itemSelector: '.masonry-grid-item'
     });
-    
+
     // Fix for overlapping items
     if (masonry_container.length) {
       masonry_container.imagesLoaded().progress( function() {
@@ -2236,18 +2236,18 @@ Version:       1.1.0
     if ($("#map-canvas").length) {
       google.maps.event.addDomListener(window, 'load', initialize());
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
      // =============================================
     // DEMO
     // =============================================
     if (!$('body').hasClass('intro-page')) {
 
-      $(".wrapper").after("<!-- ONLY FOR DEMO --><a class='buy-now' href='https://1.envato.market/q3Yz5'><img src='intro/images/icons/envato.svg'>Buy<span> Himara</span> Now For <span>$21</span></a>");
+      // $(".wrapper").after("<!-- ONLY FOR DEMO --><a class='buy-now' href='https://1.envato.market/q3Yz5'><img src='intro/images/icons/envato.svg'>Buy<span> Himara</span> Now For <span>$21</span></a>");
 
       $(".wrapper").after("<div class='eagle-demo-panel'><div class='eagle-demo-panel-options'><div id='toggle-demo-panel'><i class='fa fa-sliders'></i></div></div><div class='eagle-demo-panel-wrapper'><div class='eagle-demo-panel-inner'><div class='site-layout'><h4 class='section-title'>LAYOUT</h4><button id='wide-layout' class='btn layout-btn active'>Wide Layout</button><button id='boxed-layout' class='btn layout-btn'>Boxed Layout</button></div><div class='demos-list'><h4 class='section-title'>DEMOS</h4><div class='row'><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index.html'><img src='intro/images/screenshots/home-page1.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 1</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index2.html'><img src='intro/images/screenshots/home-page2.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 2</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index3.html'><img src='intro/images/screenshots/home-page3.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 3</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index4.html'><img src='intro/images/screenshots/home-page4.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 4</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index5.html'><img src='intro/images/screenshots/home-page5.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 5</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index6.html'><img src='intro/images/screenshots/home-page6.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 6</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index7.html'><img src='intro/images/screenshots/home-page7.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 7</h4></div></div><div class='col-md-6'><div class='demo-panel-item'><figure><a href='index8.html'><img src='intro/images/screenshots/home-page8.jpg' class='img-fluid'></a></figure><h4 class='title'>Home Page 8</h4></div></div></div></div><div class='aligncenter mt50'><a class='btn purchase-btn' href='https://1.envato.market/q3Yz5'>Buy<span> Himara </span>Now For <span>$21</span></a></div><h4 class='section-title mt50'>MORE ITEMS</h4><div class='demo-panel-item'><figure><a href='../../html/zante/intro?ref=demo-panel-himara' target='_blank'><img src='intro/images/items//zante.jpg' class='img-fluid'></a></figure><h4 class='title'>Zante Hotel (HTML)</h4></div><div class='demo-panel-item'><figure><a href='../../themes/fiore/intro?ref=demo-panel-himara' target='_blank'><img src='intro/images/items//fiore.jpg' class='img-fluid'></a></figure><h4 class='title'>Fiore (WP)</h4></div></div></div></div>");
 

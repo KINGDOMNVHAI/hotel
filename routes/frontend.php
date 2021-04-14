@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-// ======================= Home Page =======================
+// ======================= Home Page ======================= https://preview.eagle-themes.com/html/himara/index.html
 
 Route::get('/','frontend\HomeController@index')->name('home');
 
@@ -14,4 +14,6 @@ Route::get('/blog','frontend\PostController@blog')->name('blog');
 
 Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
 
-Route::get('/room/{idRoom}','frontend\PostController@room')->name('room');
+Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room');
+
+Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room');

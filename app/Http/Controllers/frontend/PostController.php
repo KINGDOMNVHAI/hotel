@@ -23,17 +23,4 @@ class PostController extends Controller
             'listroom'  => $viewListRoom,
         ]);
     }
-
-    public function room($idRoom)
-    {
-        // Public Services
-        $detailroom     = new RoomService;
-        $viewDetailRoom = $detailroom->detailroom($idRoom);
-
-        return view('feHotel.pages.room', [
-            'title'      => TITLE_FRONTEND_INDEX,
-
-            'detailroom' => $viewDetailRoom,
-        ]);
-    }
 }

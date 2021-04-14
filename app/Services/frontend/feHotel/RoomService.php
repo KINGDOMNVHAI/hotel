@@ -40,12 +40,34 @@ class RoomService extends ServiceProvider
         $query = DB::table('phong')
             ->select(
                 'maphong', 'tenphong'
-                ,'kichthuoc','mota','noidung'
+                ,'kichthuoc','mota','noidung', 'giaphong'
                 ,'maloaiphong','phongnoibat','thumbnailphong'
             )
             ->where('enablephong', '=', 1)
             ->where('maphong', '=', $idRoom)
             ->first();
+
+        return $query;
+    }
+
+    public function listRoomHavePaginate($limit, $urlListRoom)
+    {
+        $query = DB::table('phong')
+            ->where('enablephong', '=', 1);
+
+        if ($urlListRoom == 'all') {
+            $query = $query;
+        } else if ($urlListRoom = 'single') {
+            $query = $query->where('maloaiphong', '=', SINGLE);
+        } else if ($urlListRoom = 'double') {
+            $query = $query->where('maloaiphong', '=', DOUBLE);
+        } else if ($urlListRoom = 'deluxe') {
+            $query = $query->where('maloaiphong', '=', DELUXE);
+        } else {
+
+        }
+
+        $query = $query->paginate($limit);
 
         return $query;
     }

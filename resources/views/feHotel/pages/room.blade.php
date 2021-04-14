@@ -2,17 +2,17 @@
 
 @section('NoiDung')
 
-<div class="page-title gradient-overlay op5" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
+<div class="page-title gradient-overlay op6" style="background: url({{asset('feHotel/images/breadcrumb.jpg')}}); background-repeat: no-repeat;
     background-size: cover;">
     <div class="container">
         <div class="inner">
             <h1>{{$detailroom->tenphong}}</h1>
             <div class="room-details-price">
-                €89 / NIGHT
+                {{$detailroom->giaphong}} VND / NIGHT
             </div>
             <ol class="breadcrumb">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{route('home')}}">Home</a>
                 </li>
                 <li>
                     <a href="index.html">Rooms</a>
@@ -27,38 +27,36 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-12">
-
                 <div class="room-slider">
                     <div id="room-main-image" class="owl-carousel image-gallery">
-
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="images/rooms/single/single1.jpg">
-                                    <img class="img-fluid" src="images/rooms/single/single1.jpg" alt="Image">
+                                <a href="{{asset('upload/rooms/single/single1.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single1.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="images/rooms/single/single2.jpg">
-                                    <img class="img-fluid" src="images/rooms/single/single2.jpg" alt="Image">
+                                <a href="{{asset('upload/rooms/single/single2.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single2.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="images/rooms/single/single3.jpg">
-                                    <img class="img-fluid" src="images/rooms/single/single3.jpg" alt="Image">
+                                <a href="{{asset('upload/rooms/single/single3.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single3.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="images/rooms/single/single4.jpg">
-                                    <img class="img-fluid" src="images/rooms/single/single4.jpg" alt="Image">
+                                <a href="{{asset('images/rooms/single/single4.jpg')}}.jpg">
+                                    <img class="img-fluid" src="{{asset('images/rooms/single/single4.jpg')}}.jpg" alt="Image">
                                 </a>
                             </figure>
                         </div>
@@ -114,19 +112,8 @@
                         <div class="item"><img class="img-fluid" src="images/rooms/single/single8.jpg" alt="Image"></div>
                     </div>
                 </div>
-                <p class="dropcap">Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                    nisl ut aliquip ex ea
-                    <u>commodo consequat.</u>
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-                </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut, asperiores voluptatibus quo rem iusto laborum, laudantium corrupti ea esse officia placeat beatae! Ducimus quasi nisi odio architecto repudiandae illo sunt nulla quia obcaecati
-                    blanditiis? Doloremque commodi deserunt corporis, maiores, quam ipsam voluptates beatae necessitatibus, sapiente impedit sunt cupiditate odio, officiis quo debitis distinctio! Tenetur quibusdam modi adipisci vel ullam cum ratione itaque laborum
-                    molestias nesciunt. Qui itaque saepe obcaecati quo tempora natus laudantium quidem, inventore totam. Nobis incidunt est doloribus qui vero expedita a fugit necessitatibus minus sapiente illo, commodi laudantium minima quo deserunt odio repellat
-                    placeat quas, perferendis, voluptates! Omnis corporis nostrum optio reprehenderit aspernatur consequuntur, nisi rerum. Architecto provident alias voluptatem aliquam tenetur eius eos. Iure, earum. Asperiores consectetur, dolorem animi pariatur. Magni
-                    necessitatibus non hic odit nesciunt voluptatum distinctio provident, repellendus quae dolores, assumenda delectus quisquam fuga velit natus cumque. Odio sint deserunt ex dolorem, culpa, sit accusantium nesciunt. Dicta, nulla aperiam expedita nihil
-                    at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
-                    illum. Repellendus cumque veniam quae odit enim.
+                    {{$detailroom->noidung}}
                 </p>
                 <div class="section-title sm">
                     <h4>ROOM SERVICES</h4>
