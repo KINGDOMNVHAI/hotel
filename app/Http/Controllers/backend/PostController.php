@@ -7,6 +7,7 @@ use App\Model\User;
 use App\Model\Post;
 use App\Services\all\ListPostService;
 use App\Services\backend\PostService;
+use App\Services\frontend\feHotel\RoomService;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -31,14 +32,14 @@ class PostController extends Controller
             $username = Auth::user()->username;
 
             // Public Services
-            $listpost     = new ListPostService;
-            $viewListPost = $listpost->listpost();
+            $listroom     = new RoomService;
+            $viewListRoom = $listroom->listRoomHavePaginate(20, 'all');
 
             return view('backend.pages.list-post', [
                 'title'     => TITLE_FRONTEND_INDEX,
 
                 'username'  => $username,
-                'listpost'  => $viewListPost,
+                'listroom'  => $viewListRoom,
             ]);
         }
         else {

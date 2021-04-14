@@ -32,14 +32,14 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @foreach($listpost as $post)
+                     @foreach($listroom as $room)
                     <tr>
-                        <td>{{ $post->id_post }}</td>
-                        <td>{{ $post->name_post }}</td>
-                        <td><img src="{{ asset('upload/' . $post->thumbnail_post) }}" width="150px;"></td>
+                        <td>{{ $room->maphong }}</td>
+                        <td>{{ $room->tenphong }}</td>
+                        <td><img src="{{ asset('upload/rooms/deluxe/' . $room->thumbnailphong) }}" width="150px;"></td>
                         <td>
-                            <a href="{{route('update', $post->url_post)}}" class="btn btn-primary">Edit</a> ||
-                            <a href="{{route('delete', $post->url_post)}}" class="btn btn-danger">Delete</a>
+                            <a href="{{route('update', $room->maphong)}}" class="btn btn-primary">Edit</a> ||
+                            <a href="{{route('delete', $room->maphong)}}" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                     @endforeach
