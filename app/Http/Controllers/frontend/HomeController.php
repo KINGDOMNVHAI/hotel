@@ -19,7 +19,7 @@ class HomeController extends Controller
     {
         //  Services
         $listroom     = new RoomService;
-        $viewListRoom = $listroom->listroom();
+        $viewListRoom = $listroom->listroom(3);
 
         return view('feHotel.pages.home', [
             'title'     => TITLE_FRONTEND_INDEX,
@@ -28,21 +28,17 @@ class HomeController extends Controller
         ]);
     }
 
-    // public function about()
-    // {
-    //     return view('feHotel.pages.about', [
-    //         'title' => TITLE_FRONTEND_INDEX,
+    public function about()
+    {
+        return view('feHotel.pages.about', [
+            'title' => TITLE_FRONTEND_INDEX,
+        ]);
+    }
 
-    //         'darkskyAPI' => $this->darkskyAPI,
-    //     ]);
-    // }
-
-    // public function contact()
-    // {
-    //     return view('feHotel.pages.contact', [
-    //         'title' => TITLE_FRONTEND_INDEX,
-
-    //         'darkskyAPI' => $this->darkskyAPI,
-    //     ]);
-    // }
+    public function contact()
+    {
+        return view('feHotel.pages.contact', [
+            'title' => TITLE_FRONTEND_INDEX,
+        ]);
+    }
 }

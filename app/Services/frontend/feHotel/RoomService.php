@@ -24,19 +24,29 @@ class RoomService extends ServiceProvider
      *
      * @return void
      */
-    public function listroom()
+    public function listroom($limit)
     {
         // ORM Laravel
         $query = DB::table('phong')
             ->where('enablephong', '=', 1)
-            ->limit(3)
+            ->limit($limit)
             ->get();
 
         return $query;
     }
 
-    public function detailroom()
+    public function detailroom($idRoom)
     {
-        
+        $query = DB::table('phong')
+            ->select(
+                'maphong', 'tenphong'
+                ,'kichthuoc','mota','noidung'
+                ,'maloaiphong','phongnoibat','thumbnailphong'
+            )
+            ->where('enablephong', '=', 1)
+            ->where('maphong', '=', $idRoom)
+            ->first();
+
+        return $query;
     }
 }

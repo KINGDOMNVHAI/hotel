@@ -3,7 +3,7 @@
 @section('NoiDung')
 
 <div class="slider">
-    
+
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
             <div class="container">
@@ -205,7 +205,7 @@
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="room.html">
+                        <a href="{{route('room', $room->maphong)}}">
                             <img src="{{asset('upload/rooms/single/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
@@ -217,7 +217,7 @@
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="room.html">{{ $room->tenphong }}</a>
+                            <a href="{{route('room', $room->maphong)}}">{{ $room->tenphong }}</a>
                         </h2>
                         <p>{{ $room->mota }}</p>
                     </div>
@@ -247,7 +247,7 @@
                     </div>
                 </div>
             </div>
-            
+
             @elseif($room->maloaiphong == 3)
 
             <div class="col-md-4">

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
-use App\Services\all\GetAPIService;
+use App\Services\frontend\feHotel\RoomService;
 use App\Services\all\ListPostService;
 use DB;
 use Illuminate\Http\Request;
@@ -11,39 +11,29 @@ use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
-    public function __construct()
-    {
-        $getAPI = new GetAPIService();
-        $this->darkskyAPI = $getAPI->getAPIDarkSky();
-    }
-
     public function blog()
     {
         // Public Services
-        $listpost     = new ListPostService;
-        $viewListPost = $listpost->listpost();
+        $listroom     = new RoomService;
+        $viewListRoom = $listroom->listroom(12);
 
-        return view('frontend.pages.blog', [
+        return view('feHotel.pages.blog', [
             'title'     => TITLE_FRONTEND_INDEX,
 
-            'darkskyAPI' => $this->darkskyAPI,
-
-            'listpost'  => $viewListPost,
+            'listroom'  => $viewListRoom,
         ]);
     }
 
-    public function post($urlPost)
+    public function room($idRoom)
     {
         // Public Services
-        $detailpost     = new ListPostService;
-        $viewDetailPost = $detailpost->detailpost($urlPost);
+        $detailroom     = new RoomService;
+        $viewDetailRoom = $detailroom->detailroom($idRoom);
 
-        return view('frontend.pages.post', [
+        return view('feHotel.pages.room', [
             'title'      => TITLE_FRONTEND_INDEX,
 
-            'darkskyAPI' => $this->darkskyAPI,
-
-            'detailpost' => $viewDetailPost,
+            'detailroom' => $viewDetailRoom,
         ]);
     }
 }

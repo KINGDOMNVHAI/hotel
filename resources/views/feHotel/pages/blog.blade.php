@@ -17,7 +17,6 @@
     </div>
 </div>
 
-
 <main>
     <div class="container">
         <div class="row">
@@ -225,45 +224,6 @@
                         </div>
                     </article>
 
-                    <article class="post">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="post-thumbnail">
-                                    <figure class="gradient-overlay-hover link-icon">
-                                        <a href="blog-post.html">
-                                            <img src="images/blog/blog-post6.jpg" class="img-fluid" alt="Image">
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="post-details">
-                                    <h2 class="post-title">
-                                        <a href="blog-post.html">Running On Sand</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span class="author">
-                                            <a href="#"><img src="images/users/admin.jpg" width="16" alt="Image">JANE Doe</a>
-                                        </span>
-                                        <span class="date">
-                                            <a href="#">
-                                                <i class="fa fa-clock-o"></i>March 04, 2018</a>
-                                        </span>
-                                        <span class="comments">
-                                            <a href="#">
-                                                <i class="fa fa-commenting-o"></i>0 Comments</a>
-                                        </span>
-                                        <span class="category">
-                                            <i class="fa fa-folder-open-o"></i>IN
-                                            <a href="#">News</a>,
-                                            <a href="#">Events</a>
-                                        </span>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet reiciendis ducimus deserunt non dolorum, distinctio repellendus eaque, officiis dicta! Sit numquam qui tenetur tempore officia minus, a dignissimos ...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
                 </div>
 
                 <nav class="pagination">
