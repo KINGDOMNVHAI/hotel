@@ -12,6 +12,7 @@
                     <a href="{{route('home')}}">Home</a>
                 </li>
                 <li>Rooms</li>
+                
             </ol>
         </div>
     </div>

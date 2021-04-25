@@ -415,6 +415,7 @@
                             <a href="#"><span class="tag">City</span></a>
                             <a href="#"><span class="tag">Image</span></a>
                             <a href="#"><span class="tag">Hotel</span></a>
+                            
                         </div>
                     </aside>
                 </div>

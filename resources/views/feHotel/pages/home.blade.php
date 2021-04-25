@@ -24,67 +24,66 @@
                     <div class="row">
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label>Name
-                                    <a href="#" title="Your Name" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type your first name and last name">
+                                <label>Tên khách hàng
+                                    <a href="#" title="Tên của bạn" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hãy điền tên của bạn vào ô trống. Điền đầy đủ họ và tên của bạn">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <input class="form-control" name="booking-name" type="text" data-trigger="hover" placeholder="Write Your Name">
+                                <input class="form-control" name="booking-name" type="text" data-trigger="hover" placeholder="Tên của bạn">
                             </div>
                         </div>
 
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label>Email
-                                    <a href="#" title="Your Email" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type your email adress">
+                                    <a href="#" title="Email của bạn" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hãy điền email của bạn vào ô trống. Email của bạn bao gồm kí tự chữ, dấu chấm, số và địa chỉ email ( @gmail.com; @yahoo.com ). Nhưng không bao gồm kí tự đặc biệt ">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <input class="form-control" name="booking-email" type="email" placeholder="Write your Email">
+                                <input class="form-control" name="booking-email" type="email" placeholder="Email của bạn">
                             </div>
                         </div>
 
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label>Room Type
-                                    <a href="#" title="Room Type" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select room type">
+                                <label>Kiểu phòng
+                                    <a href="#" title="Kiểu phòng" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Chọn kiểu phòng mà bạn muốn đăng ký. Gía của mỗi kiểu phòng khác nhau">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <select class="form-control" name="booking-roomtype" title="Select Room Type" data-header="Room Type">
-                                    <option value="Single">Single Room</option>
-                                    <option value="Double">Double Room</option>
-                                    <option value="Deluxe">Deluxe Room</option>
+                                <select class="form-control" name="booking-roomtype" title="Chọn kiểu phòng" data-header="Kiểu phòng">
+                                    <option value="Single">Phòng có gác</option>
+                                    <option value="Double">Phòng không có gác</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label>Check-In/Out
-                                    <a href="#" title="Check-In / Check-Out" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select check-in and check-out date <br>*Check In from 11:00am">
+                                <label>Ngày đến và ngày đi
+                                    <a href="#" title="Ngày đến - ngày đi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Bạn hãy chọn ngày đến - ngày đi khi bạn đăng kí phòng">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <input type="text" class="datepicker form-control" name="booking-date" placeholder="Arrival & Departure" readonly="readonly">
+                                <input type="text" class="datepicker form-control" name="booking-date" placeholder="Đến & Đi" readonly="readonly">
                             </div>
                         </div>
 
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label>Guests
-                                    <a href="#" title="Guests" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select Adults / Children">
+                                <label>Số lượng người
+                                    <a href="#" title="Số lượng khách hàng" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Chọn số lượng khác hàng bao gồm người lớn và trẻ em">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
                                 <div class="panel-dropdown">
-                                    <div class="form-control guestspicker">Guests
+                                    <div class="form-control guestspicker">Số lượng khách hàng
                                         <span class="gueststotal"></span>
                                     </div>
                                     <div class="panel-dropdown-content">
                                         <div class="guests-buttons">
-                                            <label>Adults
-                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="18+ years" data-original-title="Adults">
+                                            <label>Người lớn
+                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Từ 18 tuổi trở lên" data-original-title="Người lớn">
                                                     <i class="fa fa-info-circle"></i>
                                                 </a>
                                             </label>
@@ -95,8 +94,8 @@
                                             </div>
                                         </div>
                                         <div class="guests-buttons">
-                                            <label>Cildren
-                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Under 18 years" data-original-title="Children">
+                                            <label>Trẻ em
+                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Dưới 18 tuổi" data-original-title="Trẻ em">
                                                     <i class="fa fa-info-circle"></i>
                                                 </a>
                                             </label>
@@ -112,10 +111,10 @@
                         </div>
 
                         <div class="col-md-2">
-                            <button type="submit" class="btn btn-book">BOOK A ROOM</button>
+                            <button type="submit" class="btn btn-book">Đặt phòng</button>
                             <div class="advanced-form-link">
                                 <a href="booking-form.html">
-                                    Advanced Booking Form
+                                    Biểu mẫu đặt phòng
                                 </a>
                             </div>
                         </div>
@@ -126,13 +125,13 @@
     </div>
 </div>
 
-<section class="about mt100">
+<!-- <section class="about mt100">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <div class="section-title">
                     <h4 class="text-uppercase">Hotel Himara. since 1992</h4>
-                    <p class="section-subtitle">High quality accommodation services</p>
+                    <p class="section-subtitle">Dịch vụ phòng trọ chất lượng cao</p>
                 </div>
                 <div class="info-branding">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem
@@ -181,6 +180,86 @@
                             </div>
                             <h5 class="title">LUXURY HOTEL</h5>
                             <p class="mt20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste suscipit voluptates architecto nemo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="services">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase">Phòng trọ Sunline. since 2000</h4>
+            <p class="section-subtitle">Dịch vụ phòng trọ chất lượng cao</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-12">
+                <div data-slider-id="services" class="services-owl owl-carousel">
+                    <figure class="gradient-overlay">
+                        <img src="{{asset('feHotel/images/services/restaurant.jpg')}}" class="img-fluid" alt="Image">
+                        <figcaption>
+                            <h4>Phòng</h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="gradient-overlay">
+                        <img src="{{asset('feHotel/images/services/spa.jpg')}}" class="img-fluid" alt="Image">
+                        <figcaption>
+                            <h4>Dịch vụ</h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="gradient-overlay">
+                        <img src="{{asset('feHotel/images/services/conference.jpg')}}" class="img-fluid" alt="Image">
+                        <figcaption>
+                            <h4>Thông tin</h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="gradient-overlay">
+                        <img src="{{asset('feHotel/images/services/swimming.jpg')}}" class="img-fluid" alt="Image">
+                        <figcaption>
+                            <h4>Sự kiện</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 col-12">
+                <div class="owl-thumbs" data-slider-id="services">
+                    <div class="owl-thumb-item">
+                        <span class="media-left">
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgwIDQ4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNTkuNTg0LDQ2OS40NzJsLTE2LTQ4Yy0xLjA4OC0zLjI2Ni00LjE0Mi01LjQ2OS03LjU4NC01LjQ3MkgxNDRjLTMuNDQyLDAuMDAzLTYuNDk2LDIuMjA2LTcuNTg0LDUuNDcybC0xNiw0OA0KCQkJYy0xLjM5Niw0LjE5MiwwLjg3LDguNzIyLDUuMDYyLDEwLjExOGMwLjgxMywwLjI3MSwxLjY2NSwwLjQwOSwyLjUyMiwwLjQxaDIyNGM0LjQxOC0wLjAwMyw3Ljk5Ny0zLjU4OCw3Ljk5NC04LjAwNg0KCQkJQzM1OS45OTMsNDcxLjEzNywzNTkuODU1LDQ3MC4yODUsMzU5LjU4NCw0NjkuNDcyeiBNMTM5LjEwNCw0NjRsMTAuNjY0LTMyaDE4MC40NjRsMTAuNjY0LDMySDEzOS4xMDR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zMDQsMjU2Yy0xMy4yNTUsMC0yNCwxMC43NDUtMjQsMjRzMTAuNzQ1LDI0LDI0LDI0czI0LTEwLjc0NSwyNC0yNFMzMTcuMjU1LDI1NiwzMDQsMjU2eiBNMzA0LDI4OGMtNC40MTgsMC04LTMuNTgyLTgtOA0KCQkJczMuNTgyLTgsOC04czgsMy41ODIsOCw4UzMwOC40MTgsMjg4LDMwNCwyODh6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNzIsMTYwaC02NGMtNC40MTgsMC04LDMuNTgyLTgsOHYzMmMwLDQuNDE4LDMuNTgyLDgsOCw4aDY0YzQuNDE4LDAsOC0zLjU4Miw4LTh2LTMyQzI4MCwxNjMuNTgyLDI3Ni40MTgsMTYwLDI3MiwxNjB6DQoJCQkgTTI2NCwxOTJoLTQ4di0xNmg0OFYxOTJ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NzIsMEg4QzMuNTgyLDAsMCwzLjU4MiwwLDh2Mzg0YzAsNC40MTgsMy41ODIsOCw4LDhoNDY0YzQuNDE4LDAsOC0zLjU4Miw4LThWOEM0ODAsMy41ODIsNDc2LjQxOCwwLDQ3MiwweiBNMTYsMTc2aDI0DQoJCQl2MTZIMTZWMTc2eiBNODAsMzg0SDE2VjIwOGgzMmM0LjQxOCwwLDgtMy41ODIsOC04di0zMmMwLTQuNDE4LTMuNTgyLTgtOC04SDE2di0xNmg2NFYzODR6IE04MCwxMjhIMTZ2LTE2aDY0VjEyOHogTTMyOCwyODB2MTA0DQoJCQlIMTUyVjE0NGgxNzZWMjgweiBNMzI4LDEyOEgxNTJ2LTE2aDE3NlYxMjh6IE00NjQsMTkyaC0yNHYtMTZoMjRWMTkyeiBNNDY0LDE2MGgtMzJjLTQuNDE4LDAtOCwzLjU4Mi04LDh2MzJjMCw0LjQxOCwzLjU4Miw4LDgsOA0KCQkJaDMydjE3NmgtNjRWMTQ0aDY0VjE2MHogTTQ2NCwxMjhoLTY0di0xNmg2NFYxMjh6IE00NjQsOTZoLTcyYy00LjQxOCwwLTgsMy41ODItOCw4djI4MGgtNDBWMTA0YzAtNC40MTgtMy41ODItOC04LThIMTQ0DQoJCQljLTQuNDE4LDAtOCwzLjU4Mi04LDh2MjgwSDk2VjEwNGMwLTQuNDE4LTMuNTgyLTgtOC04SDE2VjE2aDQ0OFY5NnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHJlY3QgeD0iNDgiIHk9IjI3MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNTYsMzJoLTMyYy0yMi4wOCwwLjAyNi0zOS45NzQsMTcuOTItNDAsNDBjMCw0LjQxOCwzLjU4Miw4LDgsOGg5NmM0LjQxOCwwLDgtMy41ODIsOC04DQoJCQlDMjk1Ljk3NCw0OS45MiwyNzguMDgsMzIuMDI2LDI1NiwzMnogTTIwMS4zNjgsNjRjMy40MDMtOS41ODIsMTIuNDY0LTE1Ljk4OCwyMi42MzItMTZoMzJjMTAuMTY4LDAuMDEyLDE5LjIyOSw2LjQxOCwyMi42MzIsMTYNCgkJCUgyMDEuMzY4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width="50px" height="50px"/>
+                        </span>
+                        <div class="media-body">
+                            <h5>Phòng</h5>
+                            <p>Tại Sunline, chúng tôi có những căn phòng tuyệt vời gồm: Phòng có gác và phòng không có gác. Những căn phòng này có đầy đủ tiện nghi, giúp bạn lựa chọn 1 nơi tạm trú mỗi khi đi xa nhà</p>
+                        </div>
+                    </div>
+                    <div class="owl-thumb-item">
+                        <span class="media-left">
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48ZyBpZD0iQ29uc3VsdC1UYWxrIj48cmVjdCB4PSIxNiIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSIyNiIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cGF0aCBkPSJNNjEuMTQyLDM2LjAxbC0zLjkwNy0uNTU4YTE0LDE0LDAsMCwwLS42NTctMS42TDU4Ljk0MiwzMC43YTEsMSwwLDAsMC0uMDkzLTEuMzA3bC00LjI0My00LjI0M0EuOTg5Ljk4OSwwLDAsMCw1NCwyNC44NjdWMTUuMjQxQTgsOCwwLDAsMCw1Nyw5YTcuOTE3LDcuOTE3LDAsMCwwLTQuNTczLTcuMjI0QTEsMSwwLDAsMCw1MSwyLjY4djUuNmwtMiwuNjY3LTItLjY2N1YyLjY4YTEsMSwwLDAsMC0xLjQyNy0uOUE3LjkxNyw3LjkxNywwLDAsMCw0MSw5YTgsOCwwLDAsMCwzLDYuMjQxVjIySDQxYTEsMSwwLDAsMC0uOTkuODU4bC0uNjQ3LDQuNTI5LDEuOTguMjgzTDQxLjg2NywyNGg0LjI2NmwuNTI0LDMuNjdhMSwxLDAsMCwwLC43MS44MTgsMTEuOTM5LDExLjkzOSwwLDAsMSwyLjQuOTg3LDEsMSwwLDAsMCwxLjA4MS0uMDc3bDIuOTYxLTIuMjIsMy4wMTYsMy4wMTZMNTQuNiwzMy4xNTVhMSwxLDAsMCwwLS4wNzcsMS4wODEsMTEuOTM5LDExLjkzOSwwLDAsMSwuOTg3LDIuNCwxLDEsMCwwLDAsLjgxOC43MWwzLjY3LjUyNHY0LjI2NmwtMy42Ny41MjRhMSwxLDAsMCwwLS44MTguNzEsMTEuOTM5LDExLjkzOSwwLDAsMS0uOTg3LDIuNCwxLDEsMCwwLDAsLjA3NywxLjA4MWwyLjIyLDIuOTYxLTMuMDE2LDMuMDE2TDUwLjg0NSw1MC42YTEsMSwwLDAsMC0xLjA4MS0uMDc3LDExLjkzOSwxMS45MzksMCwwLDEtMi40Ljk4NywxLDEsMCwwLDAtLjcxLjgxOEw0Ni4xMzMsNTZINDJWNTEuNzcxYTExLjEsMTEuMSwwLDAsMC0uNDUtMy4xMjEsOS4xMSw5LjExLDAsMSwwLTYuMzk0LTcuMDYyYy0uMDI0LS4wMS0uMDQ3LS4wMjItLjA3MS0uMDMxTDI3LDM4LjMyM1YzNi43ODZBMTEuMDg5LDExLjA4OSwwLDAsMCwzMC40NzksMzRIMzNhMywzLDAsMCwwLDMtM1YyOC44MTZBMywzLDAsMCwwLDM4LDI2VjIzYTMsMywwLDAsMC0yLTIuODE2VjE5QTE0LDE0LDAsMCwwLDgsMTl2MS4xODRBMywzLDAsMCwwLDYsMjN2M2EzLDMsMCwwLDAsMywzaDJjLjA2NCwwLC4xMjYtLjAxLjE4OS0uMDE0QTExLjAyMywxMS4wMjMsMCwwLDAsMTcsMzYuNzg2djEuNTM3TDguOTE1LDQxLjU1N0ExMC45NDksMTAuOTQ5LDAsMCwwLDIsNTEuNzcxVjYxYTEsMSwwLDAsMCwxLDFINDFhMSwxLDAsMCwwLDEtMVY1OGg1YTEsMSwwLDAsMCwuOTktLjg1OGwuNTU4LTMuOTA3YTE0LDE0LDAsMCwwLDEuNi0uNjU3TDUzLjMsNTQuOTQyYTEsMSwwLDAsMCwxLjMwNy0uMDkzbDQuMjQzLTQuMjQzYTEsMSwwLDAsMCwuMDkzLTEuMzA3bC0yLjM2NC0zLjE1MmExNCwxNCwwLDAsMCwuNjU3LTEuNmwzLjkwNy0uNTU4QTEsMSwwLDAsMCw2Miw0M1YzN0ExLDEsMCwwLDAsNjEuMTQyLDM2LjAxWm0tMTEtOC41ODhjLS4wNDctLjAyMy0uMS0uMDM4LS4xNDctLjA2VjE1SDQ4djcuOTNsLS4wMS0uMDcyQTEsMSwwLDAsMCw0NywyMkg0NlYxNC43NGExLDEsMCwwLDAtLjQyOS0uODIxQTYsNiwwLDAsMSw0NSw0LjUyMlY5YTEsMSwwLDAsMCwuNjg0Ljk0OWwzLDFhMSwxLDAsMCwwLC42MzIsMGwzLTFBMSwxLDAsMCwwLDUzLDlWNC41MjJhNiw2LDAsMCwxLS41NzEsOS40QTEsMSwwLDAsMCw1MiwxNC43NFYyNi4wMzNaTTM3LDQwYTcuMDUsNy4wNSwwLDEsMSwzLjMzMyw1Ljk0MSwxMC45MTYsMTAuOTE2LDAsMCwwLTIuNjExLTIuODc3QTYuODM2LDYuODM2LDAsMCwxLDM3LDQwWm0tNC04SDMxLjc4NmExMC45LDEwLjksMCwwLDAsMS4wMjUtMy4wMTRjLjA2MywwLC4xMjUuMDE0LjE4OS4wMTRoMXYyQTEsMSwwLDAsMSwzMywzMlpNMzEsMjFhMy4wMTUsMy4wMTUsMCwwLDEtMi40LTEuMmwtMS44LTIuNGExLDEsMCwwLDAtLjY3NC0uMzkyLDEuMDExLDEuMDExLDAsMCwwLS43NTEuMjExTDIyLjAxOSwxOS45QTUuMDE4LDUuMDE4LDAsMCwxLDE4LjksMjFIMTNWMjBhOSw5LDAsMCwxLDE4LDBabTUsNWExLDEsMCwwLDEtMSwxSDMzVjIyaDJhMSwxLDAsMCwxLDEsMVpNMjIsN0ExMi4wMTMsMTIuMDEzLDAsMCwxLDM0LDE5djFIMzNhMTEsMTEsMCwwLDAtMjIsMEgxMFYxOUExMi4wMTMsMTIuMDEzLDAsMCwxLDIyLDdaTTksMjdhMSwxLDAsMCwxLTEtMVYyM2ExLDEsMCwwLDEsMS0xaDJ2NVptNCwwVjIzaDUuOWE3LjAyNCw3LjAyNCwwLDAsMCw0LjM3Mi0xLjUzNGwyLjU1MS0yLjA0MUwyNywyMWE1LjAyNSw1LjAyNSwwLDAsMCw0LDJ2NGE4Ljk0Nyw4Ljk0NywwLDAsMS0xLjUyMiw1SDIydjJoNS42NDRBOC45OTEsOC45OTEsMCwwLDEsMTMsMjdabTksMTFhMTAuOTY2LDEwLjk2NiwwLDAsMCwzLS40MjZWMzlhMywzLDAsMCwxLTYsMFYzNy41NzRBMTAuOTY2LDEwLjk2NiwwLDAsMCwyMiwzOFpNNDAsNjBIMzRWNDlIMzJWNjBIMTJWNDlIMTBWNjBINFY1MS43NzFhOC45NTgsOC45NTgsMCwwLDEsNS42NTgtOC4zNTdsNy41NjMtMy4wMjVhNC45NjgsNC45NjgsMCwwLDAsOS41NTgsMGw3LjU2MywzLjAyNUE4Ljk1OCw4Ljk1OCwwLDAsMSw0MCw1MS43NzFaIi8+PHJlY3QgeD0iNDMiIHk9IjI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iNDMiIHk9IjUyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iNTIuMTkyIiB5PSI0OC4xOTIiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOS4yMDUgNTIuMDIxKSByb3RhdGUoLTQ1KSIvPjxyZWN0IHg9IjU2IiB5PSIzOSIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjUyLjE5MiIgeT0iMjkuODA4IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNi4yMDUgNDYuNjM2KSByb3RhdGUoLTQ1KSIvPjwvZz48L3N2Zz4K" width="50px" height="50px"/>
+                        </span>
+                        <div class="media-body">
+                            <h5>Dịch vụ - Hữu &amp; ích</h5>
+                            <p>Khi bạn có những nhu cầu sửa chữa hoặc thay đổi trong phòng của bạn, thì chúng tôi có thể giúp đỡ ở mọi điều kiện mà bạn muốn</p>
+                        </div>
+                    </div>
+                    <div class="owl-thumb-item">
+                        <span class="media-left">
+                            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDYwIDYwIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJQYWdlLTEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgaWQ9IjAxNC0tLU5ld3NwYXBlci1hbmQtQ29mZmVlIiBmaWxsPSJyZ2IoMCwwLDApIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjxwYXRoIGlkPSJTaGFwZSIgZD0ibTI4IDZjMC0xLjEwNDU2OTUtLjg5NTQzMDUtMi0yLTJoLTExYy0xLjEwNDU2OTUgMC0yIC44OTU0MzA1LTIgMnY5YzAgMS4xMDQ1Njk1Ljg5NTQzMDUgMiAyIDJoMTFjMS4xMDQ1Njk1IDAgMi0uODk1NDMwNSAyLTJ6bS0xMyA5di05aDExdjl6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtMjcgMjRoLTEzYy0uNTUyMjg0NyAwLTEgLjQ0NzcxNTMtMSAxcy40NDc3MTUzIDEgMSAxaDEzYy41NTIyODQ3IDAgMS0uNDQ3NzE1MyAxLTFzLS40NDc3MTUzLTEtMS0xeiIvPjxwYXRoIGlkPSJTaGFwZSIgZD0ibTI3IDE5aC0xM2MtLjU1MjI4NDcgMC0xIC40NDc3MTUzLTEgMXMuNDQ3NzE1MyAxIDEgMWgxM2MuNTUyMjg0NyAwIDEtLjQ0NzcxNTMgMS0xcy0uNDQ3NzE1My0xLTEtMXoiLz48cGF0aCBpZD0iU2hhcGUiIGQ9Im0yNyAyOWgtMTNjLS41NTIyODQ3IDAtMSAuNDQ3NzE1My0xIDFzLjQ0NzcxNTMgMSAxIDFoMTNjLjU1MjI4NDcgMCAxLS40NDc3MTUzIDEtMXMtLjQ0NzcxNTMtMS0xLTF6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtMjcgMzRoLTEzYy0uNTUyMjg0NyAwLTEgLjQ0NzcxNTMtMSAxcy40NDc3MTUzIDEgMSAxaDEzYy41NTIyODQ3IDAgMS0uNDQ3NzE1MyAxLTFzLS40NDc3MTUzLTEtMS0xeiIvPjxwYXRoIGlkPSJTaGFwZSIgZD0ibTI3IDM5aC0xM2MtLjU1MjI4NDcgMC0xIC40NDc3MTUzLTEgMXMuNDQ3NzE1MyAxIDEgMWgxM2MuNTUyMjg0NyAwIDEtLjQ0NzcxNTMgMS0xcy0uNDQ3NzE1My0xLTEtMXoiLz48cGF0aCBpZD0iU2hhcGUiIGQ9Im0yNiA0M2gtMTFjLTEuMTA0NTY5NSAwLTIgLjg5NTQzMDUtMiAydjljMCAxLjEwNDU2OTUuODk1NDMwNSAyIDIgMmgxMWMxLjEwNDU2OTUgMCAyLS44OTU0MzA1IDItMnYtOWMwLTEuMTA0NTY5NS0uODk1NDMwNS0yLTItMnptLTExIDExdi05aDExdjl6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtNTEuNSAyOWgtLjV2LTFjMC0xLjEwNDU2OTUtLjg5NTQzMDUtMi0yLTJoLTE3Yy0xLjEwNDU2OTUgMC0yIC44OTU0MzA1LTIgMnYxN2MuMDA0OTU5OSA0LjQxNjIyMTkgMy41ODM3NzgxIDcuOTk1MDQwMSA4IDhoNWMuNjc1MTI3My0uMDAyNDIxMSAxLjM0NzE5ODgtLjA5MDc5ODUgMi0uMjYzdjIuNjIzYy0uMDAyMjAyOCAxLjQ1NzExODQtMS4xODI4ODE2IDIuNjM3Nzk3Mi0yLjY0IDIuNjRoLTMyLjYyMWMuODE1ODIxOS0uOTgzODA0OSAxLjI2MTkwNDQtMi4yMjE5NDAzIDEuMjYxLTMuNXYtNTEuNWMwLS41NTIyODQ3NS40NDc3MTUzLTEgMS0xaDMyYy41NTIyODQ3IDAgMSAuNDQ3NzE1MjUgMSAxdjRjMCAuNTUyMjg0NzUuNDQ3NzE1MyAxIDEgMXMxLS40NDc3MTUyNSAxLTF2LTRjMC0xLjY1Njg1NDI1LTEuMzQzMTQ1OC0zLTMtM2gtMzJjLTEuNjU2ODU0MiAwLTMgMS4zNDMxNDU3NS0zIDN2MjhoLTZjLTEuNjU2ODU0MjUgMC0zIDEuMzQzMTQ1OC0zIDN2MjAuNWMuMDAzMzA2OCAzLjAzNjE5NTMgMi40NjM4MDQ2NSA1LjQ5NjY5MzIgNS41IDUuNWgzNi44NmMyLjU2MTIzMDgtLjAwMzMwNTUgNC42MzY2OTQ1LTIuMDc4NzY5MiA0LjY0LTQuNjR2LTMuNDQ0YzIuMTYwOTUyOC0xLjI1MTM0NjggMy42MTQ1ODktMy40MzkwMTIgMy45MzEtNS45MTZoLjU2OWM0LjY5NDQyMDQgMCA4LjUtMy44MDU1Nzk2IDguNS04LjVzLTMuODA1NTc5Ni04LjUtOC41LTguNXptLTQ5LjUgMjUuNXYtMjAuNWMwLS41NTIyODQ3LjQ0NzcxNTI1LTEgMS0xaDZ2MjEuNWMtLjAwMDAwMDAzIDEuOTMyOTk2Ni0xLjU2NzAwMzQgMy40OTk5OTk5LTMuNSAzLjQ5OTk5OTlzLTMuNDk5OTk5OTctMS41NjcwMDMzLTMuNS0zLjQ5OTk5OTl6bTQ5LTE5LjVoLjVjMS4zODA3MTE5IDAgMi41IDEuMTE5Mjg4MSAyLjUgMi41cy0xLjExOTI4ODEgMi41LTIuNSAyLjVoLS41em0tMi03djNoLTE3di0zem0tNiAyM2gtNWMtMy4zMTIzMzc2LS4wMDMzMDc0LTUuOTk2NjkyNi0yLjY4NzY2MjQtNi02di0xMmgxN3YxMmMtLjAwMzMwNzQgMy4zMTIzMzc2LTIuNjg3NjYyNCA1Ljk5NjY5MjYtNiA2em04LjUtN2gtLjV2LTJoLjVjMi40ODUyODEzLS4wMDAwMDAxIDQuNDk5OTk5OS0yLjAxNDcxODcgNC40OTk5OTk5LTQuNXMtMi4wMTQ3MTg2LTQuNDk5OTk5OS00LjQ5OTk5OTktNC41aC0uNXYtMmguNWMzLjU4OTg1MDkgMCA2LjUgMi45MTAxNDkxIDYuNSA2LjVzLTIuOTEwMTQ5MSA2LjUtNi41IDYuNXoiLz48cGF0aCBpZD0iU2hhcGUiIGQ9Im0zOCA0N2MtLjU0MTI3NzQuMDM0Mjc3OC0xLjA3MTA5MjEtLjE2NjI1MTUtMS40NTQwMjQ5LS41NTAzMzMxcy0uNTgxODc0MS0uOTE0NDk0Ni0uNTQ1OTc1MS0xLjQ1NTY2NjljLS4wMDE2NTY5LS41NTIyODQ3LS40NTA3MTUzLS45OTg2NTY4LTEuMDAzLS45OTY5OTk5LS41NTIyODQ3LjAwMTY1NjgtLjk5ODY1NjguNDUwNzE1Mi0uOTk3IDEuMDAyOTk5OS0uMDMxNTkyOSAxLjA3MDIzODcuMzc5NjgwOCAyLjEwNjExMzggMS4xMzY3ODM1IDIuODYzMjE2NXMxLjc5Mjk3NzggMS4xNjgzNzY0IDIuODYzMjE2NSAxLjEzNjc4MzVjLjU1MjI4NDcgMCAxLS40NDc3MTUzIDEtMXMtLjQ0NzcxNTMtMS0xLTF6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtMzcgMTdjLS4wMzc0MTEyLTEuMDUzMDMyLS41MTM5MjQtMi4wNDIzMjE5LTEuMzE0LTIuNzI4LS4zODcyODgtLjMxNzA4NzktLjYzMzgwOC0uNzc0MTkyMS0uNjg2LTEuMjcyLjA1MjE5Mi0uNDk3ODA3OS4yOTg3MTItLjk1NDkxMjEuNjg2LTEuMjcyLjI1OTczMjEtLjI0NTQ0MTUuMzY4NzkzLS42MTA4MDQxLjI4NjEwMDUtLjk1ODQ1OTUtLjA4MjY5MjUtLjM0NzY1NTMtLjM0NDU3NTQtLjYyNDc4NjEtLjY4Ny0uNzI3LS4zNDI0MjQ2LS4xMDIyMTM4MS0uNzEzMzY4NC0uMDEzOTgyLS45NzMxMDA1LjIzMTQ1OTUtLjc5OTAyNzcuNjg1NDIxMi0xLjI3NDc4NTcgMS42NzM5MjQ2LTEuMzEyIDIuNzI2LjAzNzQxMTIgMS4wNTMwMzIuNTEzOTI0IDIuMDQyMzIxOSAxLjMxNCAyLjcyOC4zODcyODguMzE3MDg3OS42MzM4MDguNzc0MTkyMS42ODYgMS4yNzItLjA1MjE5MjUuNDk4ODI4NS0uMjk5NTA0Ljk1Njc4Ni0uNjg4IDEuMjc0LS43OTkwMjc3LjY4NTQyMTItMS4yNzQ3ODU3IDEuNjczOTI0Ni0xLjMxMiAyLjcyNi4wMzcyMTQzIDEuMDUyMDc1NC41MTI5NzIzIDIuMDQwNTc4OCAxLjMxMiAyLjcyNi4yNTk3MzIxLjI0NTQ0MTUuNjMwNjc1OS4zMzM2NzMzLjk3MzEwMDUuMjMxNDU5NS4zNDI0MjQ2LS4xMDIyMTM5LjYwNDMwNzUtLjM3OTM0NDcuNjg3LS43MjcuMDgyNjkyNS0uMzQ3NjU1NC0uMDI2MzY4NC0uNzEzMDE4LS4yODYxMDA1LS45NTg0NTk1LS4zODcyODgtLjMxNzA4NzktLjYzMzgwOC0uNzc0MTkyMS0uNjg2LTEuMjcyLjA1MjE5MjUtLjQ5ODgyODUuMjk5NTA0LS45NTY3ODYuNjg4LTEuMjc0Ljc5OTAyNzctLjY4NTQyMTIgMS4yNzQ3ODU3LTEuNjczOTI0NiAxLjMxMi0yLjcyNnoiLz48cGF0aCBpZD0iU2hhcGUiIGQ9Im00MyAxN2MtLjAzNzQxMTItMS4wNTMwMzItLjUxMzkyNC0yLjA0MjMyMTktMS4zMTQtMi43MjgtLjM4NzI4OC0uMzE3MDg3OS0uNjMzODA4LS43NzQxOTIxLS42ODYtMS4yNzIuMDUyMTkyLS40OTc4MDc5LjI5ODcxMi0uOTU0OTEyMS42ODYtMS4yNzIuMjU5NzMyMS0uMjQ1NDQxNS4zNjg3OTMtLjYxMDgwNDEuMjg2MTAwNS0uOTU4NDU5NS0uMDgyNjkyNS0uMzQ3NjU1My0uMzQ0NTc1NC0uNjI0Nzg2MS0uNjg3LS43MjctLjM0MjQyNDYtLjEwMjIxMzgzLS43MTMzNjg0LS4wMTM5ODItLjk3MzEwMDUuMjMxNDU5NS0uNzk5MDI3Ny42ODU0MjEyLTEuMjc0Nzg1NyAxLjY3MzkyNDYtMS4zMTIgMi43MjYuMDM3NDExMiAxLjA1MzAzMi41MTM5MjQgMi4wNDIzMjE5IDEuMzE0IDIuNzI4LjM4NzI4OC4zMTcwODc5LjYzMzgwOC43NzQxOTIxLjY4NiAxLjI3Mi0uMDUyMTkyNS40OTg4Mjg1LS4yOTk1MDQuOTU2Nzg2LS42ODggMS4yNzQtLjc5OTAyNzcuNjg1NDIxMi0xLjI3NDc4NTcgMS42NzM5MjQ2LTEuMzEyIDIuNzI2LjAzNzIxNDMgMS4wNTIwNzU0LjUxMjk3MjMgMi4wNDA1Nzg4IDEuMzEyIDIuNzI2LjQwMTUxMS4zNzk0MTk2IDEuMDM0NTgwNC4zNjE1MTEgMS40MTQtLjA0cy4zNjE1MTEtMS4wMzQ1ODA0LS4wNC0xLjQxNGMtLjM4NzI4OC0uMzE3MDg3OS0uNjMzODA4LS43NzQxOTIxLS42ODYtMS4yNzIuMDUyMTkyNS0uNDk4ODI4NS4yOTk1MDQtLjk1Njc4Ni42ODgtMS4yNzQuNzk5MDI3Ny0uNjg1NDIxMiAxLjI3NDc4NTctMS42NzM5MjQ2IDEuMzEyLTIuNzI2eiIvPjxwYXRoIGlkPSJTaGFwZSIgZD0ibTQ3LjcyNiAxMC4zMTNjLS4xODIxNjk2LS4xOTI4NzI1LS40MzM1MTYxLS4zMDU0NTAxLS42OTg3MTI4LS4zMTI5NTIxLS4yNjUxOTY3LS4wMDc1MDIwNS0uNTIyNTA1NS4wOTA2ODY1LS43MTUyODcyLjI3Mjk1MjEtLjc5OTI3ODguNjg1NjU0My0xLjI3NTA2MTkgMS42NzQ1NzIzLTEuMzEyIDIuNzI3LjAzNzQxMTIgMS4wNTMwMzIuNTEzOTI0IDIuMDQyMzIxOSAxLjMxNCAyLjcyOC4zODcyODguMzE3MDg3OS42MzM4MDguNzc0MTkyMS42ODYgMS4yNzItLjA1MjE5MjUuNDk4ODI4NS0uMjk5NTA0Ljk1Njc4Ni0uNjg4IDEuMjc0LS43OTkwMjc3LjY4NTQyMTItMS4yNzQ3ODU3IDEuNjczOTI0Ni0xLjMxMiAyLjcyNi4wMzcyMTQzIDEuMDUyMDc1NC41MTI5NzIzIDIuMDQwNTc4OCAxLjMxMiAyLjcyNi4yNTk3MzIxLjI0NTQ0MTUuNjMwNjc1OS4zMzM2NzMzLjk3MzEwMDUuMjMxNDU5NS4zNDI0MjQ2LS4xMDIyMTM5LjYwNDMwNzUtLjM3OTM0NDcuNjg3LS43MjcuMDgyNjkyNS0uMzQ3NjU1NC0uMDI2MzY4NC0uNzEzMDE4LS4yODYxMDA1LS45NTg0NTk1LS4zODcyODgtLjMxNzA4NzktLjYzMzgwOC0uNzc0MTkyMS0uNjg2LTEuMjcyLjA1MjE5MjUtLjQ5ODgyODUuMjk5NTA0LS45NTY3ODYuNjg4LTEuMjc0Ljc5OTAyNzctLjY4NTQyMTIgMS4yNzQ3ODU3LTEuNjczOTI0NiAxLjMxMi0yLjcyNi0uMDM3NDExMi0xLjA1MzAzMi0uNTEzOTI0LTIuMDQyMzIxOS0xLjMxNC0yLjcyOC0uMzg3Mjg4LS4zMTcwODc5LS42MzM4MDgtLjc3NDE5MjEtLjY4Ni0xLjI3Mi4wNTIxOTItLjQ5NzgwNzkuMjk4NzEyLS45NTQ5MTIxLjY4Ni0xLjI3Mi4xOTMxNzU5LS4xODIyMDUyLjMwNTk0ODgtLjQzMzc2MjcuMzEzNDUyNS0uNjk5MjA0NS4wMDc1MDM2LS4yNjU0NDE5LS4wOTA4NzgyLS41MjI5Njg0LS4yNzM0NTI1LS43MTU3OTU1eiIvPjwvZz48L2c+PC9zdmc+" width="50px" height="50px"/>
+                        </span>
+                        <div class="media-body">
+                            <h5>Thông tin</h5>
+                            <p>Có những thông tin bổ ích mà bạn có thể xem và trong thông tin có cẩ nội quy cho việc bạn sử dụng phòng trọ</p>
+                        </div>
+                    </div>
+                    <div class="owl-thumb-item">
+                        <span class="media-left">
+                        <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQyMiA2MHYtMzBoLTMwdjMwaC00NS41di0zMGgtMzB2MzBoLTQ1LjV2LTMwaC0zMHYzMGgtNDUuNXYtMzBoLTMwdjMwaC00NS41di0zMGgtMzB2MzBoLTkwdjQyMmg1MTJ2LTQyMnptLTMzMiAzMHYzMGgzMHYtMzBoNDUuNXYzMGgzMHYtMzBoNDUuNXYzMGgzMHYtMzBoNDUuNXYzMGgzMHYtMzBoNDUuNXYzMGgzMHYtMzBoNjB2NjBoLTQ1MnYtNjB6bS02MCAzNjJ2LTI3Mmg0NTJ2MjcyeiIvPjxwYXRoIGQ9Im0yMDAuNDQ4IDI3Ni41NDItMzQuNDQ4LTY5LjgtMzQuNDQ4IDY5LjgwMS03Ny4wMjkgMTEuMTkzIDU1LjczOSA1NC4zMzItMTMuMTU4IDc2LjcxOCA2OC44OTYtMzYuMjIyIDY4Ljg5NiAzNi4yMjEtMTMuMTU4LTc2LjcxOCA1NS43MzktNTQuMzMyem0tNS4zOTUgODcuNDAyLTI5LjA1My0xNS4yNzQtMjkuMDUzIDE1LjI3NCA1LjU0OS0zMi4zNTEtMjMuNTA1LTIyLjkxMSAzMi40ODItNC43MiAxNC41MjctMjkuNDMzIDE0LjUyNiAyOS40MzQgMzIuNDgyIDQuNzItMjMuNTA1IDIyLjkxMXoiLz48cGF0aCBkPSJtNDIyIDIxMWgzMHYzMGgtMzB6Ii8+PHBhdGggZD0ibTQyMiAyNzFoMzB2MzBoLTMweiIvPjxwYXRoIGQ9Im00MjIgMzMxaDMwdjMwaC0zMHoiLz48cGF0aCBkPSJtNDIyIDM5MWgzMHYzMGgtMzB6Ii8+PHBhdGggZD0ibTM2MiAyMTFoMzB2MzBoLTMweiIvPjxwYXRoIGQ9Im0zNjIgMjcxaDMwdjMwaC0zMHoiLz48cGF0aCBkPSJtMzYyIDMzMWgzMHYzMGgtMzB6Ii8+PHBhdGggZD0ibTM2MiAzOTFoMzB2MzBoLTMweiIvPjxwYXRoIGQ9Im0zMDIgMjExaDMwdjMwaC0zMHoiLz48cGF0aCBkPSJtMzAyIDI3MWgzMHYzMGgtMzB6Ii8+PHBhdGggZD0ibTMwMiAzMzFoMzB2MzBoLTMweiIvPjxwYXRoIGQ9Im0zMDIgMzkxaDMwdjMwaC0zMHoiLz48L2c+PC9zdmc+" width="50px" height="50px" />
+                        </span>
+                        <div class="media-body">
+                            <h5>Sự kiện</h5>
+                            <p>Sự kiện giảm giá hay tặng voucher tới khách hàng sử dụng phòng trọ tại Sunline</p>
                         </div>
                     </div>
                 </div>
@@ -280,77 +359,58 @@
     </div>
 </section>
 
-<section class="services">
+<section class="restaurant image-bg parallax gradient-overlay op5" data-src="images/restaurant.jpg" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
     <div class="container">
         <div class="section-title">
-            <h4>HIMARA. SERVICES</h4>
-            <p class="section-subtitle">Check out our awesome services</p>
+            <h4>SUNLINE. Dịch vụ</h4>
+            <p class="section-subtitle">Trải nghiệm dịch vụ dành cho khách hàng</p>
+            <a href="restaurant.html" class="view-all uppercase">Tất cả dịch vụ</a>
         </div>
         <div class="row">
-            <div class="col-lg-7 col-12">
-                <div data-slider-id="services" class="services-owl owl-carousel">
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/restaurant.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Restaurant</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/spa.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Spa</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/conference.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Conference Room</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/swimming.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Swimming Pool</h4>
-                        </figcaption>
-                    </figure>
+
+            <div class="col-md-6 col-sm-6 col-6">
+                <div class="restaurant-menu-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <figure>
+                                <img src="{{asset('feHotel/images/service/suadien.jpg')}}" class="img-fluid " alt="Image">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">Sửa điện</span>
+                                    <span class="price">
+                                        <span class="amount">50 000 đồng</span>
+                                    </span>
+                                </div>
+                                <p>Các dịch vụ sửa chữa điện ở tphcm mà chúng tôi cung cấp...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-12">
-                <div class="owl-thumbs" data-slider-id="services">
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-tray-1"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Restaurant</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+
+            <div class="col-md-6 col-sm-6 col-6">
+                <div class="restaurant-menu-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <figure>
+                                <img src="{{asset('feHotel/images/service/suaongnuoc3.jpg')}}" class="img-fluid" alt="Image">
+                            </figure>
                         </div>
-                    </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-nature"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Spa - Beauty &amp; Health</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </div>
-                    </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-screen-1"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Conference Room</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </div>
-                    </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-sports"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Swimming Pool</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        <div class="col-lg-8 col-12">
+                            <div class="info">
+                                <div class="title">
+                                    <span class="name">Sửa đường ống nước</span>
+                                    <span class="price">
+                                        <span class="amount">50 000 dồng</span>
+                                    </span>
+                                </div>
+                                <p>Sửa đường ống nước tại nhà tphcm , xử lý nhanh các sự cố hư hỏng ống nước...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,355 +419,61 @@
     </div>
 </section>
 
+
 <section class="gallery">
     <div class="container">
         <div class="section-title">
-            <h4>HIMARA. GALLERY</h4>
-            <p class="section-subtitle">Check out our image gallery</p>
-            <a href="gallery.html" class="view-all">View gallery images</a>
+            <h4>SUNLINE. GALLERY</h4>
+            <p class="section-subtitle">Bộ sưu tập ảnh thư viện về phòng trọ SUNLINE</p>
+            <a href="gallery.html" class="view-all">Tất cả ảnh</a>
         </div>
         <div class="gallery-owl owl-carousel image-gallery">
 
             <div class="gallery-item">
                 <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery1.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery1.jpg')}}" alt="Image">
+                    <a href="{{asset('feHotel/images/service/phong4.jpg')}}">
+                        <img src="{{asset('feHotel/images/service/phong4.jpg')}}" alt="Image" height="280px">
                     </a>
-                    <figcaption>Swimming Pool</figcaption>
+                    <figcaption>Phòng có gác 01</figcaption>
                 </figure>
             </div>
 
             <div class="gallery-item">
                 <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery2.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery2.jpg')}}" alt="Image">
+                    <a href="{{asset('feHotel/images/service/phongkhongcogac.jpg')}}">
+                        <img src="{{asset('feHotel/images/service/phongkhongcogac.jpg')}}" alt="Image" height="280px">
                     </a>
-                    <figcaption>Room View</figcaption>
+                    <figcaption>Phòng không có gác 01</figcaption>
                 </figure>
             </div>
 
             <div class="gallery-item">
                 <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery3.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery3.jpg')}}" alt="Image">
+                    <a href="{{asset('feHotel/images/service/phong2.png')}}">
+                        <img src="{{asset('feHotel/images/service/phong2.png')}}" alt="Image" height="280px">
                     </a>
-                    <figcaption>Cocktail</figcaption>
+                    <figcaption>Phòng có gác 02</figcaption>
                 </figure>
             </div>
 
             <div class="gallery-item">
                 <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery4.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery4.jpg')}}" alt="Image">
+                    <a href="{{asset('feHotel/images/service/phongkcogac.jpg')}}">
+                        <img src="{{asset('feHotel/images/service/phongkcogac.jpg')}}" alt="Image" height="280px">
                     </a>
-                    <figcaption>Breakfast</figcaption>
+                    <figcaption>Phòng không có gác 02</figcaption>
                 </figure>
             </div>
 
             <div class="gallery-item">
                 <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery5.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery5.jpg')}}" alt="Image">
+                    <a href="{{asset('feHotel/images/service/phongtam.jpg')}}">
+                        <img src="{{asset('feHotel/images/service/phongtam.jpg')}}" alt="Image" height="280px">
                     </a>
-                    <figcaption>Playground</figcaption>
+                    <figcaption>Phòng tắm</figcaption>
                 </figure>
             </div>
 
-            <div class="gallery-item">
-                <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery6.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery6.jpg')}}" alt="Image">
-                    </a>
-                    <figcaption>Restaurant</figcaption>
-                </figure>
-            </div>
-
-            <div class="gallery-item">
-                <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery7.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery7.jpg')}}" alt="Image">
-                    </a>
-                    <figcaption>Wedding Ceremony</figcaption>
-                </figure>
-            </div>
-
-            <div class="gallery-item">
-                <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery8.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery8.jpg')}}" alt="Image">
-                    </a>
-                    <figcaption>Beach</figcaption>
-                </figure>
-            </div>
-
-            <div class="gallery-item">
-                <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery9.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery9.jpg')}}" alt="Image">
-                    </a>
-                    <figcaption>Honeymoon Room</figcaption>
-                </figure>
-            </div>
-
-            <div class="gallery-item">
-                <figure class="gradient-overlay image-icon">
-                    <a href="{{asset('feHotel/images/gallery/gallery10.jpg')}}">
-                        <img src="{{asset('feHotel/images/gallery/gallery10.jpg')}}" alt="Image">
-                    </a>
-                    <figcaption>Sea</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="testimonials gray">
-    <div class="container">
-        <div class="section-title">
-            <h4>OUR GUESTS LOVE US</h4>
-            <p class="section-subtitle">What our guests are saying about us</p>
-        </div>
-        <div class="owl-carousel testimonials-owl">
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user1.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Marlene Simpson</h4>
-                        <div class="location">Madrid / Spain</div>
-                    </div>
-                    <div class="rating">
-                        <i class="fa fa-star voted" aria-hidden="true"></i>
-                        <i class="fa fa-star voted" aria-hidden="true"></i>
-                        <i class="fa fa-star voted" aria-hidden="true"></i>
-                        <i class="fa fa-star voted" aria-hidden="true"></i>
-                        <i class="fa fa-star voted" aria-hidden="true"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user2.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Brad Knight</h4>
-                        <div class="location">Athens / Greece</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user3.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Daryl Phillips</h4>
-                        <div class="location">Lisbon / Portugal</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user4.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Felecia Lawson</h4>
-                        <div class="location">Paris / France</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user5.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Joanne Robinson</h4>
-                        <div class="location">New York / USA</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user6.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Emily Hill</h4>
-                        <div class="location">Rome / Italy</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user7.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Mabel Hicks</h4>
-                        <div class="location">Moscow / Russia</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user8.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Kent Lambert</h4>
-                        <div class="location">Berlin / Germany</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user9.jpg')}}">
-                    </div>
-                    <div class="author">
-                        <h4 class="name">Gerald Schmidt</h4>
-                        <div class="location">Zagreb / Croatia</div>
-                        <div class="rating">
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star voted" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec turpis a nunc convallis condimentum. Sed odio nisl, mattis eget interdum non, pretium et lacus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="restaurant image-bg parallax gradient-overlay op5" data-src="images/restaurant.jpg" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
-    <div class="container">
-        <div class="section-title">
-            <h4>HIMARA. RESTAURANT</h4>
-            <p class="section-subtitle">Live a gourmet dining experience</p>
-            <a href="restaurant.html" class="view-all uppercase">More About Our Restaurant</a>
-        </div>
-        <div class="row">
-
-            <div class="col-md-6 col-sm-6 col-6">
-                <div class="restaurant-menu-item">
-                    <div class="row">
-                        <div class="col-lg-4 col-12">
-                            <figure>
-                                <img src="{{asset('feHotel/images/restaurant/restaurant1.jpg')}}" class="img-fluid " alt="Image">
-                            </figure>
-                        </div>
-                        <div class="col-lg-8 col-12">
-                            <div class="info">
-                                <div class="title">
-                                    <span class="name">Salat</span>
-                                    <span class="price">
-                                        <span class="amount">€16.99</span>
-                                    </span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut laoreet...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-6">
-                <div class="restaurant-menu-item">
-                    <div class="row">
-                        <div class="col-lg-4 col-12">
-                            <figure>
-                                <img src="{{asset('feHotel/images/restaurant/restaurant2.jpg')}}" class="img-fluid" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="col-lg-8 col-12">
-                            <div class="info">
-                                <div class="title">
-                                    <span class="name">Croquettes</span>
-                                    <span class="price">
-                                        <span class="amount">€9.99</span>
-                                    </span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut laoreet...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -715,9 +481,9 @@
 <section class="news">
     <div class="container">
         <div class="section-title">
-            <h4 class="title">LATEST NEWS</h4>
-            <p class="section-subtitle">Check out our latest news</p>
-            <a href="blog.html" class="view-all">View all news</a>
+            <h4 class="title">Bản tin</h4>
+            <p class="section-subtitle">Một số thông tin bạn có thể xem</p>
+            <a href="blog.html" class="view-all">Tất cả thông tin</a>
         </div>
         <div class="row">
 
@@ -730,9 +496,9 @@
                     </figure>
                     <div class="news-info">
                         <h4 class="title">
-                            <a href="blog-post.html">10 Tips for Holiday Travel</a>
+                            <a href="blog-post.html">Cách phòng chống virus Corona mới nhất của Bộ Y tế</a>
                         </h4>
-                        <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
+                        <p>Dịch viêm đường hô hấp cấp do Covid-19 gây ra các triệu chứng sốt, ho, viêm phổi cấp, suy hô hấp cấp, thậm chí tử vong đến nay vẫn đang gây căng thẳng trên toàn cầu. Có hay không cách điều trị Covid-19? Biện pháp phòng chống Covid-19 hiện nay là gì? Ngay khi...</p>
                         <div class="post-meta">
                             <span class="author">
                                 <a href="#"><img src="{{asset('feHotel/images/users/admin.jpg')}}" width="16" alt="Image">
@@ -740,7 +506,7 @@
                             </span>
                             <span class="date">
                                 <i class="fa fa-clock-o"></i>
-                                August 13, 2017</span>
+                                01.03.2019</span>
                             <span class="comments">
                                 <a href="#">
                                     <i class="fa fa-commenting-o"></i> 1 Comment</a>
@@ -759,9 +525,9 @@
                     </figure>
                     <div class="news-info">
                         <h4 class="title">
-                            <a href="blog-post.html">Enjoy your holidays</a>
+                            <a href="blog-post.html">Những nội quy phòng trọ bạn phải “nằm lòng” khi thuê nhà</a>
                         </h4>
-                        <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
+                        <p>Khu nhà trọ an ninh, trật tự, yên tĩnh, môi trường sống tốt, thoải mái, không ô nhiễm. Là niềm mơ ước của rất nhiều người khi đi thuê nhà trọ. Và điều này chỉ có thể được tạo ra khi có những nội quy, và quy định nghiêm ngặt từ chủ trọ. Việc này giúp họ dễ quản lý hơn,...</p>
                         <div class="post-meta">
                             <span class="author">
                                 <a href="#"><img src="{{asset('feHotel/images/users/admin.jpg')}}" width="16" alt="Image">
@@ -769,7 +535,7 @@
                             </span>
                             <span class="date">
                                 <i class="fa fa-clock-o"></i>
-                                August 16, 2017</span>
+                                09.06.2017</span>
                             <span class="comments">
                                 <a href="#">
                                     <i class="fa fa-commenting-o"></i>
@@ -789,9 +555,9 @@
                     </figure>
                     <div class="news-info">
                         <h4 class="title">
-                            <a href="blog-post.html">Honeymoon at Hotel Himara</a>
+                            <a href="blog-post.html">Tuyệt chiêu dọn dẹp nhà cửa siêu nhanh ngày cuối tuần</a>
                         </h4>
-                        <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
+                        <p>Bạn quá bận rộn với công việc và không có nhiều thời gian dọn dẹp nhà cửa? Bạn muốn giữ cho không gian nhà ở của mình luôn sạch sẽ mà không mất quá nhiều thời gian, công sức? Vậy thì đừng bỏ lỡ các cách giữ nhà cửa sạch sẽ, gọn gàng trong bài viết này nhé!...</p>
                         <div class="post-meta">
                             <span class="author">
                                 <a href="#"><img src="{{asset('feHotel/images/users/admin.jpg')}}" width="16" alt="Image">
@@ -799,7 +565,7 @@
                             </span>
                             <span class="date">
                                 <i class="fa fa-clock-o"></i>
-                                January 11, 2018</span>
+                                11.09.2018</span>
                             <span class="comments">
                                 <a href="#">
                                     <i class="fa fa-commenting-o"></i>
@@ -816,64 +582,64 @@
 <section class="events">
     <div class="container">
         <div class="section-title">
-            <h4>UPCOMING EVENTS</h4>
-            <p class="section-subtitle">Check ou our upcoming events</p>
-            <a href="events.html" class="view-all">View all events</a>
+            <h4>Sự kiện sắp đến</h4>
+            <p class="section-subtitle">Dưới đây là sự kiện ở bên chúng tôi</p>
+            <a href="events.html" class="view-all">Tất cả sự kiện</a>
         </div>
         <div class="events-owl owl-carousel">
 
             <div class="event-item">
                 <div class="date">
                     <span class="event-calendar"></span>
-                    <div class="day">31</div>
-                    <div class="month">January</div>
+                    <div class="day">01</div>
+                    <div class="month">04.2021</div>
                 </div>
                 <div class="details">
                     <h6 class="title">
-                        <a href="event-details.html">Family Party</a>
+                        <a href="event-details.html">Giảm 10%</a>
                     </h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Chào tháng tư xinh đẹp, chúng tôi giảm 10% cho những bạn mướn phòng...</p>
                 </div>
                 <div class="align-center">
-                    <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
+                    <a class="btn btn-sm btn-dark" href="event-details.html">Chi tiết nhiều hơn</a>
                 </div>
             </div>
 
             <div class="event-item">
                 <div class="date">
                     <span class="event-calendar"></span>
-                    <div class="day">17</div>
-                    <div class="month">Mars</div>
+                    <div class="day">30</div>
+                    <div class="month">01.2021</div>
                 </div>
                 <div class="details">
                     <h6 class="title">
-                        <a href="event-details.html">Traditional Music Festival</a>
+                        <a href="event-details.html">Tặng quà năm mới</a>
                     </h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Vào dịp năm mới, khi bạn là khách hàng đặt phòng tại chúng tôi, thì bạn sẽ nhận được...</p>
                 </div>
                 <div class="align-center">
-                    <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
+                    <a class="btn btn-sm btn-dark" href="event-details.html">Chi tiết nhiều hơn</a>
                 </div>
             </div>
 
             <div class="event-item">
                 <div class="date">
                     <span class="event-calendar"></span>
-                    <div class="day">05</div>
-                    <div class="month">July</div>
+                    <div class="day">01</div>
+                    <div class="month">01.2021</div>
                 </div>
                 <div class="details">
                     <h6 class="title">
-                        <a href="event-details.html">Summer Party</a>
+                        <a href="event-details.html">Happy birthday!!! gửi bạn voucher 50k</a>
                     </h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Vào ngày sinh nhật vào trong tháng 01, bạn sẽ nhận được 1...</p>
                 </div>
                 <div class="align-center">
-                    <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
+                    <a class="btn btn-sm btn-dark" href="event-details.html">Chi tiết nhiều hơn</a>
                 </div>
             </div>
 
-            <div class="event-item">
+            <!-- <div class="event-item">
                 <div class="date">
                     <span class="event-calendar"></span>
                     <div class="day">16</div>
@@ -905,43 +671,9 @@
                 <div class="align-center">
                     <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="event-item">
-                <div class="date">
-                    <span class="event-calendar"></span>
-                    <div class="day">20</div>
-                    <div class="month">October</div>
-                </div>
-                <div class="details">
-                    <h6 class="title">
-                        <a href="event-details.html">Season Closing Party</a>
-                    </h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                </div>
-                <div class="align-center">
-                    <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
-                </div>
-            </div>
-
-            <div class="event-item">
-                <div class="date">
-                    <span class="event-calendar"></span>
-                    <div class="day">06</div>
-                    <div class="month">November</div>
-                </div>
-                <div class="details">
-                    <h6 class="title">
-                        <a href="event-details.html">Beer Party</a>
-                    </h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                </div>
-                <div class="align-center">
-                    <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
-                </div>
-            </div>
-
-            <div class="event-item">
+            <!-- <div class="event-item">
                 <div class="date">
                     <span class="event-calendar"></span>
                     <div class="day">28</div>
@@ -956,12 +688,123 @@
                 <div class="align-center">
                     <a class="btn btn-sm btn-dark" href="event-details.html">MORE DETAILS</a>
                 </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section class="testimonials gray">
+    <div class="container">
+        <div class="section-title">
+            <h4>OUR GUESTS FEEDBACK</h4>
+            <p class="section-subtitle">Những feedback của khách hàng nói về chúng tôi</p>
+        </div>
+        <div class="owl-carousel testimonials-owl">
+
+            <div class="item">
+                <div class="testimonial-item">
+                    <div class="author-img">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user1.jpg')}}">
+                    </div>
+                    <div class="author">
+                        <h4 class="name">Nguyễn Minh</h4>
+                        <div class="location">Thanh Hóa, Việt Nam</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa fa-star voted" aria-hidden="true"></i>
+                        <i class="fa fa-star voted" aria-hidden="true"></i>
+                        <i class="fa fa-star voted" aria-hidden="true"></i>
+                        <i class="fa fa-star voted" aria-hidden="true"></i>
+                        <i class="fa fa-star voted" aria-hidden="true"></i>
+                    </div>
+                    <p>Dịch vụ và phòng trọ của bạn thật tuyệt vời, chúng tôi đánh giá cho bạn 5 sao, hy vọng tôi có dịp để trở lại đây và tiếp tục đăng ký tại phòng chỗ bạn. Rất vui vì tôi đã chọn một chỗ ở tiện nghi</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="testimonial-item">
+                    <div class="author-img">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user2.jpg')}}">
+                    </div>
+                    <div class="author">
+                        <h4 class="name">Gia Hân</h4>
+                        <div class="location">Cà Mau, Việt Nam</div>
+                        <div class="rating">
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p>Tuy phòng bị chút rò rỉ về nước, nhưng sau đó quản lý đã sửa giúp tớ. Tớ cũng cảm thấy phòng của các bạn thật thoải mái, tớ sẽ giới thiệu cho các bạn của tớ tới sử dụng phòng của bạn.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="testimonial-item">
+                    <div class="author-img">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user3.jpg')}}">
+                    </div>
+                    <div class="author">
+                        <h4 class="name">Nguyễn Phillips</h4>
+                        <div class="location">Thái Lan</div>
+                        <div class="rating">
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p>WOW!!!!!! Tôi là khách du lịch và thăm Thành phố Hồ Chí Minh trong hai tháng, tôi đã tìm đến và đăng ký phòng của bạn, tôi đã sử dụng nó và thật hấp dẫn... tôi sẽ quay lại chỗ của bạn.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="testimonial-item">
+                    <div class="author-img">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user4.jpg')}}">
+                    </div>
+                    <div class="author">
+                        <h4 class="name">Lê Hoàng</h4>
+                        <div class="location">Daklak, Việt nam</div>
+                        <div class="rating">
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p>Phòng đẹp và sạch sẽ, đầy đủ tiện nghi, rất thích nơi này vì quản lý tân cực kì dễ thương. Sẽ còn tiếp tục quay lại đây nhiều lần nữa. Điều bất ngờ mình nhận được 1 voucher 50k vào ngày sinh nhật</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="testimonial-item">
+                    <div class="author-img">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user5.jpg')}}">
+                    </div>
+                    <div class="author">
+                        <h4 class="name">Hải</h4>
+                        <div class="location">Nha Trang, Việt nam</div>
+                        <div class="rating">
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star voted" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p>Địa điểm thuận lợi để di chuyển tới các quận khác. Phòng trọ ở trong ngõ nên không bị ồn ào khi nghỉ ngơi, nhưng mặt ngõ vẫn rất rộng đủ để taxi vào ra đưa đón.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="contact-v2 gray">
+<!-- <section class="contact-v2 gray">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -1014,15 +857,34 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="instgram">
-    <div class="section-title aligncenter">
-        <p class="section-subtitle">Check out some pictures from our instagram page
-            <a href="https://www.instagram.com/hotelhimara/" target="_blank">@hotelhimara</a>
+    <div class="section-title aligncenter">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        <p class="section-subtitle">
+            <a href="https://www.instagram.com/pagesunline/" target="_blank">Thông tin về chúng tôi trong Instagram SUNLINE</a>
+        </p>
+    </div>
+    <div class="section-title aligncenter">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        <p class="section-subtitle">
+            <a href="https://www.facebook.com/NhaTroSunLine" target="_blank">Thông tin về chúng tôi trong Facebook SUNLINE</a>
         </p>
     </div>
     <div id="instafeed-gallery" class="owl-carousel instagram-owl"></div>
 </section>
 
+<style>
+.fb-livechat, .fb-widget{display: none}
+.ctrlq.fb-button, .ctrlq.fb-close{position: fixed; right: 24px; cursor: pointer}
+.ctrlq.fb-button{
+    z-index: 999; 
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxyZWN0IGZpbGw9IiMwMDg0RkYiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PC9nPjxwYXRoIGQ9Ik02NCwxNy41MzFjLTI1LjQwNSwwLTQ2LDE5LjI1OS00Niw0My4wMTVjMCwxMy41MTUsNi42NjUsMjUuNTc0LDE3LjA4OSwzMy40NnYxNi40NjIgIGwxNS42OTgtOC43MDdjNC4xODYsMS4xNzEsOC42MjEsMS44LDEzLjIxMywxLjhjMjUuNDA1LDAsNDYtMTkuMjU4LDQ2LTQzLjAxNUMxMTAsMzYuNzksODkuNDA1LDE3LjUzMSw2NCwxNy41MzF6IE02OC44NDUsNzUuMjE0ICBMNTYuOTQ3LDYyLjg1NUwzNC4wMzUsNzUuNTI0bDI1LjEyLTI2LjY1N2wxMS44OTgsMTIuMzU5bDIyLjkxLTEyLjY3TDY4Ljg0NSw3NS4yMTR6IiBmaWxsPSIjRkZGRkZGIiBpZD0iQnViYmxlX1NoYXBlIi8+PC9zdmc+) center no-repeat #db7b7b; 
+    width: 60px; 
+    height: 60px; 
+    text-align: center; 
+    bottom: 200px; 
+    border: 0; 
+    outline: 0; 
+    border-radius: 60px; -webkit-border-radius: 60px; -moz-border-radius: 60px; -ms-border-radius: 60px; -o-border-radius: 60px; box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16); -webkit-transition: box-shadow .2s ease; background-size: 80%; transition: all .2s ease-in-out}.ctrlq.fb-button:focus, .ctrlq.fb-button:hover{transform: scale(1.1); box-shadow: 0 2px 8px rgba(0, 0, 0, .09), 0 4px 40px rgba(0, 0, 0, .24)}.fb-widget{background: #fff; z-index: 1000; position: fixed; width: 360px; height: 435px; overflow: hidden; opacity: 0; bottom: 0; right: 24px; border-radius: 6px; -o-border-radius: 6px; -webkit-border-radius: 6px; box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -o-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)}.fb-credit{text-align: center; margin-top: 8px}.fb-credit a{transition: none; color: #bec2c9; font-family: Helvetica, Arial, sans-serif; font-size: 12px; text-decoration: none; border: 0; font-weight: 400}.ctrlq.fb-overlay{z-index: 0; position: fixed; height: 100vh; width: 100vw; -webkit-transition: opacity .4s, visibility .4s; transition: opacity .4s, visibility .4s; top: 0; left: 0; background: rgba(0, 0, 0, .05); display: none}.ctrlq.fb-close{z-index: 4; padding: 0 6px; background: #db7b7b; font-weight: 700; font-size: 11px; color: #fff; margin: 8px; border-radius: 3px}.ctrlq.fb-close::after{content: "X"; font-family: sans-serif}.bubble{width: 20px; height: 20px; background: #c00; color: #fff; position: absolute; z-index: 999999999; text-align: center; vertical-align: middle; top: -2px; left: -5px; border-radius: 50%;}.bubble-msg{width: 120px; left: -140px; top: 5px; position: relative; background: rgba(59, 89, 152, .8); color: #fff; padding: 5px 8px; border-radius: 8px; text-align: center; font-size: 13px;}</style><div class="fb-livechat"> <div class="ctrlq fb-overlay"></div><div class="fb-widget"> <div class="ctrlq fb-close"></div><div class="fb-page" data-href="https://www.facebook.com/NhaTroSunLine" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div><div class="fb-credit"> <a href="https://www.facebook.com/NhaTroSunLine" target="_blank" >Powered by SUNLINE</a> </div><div id="fb-root"></div></div><a href="https://m.me/NhaTroSunLine" title="Hello, bạn có thể để lại tin nhắn cho chúng tôi" class="ctrlq fb-button"> <div class="bubble">1</div><div class="bubble-msg">Bạn muốn được hỗ trợ về thông tin?</div></a></div><script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script>jQuery(document).ready(function($){function detectmob(){if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){return true;}else{return false;}}var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); if(!detectmob()){$(".ctrlq").on("click", function(e){e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({bottom: 0, opacity: 0}, 2 * t.delay, function(){$(this).hide("slow"), t.button.show()})) : t.button.fadeOut("medium", function(){t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)})})}});
+    </script>
 @endsection
