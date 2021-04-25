@@ -115,44 +115,44 @@
                     {{$detailroom->noidung}}
                 </p>
                 <div class="section-title sm">
-                    <h4>ROOM SERVICES</h4>
-                    <p class="section-subtitle">Single Room Includes</p>
+                    <h4>Dịch vụ phòng</h4>
+                    <p class="section-subtitle">Phòng có gác bao gồm:</p>
+                    
                 </div>
                 <div class="room-services-list">
                     <div class="row">
                         <div class="col-sm-4">
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="fa fa-check"></i>Double Bed
+                                    <i class="fa fa-check"></i>Có gác
                                 </li>
                                 <li>
-                                    <i class="fa fa-check"></i>80 Sq mt
+                                    <i class="fa fa-check"></i>Phòng bếp
                                 </li>
                                 <li>
-                                    <i class="fa fa-check"></i>3 Persons
+                                    <i class="fa fa-check"></i>Phòng tắm
                                 </li>
                                 <li>
                                     <i class="fa fa-check"></i>Free Internet
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>Phương thức thanh toán: Tiền mặt hoặc qua ngân hàng
                                 </li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="fa fa-check"></i>Free Wi-Fi
+                                    <i class="fa fa-check"></i>Kích thước phòng: 
+                                    {{$detailroom->kichthuoc}}
                                 </li>
                                 <li>
-                                    <i class="fa fa-check"></i>Breakfast Include
-                                </li>
-                                <li>
-                                    <i class="fa fa-check"></i>Private Balcony
-                                </li>
-                                <li class="no">
-                                    <i class="fa fa-times"></i>Free Newspaper
+                                    <i class="fa fa-check"></i>Mô tả:
+                                    {{$detailroom->mota}}
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                             <ul class="list-unstyled">
                                 <li class="no">
                                     <i class="fa fa-times"></i>Flat Screen Tv
@@ -167,10 +167,10 @@
                                     <i class="fa fa-check"></i>Room Service
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <p>Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                <!-- <p>Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
                     ex ea
                     <u>commodo consequat.</u>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
@@ -179,9 +179,9 @@
                     ex ea
                     <u>commodo consequat.</u>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-                </p>
+                </p>  -->
 
-                <div id="room-reviews" class="room-reviews">
+                <!-- <div id="room-reviews" class="room-reviews">
                     <div class="section-title sm">
                         <h4>ROOM REVIEWS</h4>
                         <p class="section-subtitle">What our guests are saying about us</p>
@@ -353,32 +353,32 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="similar-rooms">
                     <div class="section-title sm">
-                        <h4>SIMILAR ROOMS</h4>
-                        <p class="section-subtitle">Leave your review</p>
+                        <h4>Gợi ý phòng</h4>
+                        <p class="section-subtitle">Dưới đây là những phòng gợi ý của bạn</p>
                     </div>
                     <div class="row">
 
                         <div class="col-lg-4">
+
                             <div class="room-grid-item">
                                 <figure class="gradient-overlay-hover link-icon">
                                     <a href="room.html">
                                         <img src="images/rooms/single/single1.jpg" class="img-fluid" alt="Image">
                                     </a>
-                                    <div class="room-services">
+                                    <!-- <div class="room-services">
                                         <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
                                         <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
                                         <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                                    </div>
+                                    </div> -->
                                     <div class="room-price">€89 / night</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">
-                                        <a href="room.html">Single Room</a>
+                                        <a href="room.html">Phòng có gác 01</a>
                                     </h2>
-                                    <p>Enjoy our single room</p>
                                 </div>
                             </div>
                         </div>
@@ -389,18 +389,17 @@
                                     <a href="room.html">
                                         <img src="images/rooms/double/double.jpg" class="img-fluid" alt="Image">
                                     </a>
-                                    <div class="room-services">
+                                    <!-- <div class="room-services">
                                         <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
                                         <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
                                         <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                                    </div>
+                                    </div> -->
                                     <div class="room-price">€129 / night</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">
-                                        <a href="room.html">Double Room</a>
+                                        <a href="room.html">Phòng không có gác 02</a>
                                     </h2>
-                                    <p>Enjoy our double room</p>
                                 </div>
                             </div>
                         </div>
@@ -411,19 +410,18 @@
                                     <a href="room.html">
                                         <img src="images/rooms/deluxe/deluxe.jpg" class="img-fluid" alt="Image">
                                     </a>
-                                    <div class="room-services">
+                                    <!-- <div class="room-services">
                                         <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
                                         <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="2 Bathrooms" data-original-title="Bathroom"></i>
                                         <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
                                         <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                                    </div>
+                                    </div> -->
                                     <div class="room-price">€189 / night</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">
-                                        <a href="room.html">Deluxe Room</a>
+                                        <a href="room.html">Phòng không có gác 10</a>
                                     </h2>
-                                    <p>Enjoy our delux room</p>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +509,7 @@
                         </div>
                     </aside>
 
-                    <aside class="widget">
+                    <!-- <aside class="widget">
                         <h4 class="widget-title">Latest Posts</h4>
                         <div class="latest-posts">
 
@@ -610,11 +608,11 @@
                                 </div>
                             </div>
                         </div>
-                    </aside>
+                    </aside> -->
 
-                    <aside class="widget noborder">
+                    <!-- <aside class="widget noborder">
                         <img src="images/banner.jpg" class="img-fluid" alt="Image">
-                    </aside>
+                    </aside> -->
                 </div>
             </div>
         </div>

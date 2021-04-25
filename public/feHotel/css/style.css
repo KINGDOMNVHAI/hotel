@@ -959,7 +959,7 @@ a:hover, a:focus, a:active {
   left: 0;
   top: 0;
   pointer-events: none;
-  background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+  background: linear-gradient(45deg, rgb(196, 125, 44), rgb(187, 79, 85));
   opacity: 0;
   -webkit-transition: .4s;
   transition: .4s;
@@ -6784,7 +6784,7 @@ section.restaurant .restaurant-menu-item .title span.price {
   border-radius: 100%;
   border-width: 1px;
   border-style: solid;
-  border-color: #edcb9a #efefef #efefef;
+  border-color: #be8638 #efefef #efefef;
   -webkit-animation: loader3 2s infinite linear;
   animation: loader3 2s infinite linear;
   left: 0;
