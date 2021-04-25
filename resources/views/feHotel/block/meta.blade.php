@@ -27,3 +27,5 @@
 <link href="{{asset('feHotel/fonts/flaticon.css')}}" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CRoboto:100,300,400,400i,500,700" rel="stylesheet">
+
+<meta name="csrf-token" content="{{ csrf_token() }}">

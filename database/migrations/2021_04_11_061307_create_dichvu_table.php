@@ -14,10 +14,13 @@ class CreateDichvuTable extends Migration
     public function up()
     {
         Schema::create('dichvu', function (Blueprint $table) {
-            $table->increments('iddichvu');
+            $table->increments('madichvu');
             $table->string('tendichvu');
-            $table->integer('giadichvu');
+            $table->text('motadichvu');
             $table->string('hinhanh');
+            $table->string('trangchu')->nullable();
+            $table->integer('enabledichvu');
+            $table->integer('enabletrangchu')->default(0);
         });
     }
 

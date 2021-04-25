@@ -3,7 +3,6 @@
 @section('NoiDung')
 
 <div class="slider">
-
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
             <div class="container">
@@ -289,70 +288,29 @@
         <div class="row">
             <div class="col-lg-7 col-12">
                 <div data-slider-id="services" class="services-owl owl-carousel">
+                    @foreach($listserviceslider as $service)
                     <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/restaurant.jpg')}}" class="img-fluid" alt="Image">
+                        <img src="{{asset('feHotel/images/services/' . $service->hinhanh)}}" class="img-fluid" alt="Image">
                         <figcaption>
-                            <h4>Restaurant</h4>
+                            <h4>{{$service->tendichvu}}</h4>
                         </figcaption>
                     </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/spa.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Spa</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/conference.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Conference Room</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/swimming.jpg')}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>Swimming Pool</h4>
-                        </figcaption>
-                    </figure>
+                    @endforeach
                 </div>
             </div>
             <div class="col-lg-5 col-12">
                 <div class="owl-thumbs" data-slider-id="services">
+                    @foreach($listserviceslider as $service)
                     <div class="owl-thumb-item">
                         <span class="media-left">
-                            <i class="flaticon-tray-1"></i>
+                            {!! $service->trangchu !!}
                         </span>
                         <div class="media-body">
-                            <h5>Restaurant</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            <h5>{{$service->tendichvu}}</h5>
+                            <p>{{$service->motadichvu}}</p>
                         </div>
                     </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-nature"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Spa - Beauty &amp; Health</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </div>
-                    </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-screen-1"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Conference Room</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </div>
-                    </div>
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            <i class="flaticon-sports"></i>
-                        </span>
-                        <div class="media-body">
-                            <h5>Swimming Pool</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
-use App\Model\User;
 use App\Services\auth\LoginService;
+use App\Services\all\UserService;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -48,5 +48,32 @@ class LoginController extends Controller
                 return redirect()->route('login')->with('message', __(WRONG_PASSWORD));
             }
         }
+    }
+
+    public function checkregister(Request $request)
+    {
+        $user = new UserService;
+        $insert = $user->insert($request);
+
+        return redirect('login');
+
+        // if (Auth::attempt(['username' => $username, 'password' => $password]))
+        // {
+        //     return redirect('list-post');
+        // }
+        // else
+        // {
+        //     $checklogin = new LoginService;
+        //     $checkuser = $checklogin->checkUser($username);
+
+        //     if ($checkuser == '')
+        //     {
+        //         return redirect()->route('login')->with('message', __(USERNAME_IS_NOT_EXIST));
+        //     }
+        //     else
+        //     {
+        //         return redirect()->route('login')->with('message', __(WRONG_PASSWORD));
+        //     }
+        // }
     }
 }

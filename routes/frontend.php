@@ -17,3 +17,5 @@ Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
 Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room');
 
 Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room');
+
+Route::get('/service/{idService}','frontend\ServiceController@service')->name('service');

@@ -6,18 +6,12 @@
     background-size: cover;">
     <div class="container">
         <div class="inner">
-            <h1>{{$detailroom->tenphong}}</h1>
-            <div class="room-details-price">
-                {{$detailroom->giaphong}} VND / NIGHT
-            </div>
+            <h1>{{$detailservice->tendichvu}}</h1>
+            <div class="room-details-price"></div>
             <ol class="breadcrumb">
-                <li>
-                    <a href="{{route('home')}}">Home</a>
-                </li>
-                <li>
-                    <a href="index.html">Rooms</a>
-                </li>
-                <li>{{$detailroom->tenphong}}</li>
+                <li><a href="{{route('home')}}">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li>{{$detailservice->tendichvu}}</li>
             </ol>
         </div>
     </div>
@@ -31,88 +25,89 @@
                     <div id="room-main-image" class="owl-carousel image-gallery">
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single1.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single1.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant1.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant1.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single2.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single2.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant2.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant2.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single3.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single3.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant3.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant3.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('images/rooms/single/single4.jpg')}}.jpg">
-                                    <img class="img-fluid" src="{{asset('images/rooms/single/single4.jpg')}}.jpg" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant4.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant4.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single5.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single5.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant5.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant5.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single6.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single6.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant6.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant6.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single7.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single7.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant7.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant7.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
 
                         <div class="item">
                             <figure class="gradient-overlay-hover image-icon">
-                                <a href="{{asset('upload/rooms/single/single8.jpg')}}">
-                                    <img class="img-fluid" src="{{asset('upload/rooms/single/single8.jpg')}}" alt="Image">
+                                <a href="{{asset('upload/services/restaurant/restaurant8.jpg')}}">
+                                    <img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant8.jpg')}}" alt="Image">
                                 </a>
                             </figure>
                         </div>
                     </div>
                     <div id="room-thumbs" class="room-thumbs owl-carousel">
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single1.jpg')}}" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single2.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="images/rooms/single/single1.jpg" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single3.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="images/rooms/single/single2.jpg" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single4.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="images/rooms/single/single3.jpg" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single5.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="images/rooms/single/single4.jpg" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single6.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant5.jpg')}}" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single7.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant6.jpg')}}" alt="Image"></div>
 
-                        <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single8.jpg')}}" alt="Image"></div>
+                        <div class="item"><img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant7.jpg')}}" alt="Image"></div>
+
+                        <div class="item"><img class="img-fluid" src="{{asset('upload/services/restaurant/restaurant8.jpg')}}" alt="Image"></div>
                     </div>
                 </div>
                 <p>
-                    {{$detailroom->noidung}}
+                    {{$detailservice->motadichvu}}
                 </p>
                 <div class="section-title sm">
                     <h4>ROOM SERVICES</h4>

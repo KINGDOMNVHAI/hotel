@@ -59,107 +59,27 @@
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
-                    <a href="{{route('list-room', 'all')}}">ROOMS</a>
+                    <a href="{{route('list-room', 'all')}}">PHÒNG</a>
                     <ul class="submenu">
                         <li class="menu-item dropdown">
-                            <a href="#">Rooms</a>
-                            <ul class="submenu">
-                                <li class="menu-item">
-                                    <a href="{{route('list-room', 'single')}}">SINGLE</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room', 'double')}}">DOUBLE</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room', 'deluxe')}}">DELUXE</a>
-                                </li>
-                            </ul>
+                            <a href="{{route('list-room', 'single')}}">SINGLE</a>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="{{route('list-room', 'double')}}">DOUBLE</a>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="{{route('list-room', 'deluxe')}}">DELUXE</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
-                    <a href="#">BLOG</a>
+                    <a href="#">DỊCH VỤ</a>
                     <ul class="submenu">
+                        @foreach($listservice as $service)
                         <li class="menu-item dropdown">
-                            <a href="#">Blog Archive</a>
-                            <ul class="submenu">
-                                <li class="menu-item dropdown">
-                                    <a href="#">List View</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="blog.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item dropdown">
-                                    <a href="#">Classic View</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="blog-classic.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-classic-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-classic-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item dropdown">
-                                    <a href="#">Grid View</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="blog-grid.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-grid-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-grid-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a href="{{route('service', $service->madichvu)}}">{{$service->tendichvu}}</a>
                         </li>
-                        <li class="menu-item dropdown">
-                            <a href="#">Blog Post</a>
-                            <ul class="submenu">
-                                <li class="menu-item dropdown">
-                                    <a href="#">Style 1</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="blog-post.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-post-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-post-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item dropdown">
-                                    <a href="#">Style 2</a>
-                                    <ul class="submenu">
-                                        <li class="menu-item">
-                                            <a href="blog-post-style2.html">Right Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-post-style2-left-sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-post-style2-full-width.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
@@ -327,7 +247,7 @@
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="contact.html">CONTACT US</a>
+                    <a href="{{route('contact')}}">CONTACT US</a>
                 </li>
                 <li class="menu-item menu-btn">
                     <a href="booking-form.html" class="btn">
