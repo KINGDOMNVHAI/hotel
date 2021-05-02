@@ -11,20 +11,22 @@
     </div>
     <div class="card-body">
         <h2>Edit User</h2>
-        <form class="form-horizontal" action="{{route('edit', $post->url_post)}}" method="POST">
+        <form class="form-horizontal" action="{{route('edit', $room->maphong)}}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group">
                 <label class="control-label col-sm-2" for="name">Name:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" value="{{$post->name_post}}">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" value="{{$room->tenphong}}">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="content">Content:</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control" id="content" name="content" rows="10" cols="50">{{$post->content_post}}</textarea>
+                    <textarea class="form-control" id="content" name="content" rows="10" cols="50">{{$room->noidung}}</textarea>
                 </div>
             </div>
+            <input type="hidden" name="thumbnailphong" id="thumbnailphong" value="{{$room->thumbnailphong}}">
+            <input type="file" name="thumbnail" id="thumbnail">
             <div class="form-group">
                 <div class="col-sm-10">
                     <input type="submit" class="btn btn-primary btn-icon-split" style="padding:10px;" value="Update">

@@ -43,9 +43,9 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
-                <a class="nav-link" href="{{route('list-post')}}">
+                <a class="nav-link" href="{{route('list-room')}}">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>List Post</span></a>
+                    <span>List Room</span></a>
             </li>
 
             <!-- Divider -->

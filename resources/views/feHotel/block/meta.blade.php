@@ -13,9 +13,6 @@
 <link rel="stylesheet" href="{{asset('feHotel/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('feHotel/css/bootstrap-select.min.css')}}">
 <link rel="stylesheet" href="{{asset('feHotel/css/jquery.mmenu.css')}}">
-<link rel="stylesheet" href="revolution/{{asset('feHotel/css/layers.css')}}">
-<link rel="stylesheet" href="revolution/{{asset('feHotel/css/settings.css')}}">
-<link rel="stylesheet" href="revolution/{{asset('feHotel/css/navigation.css')}}">
 <link rel="stylesheet" href="{{asset('feHotel/css/animate.min.css')}}">
 <link rel="stylesheet" href="{{asset('feHotel/css/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('feHotel/css/daterangepicker.css')}}">

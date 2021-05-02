@@ -11,3 +11,7 @@ Route::post('/check-login','auth\LoginController@checklogin')->name('check-login
 Route::get('/register','auth\LoginController@register')->name('register');
 
 Route::post('/check-register','auth\LoginController@checkregister')->name('check-register');
+
+// ======================= Logout =======================
+
+Route::get('/logout','auth\LoginController@logout')->name('logout');

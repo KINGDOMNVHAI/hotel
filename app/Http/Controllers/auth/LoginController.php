@@ -32,7 +32,7 @@ class LoginController extends Controller
 
         if (Auth::attempt(['username' => $username, 'password' => $password]))
         {
-            return redirect('list-post');
+            return redirect('list-room');
         }
         else
         {
@@ -75,5 +75,16 @@ class LoginController extends Controller
         //         return redirect()->route('login')->with('message', __(WRONG_PASSWORD));
         //     }
         // }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('login');
     }
 }

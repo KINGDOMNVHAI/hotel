@@ -117,7 +117,7 @@
                 <div class="section-title sm">
                     <h4>Dịch vụ phòng</h4>
                     <p class="section-subtitle">Phòng có gác bao gồm:</p>
-                    
+
                 </div>
                 <div class="room-services-list">
                     <div class="row">
@@ -129,12 +129,8 @@
                                 <li>
                                     <i class="fa fa-check"></i>Phòng bếp
                                 </li>
-                                <li>
-                                    <i class="fa fa-check"></i>Phòng tắm
-                                </li>
-                                <li>
-                                    <i class="fa fa-check"></i>Free Internet
-                                </li>
+                                <li><i class="fa fa-check"></i>Phòng tắm</li>
+                                <li><i class="fa fa-check"></i>Free Internet</li>
                                 <li>
                                     <i class="fa fa-check"></i>Phương thức thanh toán: Tiền mặt hoặc qua ngân hàng
                                 </li>
@@ -143,7 +139,7 @@
                         <div class="col-sm-4">
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="fa fa-check"></i>Kích thước phòng: 
+                                    <i class="fa fa-check"></i>Kích thước phòng:
                                     {{$detailroom->kichthuoc}}
                                 </li>
                                 <li>
