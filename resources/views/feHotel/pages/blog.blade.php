@@ -8,9 +8,7 @@
         <div class="inner">
             <h1>Blog</h1>
             <ol class="breadcrumb">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+                <li><a href="{{route('home')}}">Home</a></li>
                 <li>Blog</li>
             </ol>
         </div>
@@ -21,9 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-12">
-
                 <div class="blog-posts">
-
                     <article class="post">
                         <div class="row">
                             <div class="col-sm-4">
@@ -415,7 +411,7 @@
                             <a href="#"><span class="tag">City</span></a>
                             <a href="#"><span class="tag">Image</span></a>
                             <a href="#"><span class="tag">Hotel</span></a>
-                            
+
                         </div>
                     </aside>
                 </div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLoaiphongTable extends Migration
+class CreateLoaigiuongTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateLoaiphongTable extends Migration
      */
     public function up()
     {
-        Schema::create('loaiphong', function (Blueprint $table) {
-            $table->increments('maloaiphong');
-            $table->string('tenloaiphong');
-            $table->string('urlloaiphong');
+        Schema::create('loaigiuong', function (Blueprint $table) {
+            $table->increments('maloaigiuong');
+            $table->string('tenloaigiuong');
+            $table->string('urlloaigiuong');
         });
     }
 
@@ -27,6 +27,6 @@ class CreateLoaiphongTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('loaiphong');
+        Schema::dropIfExists('loaigiuong');
     }
 }

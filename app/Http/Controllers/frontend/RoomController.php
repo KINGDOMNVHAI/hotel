@@ -22,9 +22,9 @@ class RoomController extends Controller
         $viewListRoom = $listroom->listRoomHavePaginate(20, $urlListRoom);
 
         return view('feHotel.pages.listroom', [
-            'title'     => TITLE_FRONTEND_INDEX,
+            'title'         => TITLE_FRONTEND_INDEX,
 
-            'listroom'  => $viewListRoom,
+            'listroom'      => $viewListRoom,
             'listservice'   => $viewListService,
         ]);
     }

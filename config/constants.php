@@ -43,11 +43,10 @@ define('TYPE_ADMIN', 'admin');
 
 define('ITEM_PER_PAGE', 20);
 
-// === Category ===
+// === Loai giuong ===
 
-define('SINGLE', 1);
-define('DOUBLE', 2);
-define('DELUXE', 3);
+define('PHONG_DON', 'phong-don');
+define('PHONG_DOI', 'phong-doi');
 
 
 // === Hidden Post ===

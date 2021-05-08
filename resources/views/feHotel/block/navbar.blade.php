@@ -24,7 +24,7 @@
     <div class="container">
         <div class="brand">
             <div class="logo">
-                <a href="index.html">
+                <a href="{{route('home')}}">
                     <img src="{{asset('feHotel/images/logo.svg')}}" alt="Hotel Himara">
                 </a>
             </div>
@@ -43,27 +43,48 @@
                 <li class="menu-item dropdown active">
                     <a href="{{route('list-room', 'all')}}">Phòng</a>
                     <ul class="submenu">
+                        <li class="menu-item dropdown">
+                            <a href="#">Số giường</a>
+                            <ul class="submenu">
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'single')}}">Phòng có gác</a>
+                                    <a href="{{route('list-room', 'phong-don')}}">Phòng đơn</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'double')}}">Phòng không có gác</a>
+                                    <a href="{{route('list-room', 'phong-doi')}}">Phòng đôi</a>
                                 </li>
+                                <li class="menu-item">
+                                    <a href="{{route('list-room', '2-giuong-don')}}">2 giường đơn</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="{{route('list-room', '2-giuong-doi')}}">2 giường đôi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#">Gác xếp</a>
+                            <ul class="submenu">
+                                <li class="menu-item">
+                                    <a href="{{route('list-room', 'phong-co-gac')}}">Phòng có gác</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="{{route('list-room', 'phong-khong-co-gac')}}">Phòng không có gác</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
-                <li class="menu-item active">
+                <!-- <li class="menu-item active">
                     <a href="#">Dịch vụ</a>
                 </li>
 
                 <li class="menu-item active">
                     <a href="#">Bản tin</a>
-                </li>
+                </li> -->
 
                 <li class="menu-item active">
-                    <a href="#">Liên hệ</a>
+                    <a href="{{route('contact')}}">Liên hệ</a>
                 </li>
-
                 <li class="menu-item menu-btn">
                     <a href="booking-form.html" class="btn">
                         <i class="fa fa-calendar"></i>Đặt phòng

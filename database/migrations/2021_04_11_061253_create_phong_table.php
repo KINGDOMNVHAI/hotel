@@ -21,8 +21,9 @@ class CreatePhongTable extends Migration
             $table->text('noidung');
             $table->integer('giaphong');
             // $table->date('thoigian');
-            
-            $table->integer('maloaiphong');
+
+            $table->string('urlloaigiuong');
+            $table->boolean('gacxep')->default(false);
             $table->integer('phongnoibat')->default(0);
             $table->string('thumbnailphong');
             $table->integer('enablephong')->default(1);

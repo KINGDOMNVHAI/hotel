@@ -8,11 +8,8 @@
         <div class="inner">
             <h1>ROOMS</h1>
             <ol class="breadcrumb">
-                <li>
-                    <a href="{{route('home')}}">Home</a>
-                </li>
+                <li><a href="{{route('home')}}">Home</a></li>
                 <li>Rooms</li>
-                
             </ol>
         </div>
     </div>
@@ -20,28 +17,19 @@
 
 <main class="rooms-list-view">
     <div class="container">
-
         @foreach($listroom as $room)
         <div class="room-list-item">
             <div class="row">
                 <div class="col-lg-4">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="room.html"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
+                        <a href="{{route('room', $room->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
                     </figure>
                 </div>
                 <div class="col-lg-6">
                     <div class="room-info">
                         <h3 class="room-title">
-                            <a href="room.html">{{$room->tenphong}}</a>
+                            <a href="{{route('room', $room->maphong)}}">{{$room->tenphong}}</a>
                         </h3>
-                        <span class="room-rates">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
-                        </span>
                         <p>{{$room->mota}}</p>
                         <div class="room-services">
                             <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
@@ -65,16 +53,10 @@
         <nav class="pagination">
             <ul>
                 <li class="prev-pagination">
-                    <a href="#">
-                        &nbsp;<i class="fa fa-angle-left"></i>
-                        Previous &nbsp;</a>
+                    <a href="#">&nbsp;<i class="fa fa-angle-left"></i> Previous &nbsp;</a>
                 </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
                 <li>
                     <a href="#">3</a>
                 </li>

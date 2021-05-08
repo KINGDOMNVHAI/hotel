@@ -10,7 +10,7 @@ Route::get('/about','frontend\HomeController@about')->name('about');
 
 Route::get('/contact','frontend\HomeController@contact')->name('contact');
 
-Route::get('/blog','frontend\PostController@blog')->name('blog');
+Route::get('/blog/{urlBlog}','frontend\PostController@blog')->name('blog');
 
 Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
 

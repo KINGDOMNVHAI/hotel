@@ -231,7 +231,7 @@
                         </span>
                         <div class="media-body">
                             <h5>Phòng</h5>
-                            <p>Tại Sunline, chúng tôi có những căn phòng tuyệt vời gồm: Phòng có gác và phòng không có gác. Những căn phòng này có đầy đủ tiện nghi, giúp bạn lựa chọn 1 nơi tạm trú mỗi khi đi xa nhà</p>
+                            <p>Tại Sunline, chúng tôi có những căn phòng tuyệt vời. Những căn phòng này có đầy đủ tiện nghi, giúp bạn lựa chọn 1 nơi tạm trú mỗi khi đi xa nhà</p>
                         </div>
                     </div>
                     <div class="owl-thumb-item">
@@ -278,7 +278,7 @@
 
             @foreach($listroom as $room)
 
-            @if($room->maloaiphong == 1)
+            @if($room->urlloaigiuong == 'phong-don')
 
             <div class="col-md-4">
                 <div class="room-grid-item">
@@ -302,12 +302,12 @@
                 </div>
             </div>
 
-            @elseif($room->maloaiphong == 2)
+            @elseif($room->urlloaigiuong == 'phong-doi')
 
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="room.html">
+                        <a href="{{route('room', $room->maphong)}}">
                             <img src="{{asset('upload/rooms/double/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
@@ -319,37 +319,12 @@
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="room.html">{{ $room->tenphong }}</a>
+                            <a href="{{route('room', $room->maphong)}}">{{ $room->tenphong }}</a>
                         </h2>
                         <p>{{ $room->mota }}</p>
                     </div>
                 </div>
             </div>
-
-            @elseif($room->maloaiphong == 3)
-
-            <div class="col-md-4">
-                <div class="room-grid-item">
-                    <figure class="gradient-overlay-hover link-icon">
-                        <a href="room.html">
-                            <img src="{{asset('upload/rooms/deluxe/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
-                        </a>
-                        <div class="room-services">
-                            <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                            <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                            <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                        </div>
-                        <div class="room-price">€89 / night</div>
-                    </figure>
-                    <div class="room-info">
-                        <h2 class="room-title">
-                            <a href="room.html">{{ $room->tenphong }}</a>
-                        </h2>
-                        <p>{{ $room->mota }}</p>
-                    </div>
-                </div>
-            </div>
-
             @endif
 
             @endforeach

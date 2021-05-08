@@ -20,7 +20,7 @@
 <main class="contact-page">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="section-title">
                     <h4>CONTACT US</h4>
                     <p class="section-subtitle">Let’s Talk</p>
@@ -48,14 +48,10 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="sidebar">
-                    <div class="google-map">
-                        <div class="toggle-streetview" id="openStreetView">
-                            <i class="fa fa-street-view" aria-hidden="true"></i>
-                        </div>
-                        <div id="map-canvas"></div>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.98123887057!2d106.700961!3d10.773325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16ce95918cb14834!2sSaigon%20Centre!5e0!3m2!1sen!2s!4v1620463360340!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
                     <div class="contact-details mt75">
                         <div class="contact-info">
                             <ul>

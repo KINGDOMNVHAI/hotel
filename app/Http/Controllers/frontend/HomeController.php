@@ -56,9 +56,9 @@ class HomeController extends Controller
         $viewListService = $listservice->listservice();
 
         return view('feHotel.pages.contact', [
-            'title' => TITLE_FRONTEND_INDEX,
+            'title'         => TITLE_FRONTEND_INDEX,
 
-            'listservice'       => $viewListService,
+            'listservice'   => $viewListService,
         ]);
     }
 }
