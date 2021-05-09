@@ -6,10 +6,10 @@
     background-size: cover;">
     <div class="container">
         <div class="inner">
-            <h1>ROOMS</h1>
+            <h1>DANH SÁCH PHÒNG</h1>
             <ol class="breadcrumb">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li>Rooms</li>
+                <li><a href="{{route('home')}}">Trang chủ</a></li>
+                <li>Danh sách phòng</li>
             </ol>
         </div>
     </div>
@@ -22,13 +22,13 @@
             <div class="row">
                 <div class="col-lg-4">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="{{route('room', $room->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
+                        <a href="{{route('room-fe', $room->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
                     </figure>
                 </div>
                 <div class="col-lg-6">
                     <div class="room-info">
                         <h3 class="room-title">
-                            <a href="{{route('room', $room->maphong)}}">{{$room->tenphong}}</a>
+                            <a href="{{route('room-fe', $room->maphong)}}">{{$room->tenphong}}</a>
                         </h3>
                         <p>{{$room->mota}}</p>
                         <div class="room-services">
@@ -43,7 +43,7 @@
                 <div class="col-lg-2">
                     <div class="room-price">
                         <span class="price">{{$room->giaphong}} VND / night</span>
-                        <a href="{{route('room', $room->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
+                        <a href="{{route('room-fe', $room->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
                     </div>
                 </div>
             </div>

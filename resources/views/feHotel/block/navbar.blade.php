@@ -1,9 +1,6 @@
 <div class="topbar">
     <div class="container">
-        <div class="welcome-mssg">
-            Chào mứng đến với Sunline
-
-        </div>
+        <div class="welcome-mssg">Chào mứng đến với Sunline</div>
         <div class="top-right-menu">
             <ul class="top-menu">
                 <li class="d-none d-md-inline">
@@ -25,7 +22,7 @@
         <div class="brand">
             <div class="logo">
                 <a href="{{route('home')}}">
-                    <img src="{{asset('feHotel/images/logo.svg')}}" alt="Hotel Himara">
+                    <img src="{{asset('feHotel/img/SUNLINE-LOGO.png')}}" alt="Sunline Motel" width="180px">
                 </a>
             </div>
         </div>
@@ -41,22 +38,22 @@
                     <a href="#">Trang chủ</a>
                 </li>
                 <li class="menu-item dropdown active">
-                    <a href="{{route('list-room', 'all')}}">Phòng</a>
+                    <a href="{{route('list-room-fe', 'all')}}">Phòng</a>
                     <ul class="submenu">
                         <li class="menu-item dropdown">
                             <a href="#">Số giường</a>
                             <ul class="submenu">
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'phong-don')}}">Phòng đơn</a>
+                                    <a href="{{route('list-room-fe', 'giuong-don')}}">Phòng đơn</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'phong-doi')}}">Phòng đôi</a>
+                                    <a href="{{route('list-room-fe', 'giuong-doi')}}">Phòng đôi</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', '2-giuong-don')}}">2 giường đơn</a>
+                                    <a href="{{route('list-room-fe', '2-giuong-don')}}">2 giường đơn</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', '2-giuong-doi')}}">2 giường đôi</a>
+                                    <a href="{{route('list-room-fe', '2-giuong-doi')}}">2 giường đôi</a>
                                 </li>
                             </ul>
                         </li>
@@ -64,10 +61,10 @@
                             <a href="#">Gác xếp</a>
                             <ul class="submenu">
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'phong-co-gac')}}">Phòng có gác</a>
+                                    <a href="{{route('list-room-fe', 'phong-co-gac')}}">Phòng có gác</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="{{route('list-room', 'phong-khong-co-gac')}}">Phòng không có gác</a>
+                                    <a href="{{route('list-room-fe', 'phong-khong-co-gac')}}">Phòng không có gác</a>
                                 </li>
                             </ul>
                         </li>

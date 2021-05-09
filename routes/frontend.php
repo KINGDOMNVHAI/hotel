@@ -14,8 +14,8 @@ Route::get('/blog/{urlBlog}','frontend\PostController@blog')->name('blog');
 
 Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
 
-Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room');
+Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room-fe');
 
-Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room');
+Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room-fe');
 
-Route::get('/service/{idService}','frontend\ServiceController@service')->name('service');
+Route::get('/service/{idService}','frontend\ServiceController@service')->name('service-fe');

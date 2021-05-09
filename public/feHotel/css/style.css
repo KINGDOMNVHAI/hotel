@@ -1983,7 +1983,7 @@ header.dark-header.header-fixed-top.scroll-header {
 
 header .brand {
   display: inline-block;
-  padding: 28px 0;
+  padding: 20px 0;
 }
 
 header .brand .logo {
@@ -2042,7 +2042,7 @@ header .brand .big-logo {
 
 .mobile-header .copyright {
   display: none;
-} 
+}
 
 header.horizontal-header .main-menu {
   float: right;
@@ -2342,7 +2342,7 @@ header.vertical-header .main-menu {
 }
 
 header.vertical-header.open-header .main-menu {
- visibility: visible;    
+ visibility: visible;
 }
 
 header.vertical-header.open-header .main-menu {

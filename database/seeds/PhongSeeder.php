@@ -32,7 +32,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'giaphong'          => 300000,
-            'urlloaigiuong'      => PHONG_DOI,
+            'urlloaigiuong'     => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -44,7 +44,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'giaphong'          => 400000,
-            'urlloaigiuong'      => PHONG_DOI,
+            'urlloaigiuong'     => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -56,7 +56,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'giaphong'          => 400000,
-            'urlloaigiuong'      => PHONG_DOI,
+            'urlloaigiuong'     => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -68,7 +68,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'giaphong'          => 400000,
-            'urlloaigiuong'      => PHONG_DOI,
+            'urlloaigiuong'     => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -80,7 +80,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'giaphong'          => 400000,
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaigiuong'     => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 

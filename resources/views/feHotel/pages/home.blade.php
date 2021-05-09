@@ -283,7 +283,7 @@
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="{{route('room', $room->maphong)}}">
+                        <a href="{{route('room-fe', $room->maphong)}}">
                             <img src="{{asset('upload/rooms/single/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
@@ -295,7 +295,7 @@
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="{{route('room', $room->maphong)}}">{{ $room->tenphong }}</a>
+                            <a href="{{route('room-fe', $room->maphong)}}">{{ $room->tenphong }}</a>
                         </h2>
                         <p>{{ $room->mota }}</p>
                     </div>
@@ -307,7 +307,7 @@
             <div class="col-md-4">
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="{{route('room', $room->maphong)}}">
+                        <a href="{{route('room-fe', $room->maphong)}}">
                             <img src="{{asset('upload/rooms/double/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
@@ -319,7 +319,7 @@
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
-                            <a href="{{route('room', $room->maphong)}}">{{ $room->tenphong }}</a>
+                            <a href="{{route('room-fe', $room->maphong)}}">{{ $room->tenphong }}</a>
                         </h2>
                         <p>{{ $room->mota }}</p>
                     </div>

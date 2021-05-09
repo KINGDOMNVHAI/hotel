@@ -45,8 +45,8 @@ define('ITEM_PER_PAGE', 20);
 
 // === Loai giuong ===
 
-define('PHONG_DON', 'phong-don');
-define('PHONG_DOI', 'phong-doi');
+define('PHONG_DON', 'giuong-don');
+define('PHONG_DOI', 'giuong-doi');
 
 
 // === Hidden Post ===
