@@ -8,6 +8,7 @@ use App\Services\frontend\feHotel\ServicesService;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -36,7 +37,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function about()
+    public function about(Request $request)
     {
         //  Services
         $listservice     = new ServicesService;
@@ -45,7 +46,7 @@ class HomeController extends Controller
         return view('feHotel.pages.about', [
             'title' => TITLE_FRONTEND_INDEX,
 
-            'listservice'       => $viewListService,
+            'listservice'   => $viewListService,
         ]);
     }
 
@@ -60,5 +61,10 @@ class HomeController extends Controller
 
             'listservice'   => $viewListService,
         ]);
+    }
+
+    public function search()
+    {
+
     }
 }

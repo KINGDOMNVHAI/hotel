@@ -43,11 +43,17 @@ define('TYPE_ADMIN', 'admin');
 
 define('ITEM_PER_PAGE', 20);
 
-// === Loai giuong ===
+// === Loai phong ===
 
 define('PHONG_DON', 'giuong-don');
 define('PHONG_DOI', 'giuong-doi');
+define('HAI_GIUONG_DON', '2-giuong-don');
+define('HAI_GIUONG_DOI', '2-giuong-doi');
 
+define('GIA_PHONG_DON', 200000);
+define('GIA_PHONG_DOI', 300000);
+define('GIA_HAI_GIUONG_DON', 400000);
+define('GIA_HAI_GIUONG_DOI', 500000);
 
 // === Hidden Post ===
 

@@ -10,5 +10,5 @@ class loaiphong extends Model
 
     public $timestamps = false;
 
-    protected $fillable = ['maloaiphong','tenloaiphong','urlloaiphong'];
+    protected $fillable = ['maloaiphong','tenloaiphong','urlloaiphong','gialoaiphong'];
 }

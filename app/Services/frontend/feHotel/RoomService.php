@@ -52,21 +52,26 @@ class RoomService extends ServiceProvider
 
     public function listRoomHavePaginate($limit, $urlListRoom)
     {
+        $giuongdon = PHONG_DON;
+        $giuongdoi = PHONG_DOI;
+        $haigiuongdon = HAI_GIUONG_DON;
+        $haigiuongdoi = HAI_GIUONG_DOI;
+        $giuongtang = GIUONG_TANG;
+
         $query = DB::table('phong')
             ->where('enablephong', '=', 1);
 
         if ($urlListRoom == 'all') {
             $query = $query;
-        } else if ($urlListRoom = 'giuong-don') {
-            $query = $query->where('urlloaigiuong', '=', 'giuong-don');
-        } else if ($urlListRoom = 'giuong-doi') {
-            $query = $query->where('urlloaigiuong', '=', 'giuong-doi');
-        } else if ($urlListRoom = '2-giuong-don') {
-            $query = $query->where('urlloaigiuong', '=', '2-giuong-don');
-        } else if ($urlListRoom = '2-giuong-don') {
-            $query = $query->where('urlloaigiuong', '=', '2-giuong-doi');
-        } else if ($urlListRoom = 'giuong-tang') {
-            $query = $query->where('urlloaigiuong', '=', 'giuong-tang');
+        } else if ($urlListRoom == $giuongdon) {
+            $query = $query->where('urlloaigiuong', '=', $giuongdon);
+        } else if ($urlListRoom == $giuongdoi) {
+            $query = $query->where('urlloaigiuong', '=', $giuongdoi);
+        } else if ($urlListRoom == $haigiuongdon) {
+            $query = $query->where('urlloaigiuong', '=', $haigiuongdon);
+        } else if ($urlListRoom == $haigiuongdoi) {
+            $query = $query->where('urlloaigiuong', '=', $haigiuongdoi);
+            $query = $query->where('urlloaigiuong', '=', $giuongtang);
         } else {
 
         }
@@ -76,7 +81,6 @@ class RoomService extends ServiceProvider
         } else if ($urlListRoom = 'phong-khong-co-gac') {
             $query = $query->where('gacxep', '=', false);
         }
-
 
         $query = $query->paginate($limit);
 

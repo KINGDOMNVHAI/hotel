@@ -50,7 +50,9 @@
         </div>
         @endforeach
 
-        <nav class="pagination">
+        {!! $listroom->links() !!}
+
+        <!-- <nav class="pagination">
             <ul>
                 <li class="prev-pagination">
                     <a href="#">&nbsp;<i class="fa fa-angle-left"></i> Previous &nbsp;</a>
@@ -78,7 +80,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </div>
 </main>
 

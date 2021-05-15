@@ -17,6 +17,7 @@ class CreateLoaiphongTable extends Migration
             $table->increments('maloaiphong');
             $table->string('tenloaiphong');
             $table->string('urlloaiphong');
+            $table->integer('gialoaiphong')->default(0);
         });
     }
 

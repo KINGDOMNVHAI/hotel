@@ -16,12 +16,11 @@
             </div>
         </div>
     </div>
-    
+
     <nav id="mobile-menu"></nav>
     <div class="wrapper">
 
         @include('feHotel.block.navbar')
-
 
         @yield('NoiDung')
 
@@ -107,12 +106,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="section-title aligncenter">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <!-- <div class="section-title aligncenter">
                         <p class="section-subtitle">
                             <a href="https://www.instagram.com/pagesunline/" target="_blank">Thông tin về chúng tôi trong Instagram SUNLINE</a>
                         </p>
                     </div>
-                    <div class="section-title aligncenter">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <div class="section-title aligncenter">
                         <p class="section-subtitle">
                             <a href="https://www.facebook.com/NhaTroSunLine" target="_blank">Thông tin về chúng tôi trong Facebook SUNLINE</a>
                         </p>
@@ -126,7 +125,7 @@
                         <div class="col-md-6">
                             <div class="copyrights">&copy; 2021 Phòng trọ Sunline. Thiết kế bởi
                                 <a href="{{route('home')}}" target="_blank">Nguyễn Thư</a>.
-                                
+
                             </div>
                         </div>
                         <div class="col-md-6">

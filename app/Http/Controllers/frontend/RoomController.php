@@ -19,7 +19,7 @@ class RoomController extends Controller
 
         // Public Services
         $listroom     = new RoomService;
-        $viewListRoom = $listroom->listRoomHavePaginate(20, $urlListRoom);
+        $viewListRoom = $listroom->listRoomHavePaginate(10, $urlListRoom);
 
         return view('feHotel.pages.listroom', [
             'title'         => TITLE_FRONTEND_INDEX,

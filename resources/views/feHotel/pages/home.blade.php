@@ -15,11 +15,11 @@
         </div>
     </section>
 
-    <div class="horizontal-booking-form">
+    <!-- <div class="horizontal-booking-form">
         <div class="container">
             <div class="inner box-shadow-007">
                 <div id="booking-notification" class="notification"></div>
-                <form id="booking-form">
+                <form id="booking-form" action="{{route('booking-form-fe')}}">
                     <div class="row">
                         <div class="col-md-2">
                             <div class="form-group">
@@ -112,16 +112,14 @@
                         <div class="col-md-2">
                             <button type="submit" class="btn btn-book">Đặt phòng</button>
                             <div class="advanced-form-link">
-                                <a href="booking-form.html">
-                                    Biểu mẫu đặt phòng
-                                </a>
+                                <a href="booking-form.html">Biểu mẫu đặt phòng</a>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <!-- <section class="about mt100">
