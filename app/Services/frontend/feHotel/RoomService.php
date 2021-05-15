@@ -50,13 +50,13 @@ class RoomService extends ServiceProvider
         return $query;
     }
 
-    public function listRoomHavePaginate($limit, $urlListRoom)
+    public function listRoomHavePaginate($limit, $urlListRoom, $keyword)
     {
         $giuongdon = PHONG_DON;
         $giuongdoi = PHONG_DOI;
         $haigiuongdon = HAI_GIUONG_DON;
         $haigiuongdoi = HAI_GIUONG_DOI;
-        $giuongtang = GIUONG_TANG;
+        // $giuongtang = GIUONG_TANG;
 
         $query = DB::table('phong')
             ->where('enablephong', '=', 1);
@@ -71,7 +71,7 @@ class RoomService extends ServiceProvider
             $query = $query->where('urlloaigiuong', '=', $haigiuongdon);
         } else if ($urlListRoom == $haigiuongdoi) {
             $query = $query->where('urlloaigiuong', '=', $haigiuongdoi);
-            $query = $query->where('urlloaigiuong', '=', $giuongtang);
+            // $query = $query->where('urlloaigiuong', '=', $giuongtang);
         } else {
 
         }
@@ -82,7 +82,8 @@ class RoomService extends ServiceProvider
             $query = $query->where('gacxep', '=', false);
         }
 
-        $query = $query->paginate($limit);
+        $query = $query->where('tenphong', 'like', "%{$keyword}%")
+            ->paginate($limit);
 
         return $query;
     }

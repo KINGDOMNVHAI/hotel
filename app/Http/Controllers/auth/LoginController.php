@@ -56,25 +56,6 @@ class LoginController extends Controller
         $insert = $user->insert($request);
 
         return redirect('login');
-
-        // if (Auth::attempt(['username' => $username, 'password' => $password]))
-        // {
-        //     return redirect('list-post');
-        // }
-        // else
-        // {
-        //     $checklogin = new LoginService;
-        //     $checkuser = $checklogin->checkUser($username);
-
-        //     if ($checkuser == '')
-        //     {
-        //         return redirect()->route('login')->with('message', __(USERNAME_IS_NOT_EXIST));
-        //     }
-        //     else
-        //     {
-        //         return redirect()->route('login')->with('message', __(WRONG_PASSWORD));
-        //     }
-        // }
     }
 
     public function logout(Request $request)

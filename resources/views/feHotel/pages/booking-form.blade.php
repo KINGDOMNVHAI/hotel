@@ -127,11 +127,6 @@
                         <div class="col-md-12">
                             <input type="submit" class="btn mt50 float-right" value="Đặt phòng ngay!">
                         </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn mt50 float-right">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i> Đặt phòng ngay!
-                            </button>
-                        </div>
                     </div>
                 </form>
             </div>

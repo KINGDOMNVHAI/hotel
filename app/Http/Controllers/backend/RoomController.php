@@ -14,15 +14,21 @@ use Illuminate\Support\Facades\Auth;
 
 class RoomController extends Controller
 {
-    public function listroom()
+    public function listroom(Request $request)
     {
         if (Auth::check())
         {
             $username = Auth::user()->username;
 
+            $keyword = "";
+            // luôn search dữ liệu
+            if ($request->keyword != null) {
+                $keyword = $request->keyword;
+            }
+
             // Public Services
             $listroom     = new RoomService;
-            $viewListRoom = $listroom->listRoomHavePaginate(20, 'all');
+            $viewListRoom = $listroom->listRoomHavePaginate(20, 'all', $keyword);
 
             return view('backend.pages.list-post', [
                 'title'     => TITLE_FRONTEND_INDEX,
