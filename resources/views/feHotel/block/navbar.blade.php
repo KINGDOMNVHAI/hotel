@@ -40,7 +40,7 @@
                 <li class="menu-item dropdown active">
                     <a href="{{route('list-room-fe', 'all')}}">Phòng</a>
                     <ul class="submenu">
-                        <li class="menu-item dropdown">
+                        <!-- <li class="menu-item dropdown">
                             <a href="#">Số giường</a>
                             <ul class="submenu">
                                 <li class="menu-item">
@@ -56,8 +56,8 @@
                                     <a href="{{route('list-room-fe', '2-giuong-doi')}}">2 giường đôi</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="menu-item dropdown">
+                        </li> -->
+                        <!-- <li class="menu-item dropdown">
                             <a href="#">Gác xếp</a>
                             <ul class="submenu">
                                 <li class="menu-item">
@@ -67,6 +67,15 @@
                                     <a href="{{route('list-room-fe', 'phong-khong-co-gac')}}">Phòng không có gác</a>
                                 </li>
                             </ul>
+                        </li> -->
+
+                        <li class="menu-item dropdown">
+                                <li class="menu-item">
+                                    <a href="{{route('list-room-fe', 'phong-co-gac')}}">Phòng có gác</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="{{route('list-room-fe', 'phong-khong-co-gac')}}">Phòng không có gác</a>
+                                </li>
                         </li>
                     </ul>
                 </li>

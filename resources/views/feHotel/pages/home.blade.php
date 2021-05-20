@@ -5,12 +5,9 @@
 <div class="slider">
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
-            <div class="container">
-                <div class="video-popup">
-                    <a class="popup-vimeo" href="https://www.youtube.com/watch?v=BDDfopejpwk">
-                        <i class="fa fa-play"></i>
-                    </a>
-                </div>
+            <div class="container" align="center">
+            <iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
         </div>
     </section>
@@ -195,25 +192,25 @@
             <div class="col-lg-7 col-12">
                 <div data-slider-id="services" class="services-owl owl-carousel">
                     <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/restaurant.jpg')}}" class="img-fluid" alt="Image">
+                        <img src="{{asset('feHotel/images/rooms/family/family.jpg')}}" class="img-fluid" alt="Image">
                         <figcaption>
                             <h4>Phòng</h4>
                         </figcaption>
                     </figure>
                     <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/spa.jpg')}}" class="img-fluid" alt="Image">
+                        <img src="{{asset('feHotel/images/service/suaongnuoc1.jpeg')}}" class="img-fluid" alt="Image">
                         <figcaption>
                             <h4>Dịch vụ</h4>
                         </figcaption>
                     </figure>
                     <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/conference.jpg')}}" class="img-fluid" alt="Image">
+                        <img src="{{asset('feHotel/images/infor/kinh-nghiem-quan-ly-nha-tro.jpg')}}" class="img-fluid" alt="Image">
                         <figcaption>
                             <h4>Thông tin</h4>
                         </figcaption>
                     </figure>
                     <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/swimming.jpg')}}" class="img-fluid" alt="Image">
+                        <img src="{{asset('feHotel/images/infor/discount.jpg')}}" class="img-fluid" alt="Image">
                         <figcaption>
                             <h4>Sự kiện</h4>
                         </figcaption>
@@ -376,7 +373,7 @@
         <div class="section-title">
             <h4>SUNLINE. GALLERY</h4>
             <p class="section-subtitle">Bộ sưu tập ảnh thư viện về phòng trọ SUNLINE</p>
-            <a href="gallery.html" class="view-all">Tất cả ảnh</a>
+            
         </div>
         <div class="gallery-owl owl-carousel image-gallery">
 
@@ -442,7 +439,7 @@
                 <div class="news-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="blog-post.html">
-                            <img src="{{asset('feHotel/images/blog/blog-post1.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('feHotel/images/services/anhcovid.jpg')}}" width="350" height="350">
                         </a>
                     </figure>
                     <div class="news-info">
@@ -452,8 +449,7 @@
                         <p>Dịch viêm đường hô hấp cấp do Covid-19 gây ra các triệu chứng sốt, ho, viêm phổi cấp, suy hô hấp cấp, thậm chí tử vong đến nay vẫn đang gây căng thẳng trên toàn cầu. Có hay không cách điều trị Covid-19? Biện pháp phòng chống Covid-19 hiện nay là gì? Ngay khi...</p>
                         <div class="post-meta">
                             <span class="author">
-                                <a href="#"><img src="{{asset('feHotel/images/users/admin.jpg')}}" width="16" alt="Image">
-                                    JANE</a>
+                                FFFFFF
                             </span>
                             <span class="date">
                                 <i class="fa fa-clock-o"></i>
@@ -471,7 +467,7 @@
                 <div class="news-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="blog-post.html">
-                            <img src="{{asset('feHotel/images/blog/blog-post2.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('feHotel/images/services/noiquynhatro.jpg')}}" width="370" height="350">
                         </a>
                     </figure>
                     <div class="news-info">
@@ -495,13 +491,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <div class="col-md-4">
                 <div class="news-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="blog-post.html">
-                            <img src="{{asset('feHotel/images/blog/blog-post3.jpg')}}" class="img-fluid" alt="Image">
+                        <a href="blog-post.html" height="30">
+                            <img src="{{asset('feHotel/images/services/dondep.jpg')}}" width="350" height="350">
                         </a>
                     </figure>
                     <div class="news-info">
@@ -535,7 +531,7 @@
         <div class="section-title">
             <h4>Sự kiện sắp đến</h4>
             <p class="section-subtitle">Dưới đây là sự kiện ở bên chúng tôi</p>
-            <a href="events.html" class="view-all">Tất cả sự kiện</a>
+            <!-- <a href="events.html" class="view-all">Tất cả sự kiện</a> -->
         </div>
         <div class="events-owl owl-carousel">
 
@@ -654,8 +650,8 @@
 
             <div class="item">
                 <div class="testimonial-item">
-                    <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user1.jpg')}}">
+                    <div class="author-img"> 
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh1.jpg')}}">
                     </div>
                     <div class="author">
                         <h4 class="name">Nguyễn Minh</h4>
@@ -675,7 +671,7 @@
             <div class="item">
                 <div class="testimonial-item">
                     <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user2.jpg')}}">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh2.jpg')}}">
                     </div>
                     <div class="author">
                         <h4 class="name">Gia Hân</h4>
@@ -695,7 +691,7 @@
             <div class="item">
                 <div class="testimonial-item">
                     <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user3.jpg')}}">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh3.jpg')}}">
                     </div>
                     <div class="author">
                         <h4 class="name">Nguyễn Phillips</h4>
@@ -715,7 +711,7 @@
             <div class="item">
                 <div class="testimonial-item">
                     <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user4.jpg')}}">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh4.jpg')}}">
                     </div>
                     <div class="author">
                         <h4 class="name">Lê Hoàng</h4>
@@ -735,7 +731,7 @@
             <div class="item">
                 <div class="testimonial-item">
                     <div class="author-img">
-                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/user5.jpg')}}">
+                        <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh5.jpg')}}">
                     </div>
                     <div class="author">
                         <h4 class="name">Hải</h4>

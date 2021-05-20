@@ -929,6 +929,11 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 
+.design{
+  width:370;
+  height:350;
+}
+
 .color-overlay *, .color-overlay-hover *, .gradient-overlay *, .gradient-overlay-hover *, .dotted-overlay-hover * {
   z-index: 99;
 }
@@ -6196,7 +6201,7 @@ blockquote:after {
   font-weight: 400;
   color: #fff;
   background-color: #ffffff;
-  width: 100%;
+  width: 600px;
   height: 45px;
   line-height: 45px;
   margin-bottom: 18px;

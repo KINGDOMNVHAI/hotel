@@ -170,7 +170,7 @@
                 </form>
             </div>
 
-            <div class="col-lg-3 col-12">
+            <!-- <div class="col-lg-3 col-12">
                 <div class="sidebar">
                     <div class="contact-details">
                         <div class="section-title">
@@ -229,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </main>
