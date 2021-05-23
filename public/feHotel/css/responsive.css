@@ -201,6 +201,12 @@ Version:       1.0.0
   .services-v2 .main-image {
     margin-bottom: 50px;
   }
+
+  .news-grid-item .gradient-overlay-hover .design{
+    width: 50px;
+    height: 20px;
+  }
+
   .news-grid-item .news-info, .newsv2-item .news-info {
     padding: 15px;
   }
