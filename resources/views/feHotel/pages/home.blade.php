@@ -121,9 +121,9 @@
                         Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
                     @csrf
                     <div class="input-group">
-                    <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Tên phòng"
+                    <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Tên phòng..."
                             aria-label="Search" aria-describedby="basic-addon2">
-                    <input type="text" name="loaiphong" class="form-control bg-light border-0 small" placeholder="Loai phong..."
+                    <input type="text" name="loaiphong" class="form-control bg-light border-0 small" placeholder="Loại phòng..."
                             aria-label="Search" aria-describedby="basic-addon2">
                             
                         <input type="submit" class="btn btn-primary" value="search">
