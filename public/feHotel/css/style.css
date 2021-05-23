@@ -3435,6 +3435,7 @@ div[class*='col-']:nth-last-child(2) .newsv2-item {
 
 .video .inner {
   padding: 100px 0;
+  text-align: center;
 }
 
 .video .video-popup {
