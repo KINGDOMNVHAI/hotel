@@ -5,19 +5,17 @@
 <div class="slider">
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
-            <div class="container" align="center">
-            <iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="container" >
+            <iframe style="align:center" width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!-- <div class="horizontal-booking-form">
+    <div class="horizontal-booking-form">
         <div class="container">
-            <div class="inner box-shadow-007">
-                <div id="booking-notification" class="notification"></div>
-                <form id="booking-form" action="{{route('booking-form-fe')}}">
-                    <div class="row">
+            <div class="inner box-shadow-007" style="margin:auto">
+                <!-- <div id="booking-notification" class="notification"></div> -->
+                    <!-- <div class="row">
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label>Tên khách hàng
@@ -112,11 +110,27 @@
                                 <a href="booking-form.html">Biểu mẫu đặt phòng</a>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- <form>
+                        <input type="text" name="keyword" placeholder="Tìm kiếm..."  aria-label="Search" aria-describedby="basic-addon2">
+                        <input type="submit" class="btn btn-primary" value="search">
+                    </from> -->
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+                    action="{{route('search-room-fe')}}" method="GET">
+                    @csrf
+                    <div class="input-group">
+                    <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Tìm kiếm..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                    <input type="text" name="loaiphong" class="form-control bg-light border-0 small" placeholder="loai phong..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                            
+                        <input type="submit" class="btn btn-primary" value="search">
+                        
                     </div>
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
 
 <!-- <section class="about mt100">

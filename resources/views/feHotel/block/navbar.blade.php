@@ -91,9 +91,21 @@
                 <li class="menu-item active">
                     <a href="{{route('contact')}}">Liên hệ</a>
                 </li>
+                
                 <li class="menu-item menu-btn">
                     <a href="{{route('booking-form-fe')}}" class="btn">
                         <i class="fa fa-calendar"></i>Đặt phòng
+                    </a>
+                </li>
+                <li class="menu-item menu-btn" style="margin-left:15px;">
+                    <a href="#" class="btn">
+                        Đăng nhập
+                    </a>
+                </li>
+
+                <li class="menu-item menu-btn" style="margin-left:15px;">
+                    <a href="#" class="btn">
+                        Đăng ký
                     </a>
                 </li>
             </ul>

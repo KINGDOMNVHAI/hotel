@@ -25,3 +25,5 @@ Route::get('/booking-form','frontend\BookingController@index')->name('booking-fo
 Route::post('/booking-check','frontend\BookingController@check')->name('booking-check-fe');
 
 Route::post('/booking-final','frontend\BookingController@final')->name('booking-final-fe');
+
+Route::get('/search-room','frontend\RoomController@searchroom')->name('search-room-fe');

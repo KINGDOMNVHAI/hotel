@@ -4266,12 +4266,13 @@ footer .subfooter .social-media a i {
 }
 
 .horizontal-booking-form .inner {
-  min-height: 100px;
+  min-height: 90px;
   position: relative;
   background: #fff;
-  border-radius: 2px;
-  padding: 15px 30px;
-  border-top: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 50%;
+  margin: auto;
 }
 
 .horizontal-booking-form.dark .inner {
