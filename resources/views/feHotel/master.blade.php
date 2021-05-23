@@ -33,10 +33,10 @@
                                 <!-- <img src="{{asset('feHotel/img/SUNLINE.png')}}" alt="SUNLINE", $width ="20px", $height="20px" > -->
                                 <div class="inner">
                                     <p>Chào mừng bạn đến với Sunline</p>
-                                    <a href="https://www.tripadvisor.com/" target="_blank">
+                                    <a href="https://www.facebook.com/NhaTroSunLine" target="_blank">
                                         <div class="tripadvisor-banner">
-                                            <span class="review">Recommended</span>
-                                            <img src="{{asset('feHotel/images/icons/tripadvisor.png')}}" alt="Image" $width ="200px", $height="200px">
+                                            <span class="review">Something special</span>
+                                            <img src="{{asset('feHotel/img/Sun.png')}}" alt="Image", width ="50px", height="50px">
                                         </div>
                                     </a>
                                 </div>

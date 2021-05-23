@@ -1,6 +1,6 @@
 <div class="topbar">
     <div class="container">
-        <div class="welcome-mssg">Chào mứng đến với Sunline</div>
+        <div class="welcome-mssg">WELCOME TO YOU ♥♥♥</div>
         <div class="top-right-menu">
             <ul class="top-menu">
                 <li class="d-none d-md-inline">

@@ -67,7 +67,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label>Số lượng phòng</label>
                                 <select name="numbernight" class="form-control">
@@ -77,7 +77,7 @@
                                     <option value="4">4 nights</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label>Guests
@@ -120,8 +120,8 @@
                         </div> -->
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Your Comments</label>
-                                <textarea class="form-control" name="booking-comments" placeholder="Your Comments..."></textarea>
+                                <label>Bình luận</label>
+                                <textarea class="form-control" name="booking-comments" placeholder="Bình luận của bạn..."></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
