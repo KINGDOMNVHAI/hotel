@@ -35,10 +35,11 @@
         <nav id="main-menu" class="main-menu">
             <ul class="menu">
                 <li class="menu-item active">
-                    <a href="#">Trang chủ</a>
+                    <a href="{{route('home')}}">Trang chủ</a>
                 </li>
                 <li class="menu-item dropdown active">
-                    <a href="{{route('list-room-fe', 'all')}}">Phòng</a>
+                    <!-- <a href="{{route('list-room-fe', 'all')}}">Phòng</a> -->
+                    <a>Phòng</a>
                     <ul class="submenu">
                         <!-- <li class="menu-item dropdown">
                             <a href="#">Số giường</a>

@@ -1,7 +1,6 @@
 @extends('feHotel.master')
 
 @section('NoiDung')
-
 <div class="slider">
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
@@ -10,7 +9,7 @@
             </div>
         </div>
     </section>
-
+        
     <div class="horizontal-booking-form">
         <div class="container">
             <div class="inner box-shadow-007" style="margin:auto">
