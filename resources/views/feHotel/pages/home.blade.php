@@ -1,23 +1,20 @@
 @extends('feHotel.master')
 
 @section('NoiDung')
-
 <div class="slider">
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
-            <div class="container" align="center">
-            <iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="container1" >
+                <iframe  width="850" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
-
-    <!-- <div class="horizontal-booking-form">
+        
+    <div class="horizontal-booking-form">
         <div class="container">
-            <div class="inner box-shadow-007">
-                <div id="booking-notification" class="notification"></div>
-                <form id="booking-form" action="{{route('booking-form-fe')}}">
-                    <div class="row">
+            <div class="inner box-shadow-007" style="margin:auto">
+                <!-- <div id="booking-notification" class="notification"></div> -->
+                    <!-- <div class="row">
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label>Tên khách hàng
@@ -112,11 +109,29 @@
                                 <a href="booking-form.html">Biểu mẫu đặt phòng</a>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- <form>
+                        <input type="text" name="keyword" placeholder="Tìm kiếm..."  aria-label="Search" aria-describedby="basic-addon2">
+                        <input type="submit" class="btn btn-primary" value="search">
+                    </from> -->
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+                    action="{{route('search-room-fe')}}" method="GET">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTAzLjgzOSwzOTUuMzc5bC0xOTUuNy0zMzguOTYyQzI5Ny4yNTcsMzcuNTY5LDI3Ny43NjYsMjYuMzE1LDI1NiwyNi4zMTVjLTIxLjc2NSwwLTQxLjI1NywxMS4yNTQtNTIuMTM5LDMwLjEwMg0KCQkJTDguMTYyLDM5NS4zNzhjLTEwLjg4MywxOC44NS0xMC44ODMsNDEuMzU2LDAsNjAuMjA1YzEwLjg4MywxOC44NDksMzAuMzczLDMwLjEwMiw1Mi4xMzksMzAuMTAyaDM5MS4zOTgNCgkJCWMyMS43NjUsMCw0MS4yNTYtMTEuMjU0LDUyLjE0LTMwLjEwMUM1MTQuNzIyLDQzNi43MzQsNTE0LjcyMiw0MTQuMjI4LDUwMy44MzksMzk1LjM3OXogTTQ3Ny44NjEsNDQwLjU4Ng0KCQkJYy01LjQ2MSw5LjQ1OC0xNS4yNDEsMTUuMTA0LTI2LjE2MiwxNS4xMDRINjAuMzAxYy0xMC45MjIsMC0yMC43MDItNS42NDYtMjYuMTYyLTE1LjEwNGMtNS40Ni05LjQ1OC01LjQ2LTIwLjc1LDAtMzAuMjA4DQoJCQlMMjI5Ljg0LDcxLjQxNmM1LjQ2LTkuNDU4LDE1LjI0LTE1LjEwNCwyNi4xNjEtMTUuMTA0YzEwLjkyLDAsMjAuNzAxLDUuNjQ2LDI2LjE2MSwxNS4xMDRsMTk1LjcsMzM4Ljk2Mg0KCQkJQzQ4My4zMjEsNDE5LjgzNiw0ODMuMzIxLDQzMS4xMjgsNDc3Ljg2MSw0NDAuNTg2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyNDEuMDAxIiB5PSIxNzYuMDEiIHdpZHRoPSIyOS45OTYiIGhlaWdodD0iMTQ5Ljk4MiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjU2LDM1NS45OWMtMTEuMDI3LDAtMTkuOTk4LDguOTcxLTE5Ljk5OCwxOS45OThzOC45NzEsMTkuOTk4LDE5Ljk5OCwxOS45OThjMTEuMDI2LDAsMTkuOTk4LTguOTcxLDE5Ljk5OC0xOS45OTgNCgkJCVMyNjcuMDI3LDM1NS45OSwyNTYsMzU1Ljk5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width="20px" height="20px"/>
+                        Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
+                    @csrf
+                    <div class="input-group">
+                    <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Tên phòng..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                    <input type="text" name="loaiphong" class="form-control bg-light border-0 small" placeholder="Loại phòng..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                            
+                        <input type="submit" class="btn btn-primary" value="search">
+                        
                     </div>
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
 
 <!-- <section class="about mt100">

@@ -33,10 +33,10 @@
                                 <!-- <img src="{{asset('feHotel/img/SUNLINE.png')}}" alt="SUNLINE", $width ="20px", $height="20px" > -->
                                 <div class="inner">
                                     <p>Chào mừng bạn đến với Sunline</p>
-                                    <a href="https://www.tripadvisor.com/" target="_blank">
+                                    <a href="https://www.facebook.com/NhaTroSunLine" target="_blank">
                                         <div class="tripadvisor-banner">
-                                            <span class="review">Recommended</span>
-                                            <img src="{{asset('feHotel/images/icons/tripadvisor.png')}}" alt="Image" $width ="200px", $height="200px">
+                                            <span class="review">Something special</span>
+                                            <img src="{{asset('feHotel/img/Sun.png')}}" alt="Image", width ="50px", height="50px">
                                         </div>
                                     </a>
                                 </div>
@@ -105,7 +105,11 @@
                                 </div>
                             </div>
                         </div>
+
+                        
                     </div>
+
+                    <iframe src="https://www.nhaccuatui.com/lh/normal/lpopuB4Y0Ou4" width="685" height="300px" frameborder="0" allowfullscreen allow="autoplay"></iframe>
                     <!-- <div class="section-title aligncenter">
                         <p class="section-subtitle">
                             <a href="https://www.instagram.com/pagesunline/" target="_blank">Thông tin về chúng tôi trong Instagram SUNLINE</a>
@@ -117,7 +121,10 @@
                         </p>
                     </div> -->
                 </div>
+                
             </div>
+
+            
 
             <div class="subfooter">
                 <div class="container">
@@ -158,6 +165,8 @@
             </div>
         </footer>
     </div>
+
+
 
     <div id="contact-notification" class="notification fixed"></div>
 

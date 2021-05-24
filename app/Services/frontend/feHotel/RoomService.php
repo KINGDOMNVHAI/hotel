@@ -61,25 +61,12 @@ class RoomService extends ServiceProvider
         $query = DB::table('phong')
             ->where('enablephong', '=', 1);
 
-        if ($urlListRoom == 'all') {
-            $query = $query;
-        } else if ($urlListRoom == $giuongdon) {
-            $query = $query->where('urlloaigiuong', '=', $giuongdon);
-        } else if ($urlListRoom == $giuongdoi) {
-            $query = $query->where('urlloaigiuong', '=', $giuongdoi);
-        } else if ($urlListRoom == $haigiuongdon) {
-            $query = $query->where('urlloaigiuong', '=', $haigiuongdon);
-        } else if ($urlListRoom == $haigiuongdoi) {
-            $query = $query->where('urlloaigiuong', '=', $haigiuongdoi);
-            // $query = $query->where('urlloaigiuong', '=', $giuongtang);
-        } else {
-
-        }
-
         if ($urlListRoom = 'phong-co-gac') {
             $query = $query->where('gacxep', '=', true);
         } else if ($urlListRoom = 'phong-khong-co-gac') {
             $query = $query->where('gacxep', '=', false);
+        } else {
+            $query = $query;
         }
 
         $query = $query->where('tenphong', 'like', "%{$keyword}%")

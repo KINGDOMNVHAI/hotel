@@ -1,6 +1,6 @@
 <div class="topbar">
     <div class="container">
-        <div class="welcome-mssg">Chào mứng đến với Sunline</div>
+        <div class="welcome-mssg">WELCOME TO YOU ♥♥♥</div>
         <div class="top-right-menu">
             <ul class="top-menu">
                 <li class="d-none d-md-inline">
@@ -35,10 +35,11 @@
         <nav id="main-menu" class="main-menu">
             <ul class="menu">
                 <li class="menu-item active">
-                    <a href="#">Trang chủ</a>
+                    <a href="{{route('home')}}">Trang chủ</a>
                 </li>
                 <li class="menu-item dropdown active">
-                    <a href="{{route('list-room-fe', 'all')}}">Phòng</a>
+                    <!-- <a href="{{route('list-room-fe', 'all')}}">Phòng</a> -->
+                    <a>Phòng</a>
                     <ul class="submenu">
                         <!-- <li class="menu-item dropdown">
                             <a href="#">Số giường</a>
@@ -91,9 +92,21 @@
                 <li class="menu-item active">
                     <a href="{{route('contact')}}">Liên hệ</a>
                 </li>
+                
                 <li class="menu-item menu-btn">
                     <a href="{{route('booking-form-fe')}}" class="btn">
                         <i class="fa fa-calendar"></i>Đặt phòng
+                    </a>
+                </li>
+                <li class="menu-item menu-btn" style="margin-left:15px;">
+                    <a href="#" class="btn">
+                        Đăng nhập
+                    </a>
+                </li>
+
+                <li class="menu-item menu-btn" style="margin-left:15px;">
+                    <a href="#" class="btn">
+                        Đăng ký
                     </a>
                 </li>
             </ul>
