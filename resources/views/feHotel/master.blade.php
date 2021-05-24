@@ -9,10 +9,8 @@
 <body>
     <div class="loader loader3">
         <div class="loader-inner">
-            <div class="spin">
                 <span></span>
                 <img src="{{asset('feHotel/img/SUNLINE.png')}}" alt="SUNLINE">
-                <P>SUNLINE</P>
             </div>
         </div>
     </div>
@@ -106,7 +104,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
 
                     <iframe src="https://www.nhaccuatui.com/lh/normal/lpopuB4Y0Ou4" width="685" height="300px" frameborder="0" allowfullscreen allow="autoplay"></iframe>
@@ -121,10 +119,10 @@
                         </p>
                     </div> -->
                 </div>
-                
+
             </div>
 
-            
+
 
             <div class="subfooter">
                 <div class="container">

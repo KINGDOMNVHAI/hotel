@@ -38,13 +38,15 @@ class RoomService extends ServiceProvider
     public function detailroom($idRoom)
     {
         $query = DB::table('phong')
+            ->join('loaiphong', 'phong.urlloaiphong', '=', 'loaiphong.urlloaiphong')
             ->select(
-                'maphong', 'tenphong'
-                ,'kichthuoc','mota','noidung', 'giaphong'
-                ,'urlloaigiuong','phongnoibat','thumbnailphong'
+                'phong.maphong', 'phong.tenphong'
+                ,'phong.kichthuoc','phong.mota','phong.noidung'
+                ,'phong.urlloaiphong','phong.phongnoibat','phong.thumbnailphong'
+                ,'loaiphong.gialoaiphong'
             )
-            ->where('enablephong', '=', 1)
-            ->where('maphong', '=', $idRoom)
+            ->where('phong.enablephong', '=', 1)
+            ->where('phong.maphong', '=', $idRoom)
             ->first();
 
         return $query;
@@ -59,17 +61,25 @@ class RoomService extends ServiceProvider
         // $giuongtang = GIUONG_TANG;
 
         $query = DB::table('phong')
+            ->join('loaiphong', 'phong.urlloaiphong', '=', 'loaiphong.urlloaiphong')
+            ->select(
+                'phong.maphong',
+                'phong.urlloaiphong as urlloaiphong',
+                'phong.gacxep as gacxep',
+                'phong.tenphong as tenphong',
+                'phong.mota',
+                'loaiphong.tenloaiphong as tenloaiphong',
+                'loaiphong.gialoaiphong as gialoaiphong'
+            )
             ->where('enablephong', '=', 1);
 
         if ($urlListRoom = 'phong-co-gac') {
-            $query = $query->where('gacxep', '=', true);
+            $query = $query->where('phong.gacxep', '=', true);
         } else if ($urlListRoom = 'phong-khong-co-gac') {
-            $query = $query->where('gacxep', '=', false);
-        } else {
-            $query = $query;
+            $query = $query->where('phong.gacxep', '=', false);
         }
 
-        $query = $query->where('tenphong', 'like', "%{$keyword}%")
+        $query = $query->where('phong.tenphong', 'like', "%{$keyword}%")
             ->paginate($limit);
 
         return $query;
@@ -93,7 +103,6 @@ class RoomService extends ServiceProvider
         $query = phong::insert([
             'tenphong'  => $request->name,
             'kichthuoc' => $request->size,
-            'giaphong'  => $request->price,
             'mota'      => $request->present,
             'noidung'   => $request->content,
             // 'date_post' => date("Y-m-d"),

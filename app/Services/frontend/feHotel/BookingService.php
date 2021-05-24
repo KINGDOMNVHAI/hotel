@@ -46,14 +46,14 @@ class BookingService extends ServiceProvider
         $total = $priceroom * $numbernight;
 
         $query = booking::create([
-            'fullname'  => $request->input('fullname'),
-            'email'     => $request->input('email'),
-            'phone'     => $request->input('phone'),
-            'room'      => $nameroom,
-            'giaphong'  => $total,
-            'fromdate'  => date("Y-m-d", strtotime($fromdate)),
-            'todate'    => date("Y-m-d", strtotime($todate)),
-            'night'     => $request->input('numbernight'),
+            'fullname'      => $request->input('fullname'),
+            'email'         => $request->input('email'),
+            'phone'         => $request->input('phone'),
+            'room'          => $nameroom,
+            'gialoaiphong'  => $total,
+            'fromdate'      => date("Y-m-d", strtotime($fromdate)),
+            'todate'        => date("Y-m-d", strtotime($todate)),
+            'night'         => $request->input('numbernight'),
         ]);
 
         return $query;

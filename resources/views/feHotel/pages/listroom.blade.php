@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="room-price">
-                        <span class="price">{{$room->giaphong}} VND / night</span>
+                        <span class="price">{{$room->gialoaiphong}} VND / night</span>
                         <a href="{{route('room-fe', $room->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
                     </div>
                 </div>

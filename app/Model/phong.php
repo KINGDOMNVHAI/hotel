@@ -11,9 +11,8 @@ class phong extends Model
 
     protected $fillable=[
         'maphong'
-        ,'tenphong','kichthuoc','mota','noidung', 'giaphong'
-        // ,'thoigian'
+        ,'tenphong','kichthuoc','mota','noidung'
         ,'loaigiuong','gacxep'
-        ,'phongnoibat','thumbnailphong'
+        ,'phongnoibat','thumbnailphong','maloaiphong'
     ];
 }

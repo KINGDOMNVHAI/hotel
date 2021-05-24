@@ -18,7 +18,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'gacxep'            => true,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
@@ -30,7 +30,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -41,7 +41,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -52,7 +52,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -63,7 +63,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
@@ -74,7 +74,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -84,7 +84,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -94,7 +94,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -103,7 +103,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -112,7 +112,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -121,7 +121,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '30m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -131,7 +131,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '40m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -140,7 +140,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -149,7 +149,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -158,7 +158,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -167,7 +167,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -176,7 +176,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -185,7 +185,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -194,7 +194,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -203,7 +203,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -212,7 +212,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '30m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -222,7 +222,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '40m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -231,7 +231,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -240,7 +240,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -249,7 +249,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -258,7 +258,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DON,
+            'urlloaiphong'      => PHONG_DON,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -267,7 +267,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -276,7 +276,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -285,7 +285,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -294,7 +294,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -305,7 +305,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '30m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -315,7 +315,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '40m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -324,7 +324,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -333,7 +333,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -342,7 +342,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -351,7 +351,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -360,7 +360,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -369,7 +369,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -378,7 +378,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -387,7 +387,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -396,7 +396,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '30m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -406,7 +406,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '40m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -415,7 +415,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'      => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -424,7 +424,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => PHONG_DOI,
+            'urlloaiphong'       => PHONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -433,7 +433,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -442,7 +442,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -451,7 +451,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -460,7 +460,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -469,7 +469,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -478,7 +478,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -487,7 +487,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '30m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -497,7 +497,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '40m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'       => HAI_GIUONG_DOI,
+            'urlloaiphong'       => HAI_GIUONG_DOI,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -506,7 +506,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -515,7 +515,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -524,7 +524,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -533,7 +533,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -542,7 +542,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -551,7 +551,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -560,7 +560,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -569,7 +569,7 @@ class PhongSeeder extends Seeder
             'kichthuoc'         => '60m2',
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
-            'urlloaigiuong'     => HAI_GIUONG_DON,
+            'urlloaiphong'     => HAI_GIUONG_DON,
             'thumbnailphong'    => 'double.jpg',
         ]);
     }

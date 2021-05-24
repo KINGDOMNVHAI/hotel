@@ -4,8 +4,8 @@
 <div class="slider">
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
-            <div class="container1" >
-                <iframe  width="850" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="container">
+            <center><iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
             </div>
         </div>
     </section>
@@ -310,7 +310,7 @@
 
             @foreach($listroom as $room)
 
-            @if($room->urlloaigiuong == 'phong-don')
+            @if($room->urlloaiphong == 'phong-don')
 
             <div class="col-md-4">
                 <div class="room-grid-item">
@@ -334,7 +334,7 @@
                 </div>
             </div>
 
-            @elseif($room->urlloaigiuong == 'phong-doi')
+            @elseif($room->urlloaiphong == 'phong-doi')
 
             <div class="col-md-4">
                 <div class="room-grid-item">

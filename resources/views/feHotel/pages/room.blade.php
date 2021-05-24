@@ -8,7 +8,7 @@
         <div class="inner">
             <h1>{{$detailroom->tenphong}}</h1>
             <div class="room-details-price">
-                {{$detailroom->giaphong}} VND / NIGHT
+                {{$detailroom->gialoaiphong}} VND / NIGHT
             </div>
             <ol class="breadcrumb">
                 <li>
