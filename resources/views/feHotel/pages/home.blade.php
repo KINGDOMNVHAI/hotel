@@ -9,7 +9,7 @@
             </div>
         </div>
     </section>
-        
+
     <div class="horizontal-booking-form">
         <div class="container">
             <div class="inner box-shadow-007" style="margin:auto">
@@ -116,17 +116,39 @@
                     </from> -->
                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
                     action="{{route('search-room-fe')}}" method="GET">
-                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTAzLjgzOSwzOTUuMzc5bC0xOTUuNy0zMzguOTYyQzI5Ny4yNTcsMzcuNTY5LDI3Ny43NjYsMjYuMzE1LDI1NiwyNi4zMTVjLTIxLjc2NSwwLTQxLjI1NywxMS4yNTQtNTIuMTM5LDMwLjEwMg0KCQkJTDguMTYyLDM5NS4zNzhjLTEwLjg4MywxOC44NS0xMC44ODMsNDEuMzU2LDAsNjAuMjA1YzEwLjg4MywxOC44NDksMzAuMzczLDMwLjEwMiw1Mi4xMzksMzAuMTAyaDM5MS4zOTgNCgkJCWMyMS43NjUsMCw0MS4yNTYtMTEuMjU0LDUyLjE0LTMwLjEwMUM1MTQuNzIyLDQzNi43MzQsNTE0LjcyMiw0MTQuMjI4LDUwMy44MzksMzk1LjM3OXogTTQ3Ny44NjEsNDQwLjU4Ng0KCQkJYy01LjQ2MSw5LjQ1OC0xNS4yNDEsMTUuMTA0LTI2LjE2MiwxNS4xMDRINjAuMzAxYy0xMC45MjIsMC0yMC43MDItNS42NDYtMjYuMTYyLTE1LjEwNGMtNS40Ni05LjQ1OC01LjQ2LTIwLjc1LDAtMzAuMjA4DQoJCQlMMjI5Ljg0LDcxLjQxNmM1LjQ2LTkuNDU4LDE1LjI0LTE1LjEwNCwyNi4xNjEtMTUuMTA0YzEwLjkyLDAsMjAuNzAxLDUuNjQ2LDI2LjE2MSwxNS4xMDRsMTk1LjcsMzM4Ljk2Mg0KCQkJQzQ4My4zMjEsNDE5LjgzNiw0ODMuMzIxLDQzMS4xMjgsNDc3Ljg2MSw0NDAuNTg2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyNDEuMDAxIiB5PSIxNzYuMDEiIHdpZHRoPSIyOS45OTYiIGhlaWdodD0iMTQ5Ljk4MiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjU2LDM1NS45OWMtMTEuMDI3LDAtMTkuOTk4LDguOTcxLTE5Ljk5OCwxOS45OThzOC45NzEsMTkuOTk4LDE5Ljk5OCwxOS45OThjMTEuMDI2LDAsMTkuOTk4LTguOTcxLDE5Ljk5OC0xOS45OTgNCgkJCVMyNjcuMDI3LDM1NS45OSwyNTYsMzU1Ljk5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width="20px" height="20px"/>
-                        Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
+                    <i class="fa fa-exclamation-triangle"></i> Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
                     @csrf
-                    <div class="input-group">
-                    <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Tên phòng..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                    <input type="text" name="loaiphong" class="form-control bg-light border-0 small" placeholder="Loại phòng..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                            
-                        <input type="submit" class="btn btn-primary" value="search">
-                        
+                    <div class="input-group row">
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Name
+                                    <a href="#" title="Your Name" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type your first name and last name">
+                                    <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </label>
+                                <input class="form-control" name="keyword" type="text" data-trigger="hover" placeholder="Write Your Name">
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                            <label>Room Type
+                                <a href="#" title="Room Type" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select room type">
+                                <i class="fa fa-info-circle"></i>
+                                </a>
+                            </label>
+                                <select class="form-control" name="loaiphong" title="Select Room Type" data-header="Room Type">
+                                    <option value="Single">Single Room</option>
+                                    <option value="Double">Double Room</option>
+                                    <option value="Deluxe">Deluxe Room</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="submit" class="btn btn-primary" value="search">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -388,7 +410,7 @@
         <div class="section-title">
             <h4>SUNLINE. GALLERY</h4>
             <p class="section-subtitle">Bộ sưu tập ảnh thư viện về phòng trọ SUNLINE</p>
-            
+
         </div>
         <div class="gallery-owl owl-carousel image-gallery">
 
@@ -506,7 +528,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="col-md-4">
                 <div class="news-grid-item">
@@ -665,7 +687,7 @@
 
             <div class="item">
                 <div class="testimonial-item">
-                    <div class="author-img"> 
+                    <div class="author-img">
                         <img alt="Image" class="img-fluid" src="{{asset('feHotel/images/users/anh1.jpg')}}">
                     </div>
                     <div class="author">

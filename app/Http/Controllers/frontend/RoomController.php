@@ -53,8 +53,8 @@ class RoomController extends Controller
         //loaiphong lay tu home.blade.php cua name="keyword"
         //keyword tuongtu
         $viewRoom = $room->listRoomHavePaginate(20, $request->loaiphong, $request->keyword);
-        
-        return view('feHotel.pages.search', [ // sau khi chay viewRoom xong thi tra ve return
+
+        return view('feHotel.pages.listroom', [ // sau khi chay viewRoom xong thi tra ve return
             'title'      => TITLE_FRONTEND_INDEX, // ten tab tren trinh duyet
             'listroom' => $viewRoom,
         ]);
