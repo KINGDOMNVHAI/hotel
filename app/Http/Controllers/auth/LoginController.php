@@ -29,14 +29,23 @@ class LoginController extends Controller
     {
         $username = $request->input('username');
         $password = $request->input('password');
+        $checklogin = new LoginService;
 
         if (Auth::attempt(['username' => $username, 'password' => $password]))
         {
-            return redirect('list-room');
+            $id = Auth::id();
+            $checkuser = $checklogin->checkUserRole($id);
+            if ($checkuser->tenphanquyen == ROLE_ADMIN)
+            {
+                return redirect('list-room');
+            }
+            else
+            {
+                return redirect('booking-form');
+            }
         }
         else
         {
-            $checklogin = new LoginService;
             $checkuser = $checklogin->checkUser($username);
 
             if ($checkuser == '')

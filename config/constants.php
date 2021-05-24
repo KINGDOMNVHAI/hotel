@@ -33,11 +33,11 @@ define('USERNAME_IS_NOT_EXIST', 'Tên đăng nhập sai');
 
 // ========== ADMIN ==========
 
-// === User's Type ===
+// === User's Role ===
 
-define('TYPE_MEMBER', 'member');
-define('TYPE_EDITOR', 'editor');
-define('TYPE_ADMIN', 'admin');
+define('ROLE_MEMBER', 'user');
+define('ROLE_EDITOR', 'editor');
+define('ROLE_ADMIN', 'admin');
 
 // === Paginate ===
 

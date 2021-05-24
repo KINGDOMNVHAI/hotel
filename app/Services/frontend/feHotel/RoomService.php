@@ -68,6 +68,8 @@ class RoomService extends ServiceProvider
                 'phong.gacxep as gacxep',
                 'phong.tenphong as tenphong',
                 'phong.mota',
+                'phong.thumbnailphong',
+                'phong.noidung',
                 'loaiphong.tenloaiphong as tenloaiphong',
                 'loaiphong.gialoaiphong as gialoaiphong'
             )
