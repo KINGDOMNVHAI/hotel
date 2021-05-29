@@ -24,9 +24,15 @@ class LoginService extends ServiceProvider
      *
      * @return void
      */
-    public function checkUser($username)
+    public function checkUserByUsername($username)
     {
         $query = User::where('username', $username)->first();
+        return $query;
+    }
+
+    public function checkUserByUserId($id)
+    {
+        $query = User::where('id', $id)->first();
         return $query;
     }
 

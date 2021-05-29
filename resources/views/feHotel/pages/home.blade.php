@@ -365,46 +365,6 @@
     </div>
 </section>
 
-<section class="restaurant image-bg parallax gradient-overlay op5" data-src="images/restaurant.jpg" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
-    <div class="container">
-        <div class="section-title">
-            <h4>SUNLINE. Dịch vụ</h4>
-            <p class="section-subtitle">Trải nghiệm dịch vụ dành cho khách hàng</p>
-            <a href="restaurant.html" class="view-all uppercase">Tất cả dịch vụ</a>
-        </div>
-        <div class="row">
-            <div class="col-lg-7 col-12">
-                <div data-slider-id="services" class="services-owl owl-carousel">
-                    @foreach($listserviceslider as $service)
-                    <figure class="gradient-overlay">
-                        <img src="{{asset('feHotel/images/services/' . $service->hinhanh)}}" class="img-fluid" alt="Image">
-                        <figcaption>
-                            <h4>{{$service->tendichvu}}</h4>
-                        </figcaption>
-                    </figure>
-                    @endforeach
-                </div>
-            </div>
-            <div class="col-lg-5 col-12">
-                <div class="owl-thumbs" data-slider-id="services">
-                    @foreach($listserviceslider as $service)
-                    <div class="owl-thumb-item">
-                        <span class="media-left">
-                            {!! $service->trangchu !!}
-                        </span>
-                        <div class="media-body">
-                            <h5>{{$service->tendichvu}}</h5>
-                            <p>{{$service->motadichvu}}</p>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="gallery">
     <div class="container">
         <div class="section-title">

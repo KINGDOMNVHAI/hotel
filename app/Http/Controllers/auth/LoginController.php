@@ -5,6 +5,7 @@ namespace App\Http\Controllers\auth;
 use App\Http\Controllers\Controller;
 use App\Services\auth\LoginService;
 use App\Services\all\UserService;
+use App\Services\frontend\feHotel\RoomService;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -41,12 +42,12 @@ class LoginController extends Controller
             }
             else
             {
-                return redirect('booking-form');
+                return redirect()->route('booking-form-fe');
             }
         }
         else
         {
-            $checkuser = $checklogin->checkUser($username);
+            $checkuser = $checklogin->checkUserByUsername($username);
 
             if ($checkuser == '')
             {

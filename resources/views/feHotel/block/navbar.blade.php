@@ -34,46 +34,19 @@
 
         <nav id="main-menu" class="main-menu">
             <ul class="menu">
-                <li class="menu-item active">
-                    <a href="{{route('home')}}">Trang chủ</a>
-                </li>
                 <li class="menu-item dropdown active">
-                    <!-- <a href="{{route('list-room-fe', 'all')}}">Phòng</a> -->
                     <a>Phòng</a>
                     <ul class="submenu">
-                        <li class="menu-item dropdown">
-                            <a href="#">Số giường</a>
-                            <ul class="submenu">
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', 'giuong-don')}}">Phòng đơn</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', 'giuong-doi')}}">Phòng đôi</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', '2-giuong-don')}}">2 giường đơn</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', '2-giuong-doi')}}">2 giường đôi</a>
-                                </li>
-                            </ul>
+                        <li class="menu-item">
+                            <a href="{{route('list-room-fe', 'phong-co-gac')}}">Phòng có gác</a>
                         </li>
-                        <li class="menu-item dropdown">
-                            <a href="#">Gác xếp</a>
-                            <ul class="submenu">
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', 'phong-co-gac')}}">Phòng có gác</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="{{route('list-room-fe', 'phong-khong-co-gac')}}">Phòng không có gác</a>
-                                </li>
-                            </ul>
+                        <li class="menu-item">
+                            <a href="{{route('list-room-fe', 'phong-khong-co-gac')}}">Phòng không có gác</a>
                         </li>
                     </ul>
                 </li>
-
                 <!-- <li class="menu-item active">
-                    <a href="#">Dịch vụ</a>
+                    <a href="{{route('list-services-fe')}}">Dịch vụ</a>
                 </li> -->
 
                 <li class="menu-item active">

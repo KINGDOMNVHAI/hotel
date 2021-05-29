@@ -45,16 +45,19 @@
                                 <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" value="0833999693">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label>Ngày đến / ngày về
                                     <a href="#" title="Check-In / Check-Out" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select check-in and check-out date <br>*Check In from 11:00am">
                                         <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <input type="text" class="datepicker form-control" name="bookingdate" readonly="readonly">
+                                <input type="hidden" id="bookingdate" value="{{session('bookingdate')}}">
+                                <input type="hidden" id="fromdate" value="{{session('fromdate')}}">
+                                <input type="hidden" id="todate" value="{{session('todate')}}">
+                                <input type="text" class="datepicker form-control" id="bdate" name="bookingdate" readonly="readonly" value="{{session('bookingdate')}}">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Loại phòng</label>
@@ -83,76 +86,6 @@
                                 </select>
                             </div>
                         </div>
-                        <!-- <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Số lượng phòng</label>
-                                <select name="numbernight" class="form-control">
-
-                                    @if(session('numbernight') == 1)
-                                    <option value="1" selected>1 night</option>
-                                    <option value="2">2 nights</option>
-                                    <option value="3">3 nights</option>
-                                    <option value="4">4 nights</option>
-                                    @elseif(session('numbernight') == 2)
-                                    <option value="1">1 night</option>
-                                    <option value="2" selected>2 nights</option>
-                                    <option value="3">3 nights</option>
-                                    <option value="4">4 nights</option>
-                                    @elseif(session('numbernight') == 3)
-                                    <option value="1">1 night</option>
-                                    <option value="2">2 nights</option>
-                                    <option value="3" selected>3 nights</option>
-                                    <option value="4">4 nights</option>
-                                    @elseif(session('numbernight') == 4)
-                                    <option value="1">1 night</option>
-                                    <option value="2">2 nights</option>
-                                    <option value="3">3 nights</option>
-                                    <option value="4" selected>4 nights</option>
-                                    @endif
-
-                                </select>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Guests
-                                    <a href="#" title="Guests" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select Adults / Children">
-                                        <i class="fa fa-info-circle"></i>
-                                    </a>
-                                </label>
-                                <div class="panel-dropdown">
-                                    <div class="form-control guestspicker">Guests
-                                        <span class="gueststotal"></span>
-                                    </div>
-                                    <div class="panel-dropdown-content">
-                                        <div class="guests-buttons">
-                                            <label>Adults
-                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="18+ years" data-original-title="Adults">
-                                                    <i class="fa fa-info-circle"></i>
-                                                </a>
-                                            </label>
-                                            <div class="guests-button">
-                                                <div class="minus"></div>
-                                                <input type="text" name="booking-adults" class="booking-guests" value="0">
-                                                <div class="plus"></div>
-                                            </div>
-                                        </div>
-                                        <div class="guests-buttons">
-                                            <label>Children
-                                                <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Under 18 years" data-original-title="Children">
-                                                    <i class="fa fa-info-circle"></i>
-                                                </a>
-                                            </label>
-                                            <div class="guests-button">
-                                                <div class="minus"></div>
-                                                <input type="text" name="booking-children" class="booking-guests" value="0">
-                                                <div class="plus"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Your Comments</label>
@@ -160,6 +93,8 @@
                             </div>
                         </div>
                         <div class="col-md-12">
+                            <p><b>Ngày đến:</b> {{session('fromdate')}}</p>
+                            <p><b>Ngày về:</b> {{session('todate')}}</p>
                             <p><b>Tổng tiền:</b> {{session('total')}}</p>
                             <p><b>
                             <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTAzLjgzOSwzOTUuMzc5bC0xOTUuNy0zMzguOTYyQzI5Ny4yNTcsMzcuNTY5LDI3Ny43NjYsMjYuMzE1LDI1NiwyNi4zMTVjLTIxLjc2NSwwLTQxLjI1NywxMS4yNTQtNTIuMTM5LDMwLjEwMg0KCQkJTDguMTYyLDM5NS4zNzhjLTEwLjg4MywxOC44NS0xMC44ODMsNDEuMzU2LDAsNjAuMjA1YzEwLjg4MywxOC44NDksMzAuMzczLDMwLjEwMiw1Mi4xMzksMzAuMTAyaDM5MS4zOTgNCgkJCWMyMS43NjUsMCw0MS4yNTYtMTEuMjU0LDUyLjE0LTMwLjEwMUM1MTQuNzIyLDQzNi43MzQsNTE0LjcyMiw0MTQuMjI4LDUwMy44MzksMzk1LjM3OXogTTQ3Ny44NjEsNDQwLjU4Ng0KCQkJYy01LjQ2MSw5LjQ1OC0xNS4yNDEsMTUuMTA0LTI2LjE2MiwxNS4xMDRINjAuMzAxYy0xMC45MjIsMC0yMC43MDItNS42NDYtMjYuMTYyLTE1LjEwNGMtNS40Ni05LjQ1OC01LjQ2LTIwLjc1LDAtMzAuMjA4DQoJCQlMMjI5Ljg0LDcxLjQxNmM1LjQ2LTkuNDU4LDE1LjI0LTE1LjEwNCwyNi4xNjEtMTUuMTA0YzEwLjkyLDAsMjAuNzAxLDUuNjQ2LDI2LjE2MSwxNS4xMDRsMTk1LjcsMzM4Ljk2Mg0KCQkJQzQ4My4zMjEsNDE5LjgzNiw0ODMuMzIxLDQzMS4xMjgsNDc3Ljg2MSw0NDAuNTg2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyNDEuMDAxIiB5PSIxNzYuMDEiIHdpZHRoPSIyOS45OTYiIGhlaWdodD0iMTQ5Ljk4MiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjU2LDM1NS45OWMtMTEuMDI3LDAtMTkuOTk4LDguOTcxLTE5Ljk5OCwxOS45OThzOC45NzEsMTkuOTk4LDE5Ljk5OCwxOS45OThjMTEuMDI2LDAsMTkuOTk4LTguOTcxLDE5Ljk5OC0xOS45OTgNCgkJCVMyNjcuMDI3LDM1NS45OSwyNTYsMzU1Ljk5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width="20px" height="20px"/>
@@ -236,5 +171,25 @@
         </div>
     </div>
 </main>
+
+<script>
+var date = document.getElementById("bookingdate").value;
+var from = document.getElementById("fromdate").value;
+var to = document.getElementById("todate").value;
+console.log(date);
+console.log(from);
+console.log(to);
+
+function setDateRangePicker() {
+    ('.datepicker').daterangepicker({
+      locale: {
+        format: 'DD-MM-YYYY',
+      },
+      "startDate": from,
+      "endDate": to,
+    }, function(start, end, label) {});
+}
+setDateRangePicker();
+</script>
 
 @endsection

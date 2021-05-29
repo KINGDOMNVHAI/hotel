@@ -18,7 +18,11 @@ Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name(
 
 Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room-fe');
 
+Route::get('/list-services','frontend\ServiceController@listservice')->name('list-services-fe');
+
 Route::get('/service/{idService}','frontend\ServiceController@service')->name('service-fe');
+
+Route::post('/booking-room','frontend\RoomController@bookRoom')->name('booking-room-fe');
 
 Route::get('/booking-form','frontend\BookingController@index')->name('booking-form-fe');
 

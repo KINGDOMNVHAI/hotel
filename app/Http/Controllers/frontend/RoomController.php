@@ -59,4 +59,22 @@ class RoomController extends Controller
             'listroom' => $viewRoom,
         ]);
     }
+
+    public function bookRoom(Request $request)
+    {
+        // sau khi đăng nhập, dùng maphong này để tìm ra phòng
+        $request->session()->put('maphong', $request->maphong);
+        if (Auth::check())
+        {
+            var_dump('auth');
+            $detailroom     = new RoomService;
+            $viewDetailRoom = $detailroom->detailroom($request->maphong);
+            return redirect()->route('booking-form-fe');
+        }
+        else
+        {
+            $request->session()->put('messageWarning', "Bạn cần đăng nhập trước khi tạo phòng");
+            return redirect()->back();
+        }
+    }
 }

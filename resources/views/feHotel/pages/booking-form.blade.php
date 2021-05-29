@@ -18,32 +18,73 @@
 <main>
     <div class="container">
         <div class="row">
+            @if($viewDetailRoom != null)
             <div class="col-lg-9 col-12">
                 <div class="section-title">
                     <h4>ĐẶT PHÒNG</h4>
                     <p class="section-subtitle">Hãy đặt phòng ngay hôm nay!</p>
                 </div>
+                <p class="mb30">Phòng bạn đã chọn</p>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <figure class="gradient-overlay-hover link-icon">
+                            <a href="{{route('room-fe', $viewDetailRoom->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room-info">
+                            <h3 class="room-title">
+                                <a href="{{route('room-fe', $viewDetailRoom->maphong)}}">{{$viewDetailRoom->tenphong}}</a>
+                            </h3>
+                            <p>{{$viewDetailRoom->mota}}</p>
+                            <div class="room-services">
+                                <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
+                                <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
+                                <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
+                                <span>Beds: 1 King</span>
+                                <span>Max Guests: 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="room-price">
+                            <span class="price">{{$viewDetailRoom->gialoaiphong}} VND / night</span>
+                            <a href="{{route('room-fe', $viewDetailRoom->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                </div>
                 <p class="mb30">Hãy điền đầy đủ thông tin của bạn</p>
-
                 <form action="{{route('booking-check-fe')}}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tên người đặt</label>
-                                <input type="text" class="form-control" name="fullname" placeholder="Your Name" value="Thư">
+                                @if($user != null)
+                                <input type="text" class="form-control" name="fullname" placeholder="Tên của bạn" value="{{$user->username}}">
+                                @else
+                                <input type="text" class="form-control" name="fullname" placeholder="Tên của bạn" value="">
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="email" placeholder="Your Email Address" value="thu@gmail.com">
+                                @if($user != null)
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="{{$user->email}}">
+                                @else
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="">
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Số điện thoại</label>
-                                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" value="0833999693">
+                                @if($user != null)
+                                <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" value="{{$user->phone}}">
+                                @else
+                                <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" value="">
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -56,7 +97,7 @@
                                 <input type="text" class="datepicker form-control" name="bookingdate" readonly="readonly">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label>Loại phòng</label>
                                 <select name="nameroom" class="form-control" title="Select Room Type" data-header="Select Room Type">
@@ -67,7 +108,8 @@
                                 </select>
                             </div>
                         </div>
-                        <!-- <div class="col-md-6">
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label>Số lượng phòng</label>
                                 <select name="numbernight" class="form-control">
@@ -130,6 +172,18 @@
                     </div>
                 </form>
             </div>
+            @else
+            <div class="col-lg-9 col-12">
+                <h4>Bạn chưa chọn phòng.</h4><br>
+                <p><b>Hướng dẫn</b></p>
+                <ul>
+                    <li>Vui lòng tạo tài khoản
+                    <li>Chọn phòng bạn muốn và bấm nút đặt phòng
+                    <li>Bổ sung thêm thông tin cá nhân để đặt phòng và nhận email
+                </ul>
+                <p><b>Xin cảm ơn</b></p>
+            </div>
+            @endif
 
             <!-- <div class="col-lg-3 col-12">
                 <div class="sidebar">
@@ -193,6 +247,6 @@
             </div> -->
         </div>
     </div>
-</main> 
+</main>
 
 @endsection

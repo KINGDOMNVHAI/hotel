@@ -111,13 +111,21 @@
                         <div class="item"><img class="img-fluid" src="{{asset('upload/rooms/single/single8.jpg')}}" alt="Image"></div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-4 offset-sm-8">
+                        <form id="booking-form" action="{{route('booking-room-fe')}}" method="POST">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="maphong" value="{{$detailroom->maphong}}">
+                            <input type="submit" class="btn mt50 float-right" value="ĐẶT PHÒNG">
+                        </form>
+                    </div>
+                </div>
                 <p>
                     {{$detailroom->noidung}}
                 </p>
                 <div class="section-title sm">
                     <h4>Dịch vụ phòng</h4>
                     <p class="section-subtitle">Phòng có gác bao gồm:</p>
-
                 </div>
                 <div class="room-services-list">
                     <div class="row">
@@ -171,12 +179,6 @@
                     <u>commodo consequat.</u>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
                 </p>
-                <p>Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                    ex ea
-                    <u>commodo consequat.</u>
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-                </p>  -->
-
                 <!-- <div id="room-reviews" class="room-reviews">
                     <div class="section-title sm">
                         <h4>ROOM REVIEWS</h4>
@@ -385,11 +387,6 @@
                                     <a href="room.html">
                                         <img src="images/rooms/double/double.jpg" class="img-fluid" alt="Image">
                                     </a>
-                                    <!-- <div class="room-services">
-                                        <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                                        <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                                    </div> -->
                                     <div class="room-price">€129 / night</div>
                                 </figure>
                                 <div class="room-info">
@@ -406,12 +403,6 @@
                                     <a href="room.html">
                                         <img src="images/rooms/deluxe/deluxe.jpg" class="img-fluid" alt="Image">
                                     </a>
-                                    <!-- <div class="room-services">
-                                        <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="2 Bathrooms" data-original-title="Bathroom"></i>
-                                        <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                                    </div> -->
                                     <div class="room-price">€189 / night</div>
                                 </figure>
                                 <div class="room-info">
@@ -427,81 +418,22 @@
 
             <div class="col-lg-3 col-12">
                 <div class="sidebar">
-
                     <aside class="widget noborder">
                         <div class="vertical-booking-form">
                             <div id="booking-notification" class="notification"></div>
-                            <h3 class="form-title">BOOK YOUR ROOM</h3>
+                            <h3 class="form-title">ĐẶT PHÒNG NGAY!</h3>
                             <div class="inner">
-                                <form id="booking-form">
-
-                                    <div class="form-group">
-                                        <input class="form-control" name="booking-email" type="email" placeholder="Your Email Address">
+                                @if (session('messageWarning'))
+                                    <div class="alert alert-success">
+                                        {{ session('messageWarning') }}
                                     </div>
-
-                                    <div class="form-group">
-                                        <select class="form-control" name="booking-roomtype" title="Select Room Type" data-header="Room Type" disabled="disabled">
-                                            <option value="Single" selected="selected">Single Room</option>
-                                            <option value="Double">Double Room</option>
-                                            <option value="Deluxe">Deluxe Room</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="form_date">
-                                            <input type="text" class="datepicker form-control" name="booking-checkin" placeholder="Slect Arrival & Departure Date" readonly="readonly">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="panel-dropdown">
-                                            <div class="form-control guestspicker">Guests
-                                                <span class="gueststotal"></span>
-                                            </div>
-                                            <div class="panel-dropdown-content">
-                                                <div class="guests-buttons">
-                                                    <label>Adults
-                                                        <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="18+ years" data-original-title="Adults">
-                                                            <i class="fa fa-info-circle"></i>
-                                                        </a>
-                                                    </label>
-                                                    <div class="guests-button">
-                                                        <div class="minus"></div>
-                                                        <input type="text" name="booking-adults" class="booking-guests" value="0">
-                                                        <div class="plus"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="guests-buttons">
-                                                    <label>Cildren
-                                                        <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Under 18 years" data-original-title="Children">
-                                                            <i class="fa fa-info-circle"></i>
-                                                        </a>
-                                                    </label>
-                                                    <div class="guests-button">
-                                                        <div class="minus"></div>
-                                                        <input type="text" name="booking-children" class="booking-guests" value="0">
-                                                        <div class="plus"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark btn-fw mt20 mb20">BOOK A ROOM</button>
+                                @endif
+                                <form action="{{route('booking-room-fe')}}" method="POST">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="maphong" value="{{$detailroom->maphong}}">
+                                    <input type="submit" class="btn mt50 float-right" value="ĐẶT PHÒNG">
                                 </form>
                             </div>
-                        </div>
-                    </aside>
-
-                    <aside class="widget widget-help">
-                        <h4 class="widget-title">NEED HELP?</h4>
-                        <div class="phone">
-                            <a href="tel:18475555555">
-                                +1 888 123 4567
-                            </a>
-                        </div>
-                        <div class="email">
-                            <a href="https://preview.eagle-themes.com/cdn-cgi/l/email-protection#21424e4f5540425561494e55444d49484c4053400f424e4c"><span class="__cf_email__" data-cfemail="5f3c30312b3e3c2b1f37302b3a333736323e2d3e713c3032">[email&#160;protected]</span></a>
                         </div>
                     </aside>
 

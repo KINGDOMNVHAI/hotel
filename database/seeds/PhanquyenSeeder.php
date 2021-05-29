@@ -2,7 +2,6 @@
 
 use App\Model\phanquyen;
 use Illuminate\Database\Seeder;
-
 class PhanquyenSeeder extends Seeder
 {
     /**

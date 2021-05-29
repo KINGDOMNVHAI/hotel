@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder
             'username'  => 'nvhai',
             'password'  => bcrypt('123'),
             'email'     => 'nvhai@gmail.com',
+            'phone'     => '0833999693',
             'role'      => 1,
         ]);
 
@@ -25,6 +26,7 @@ class UsersTableSeeder extends Seeder
             'username'  => 'thu',
             'password'  => bcrypt('123'),
             'email'     => 'thu@gmail.com',
+            'phone'     => '01233999693',
             'role'      => 2,
         ]);
     }

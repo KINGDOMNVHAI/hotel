@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Services\auth\LoginService;
 use App\Services\frontend\feHotel\BookingService;
+use App\Services\frontend\feHotel\RoomService;
 use Illuminate\Support\Facades\Session;
 use DB;
 use Illuminate\Http\Request;
@@ -21,14 +23,28 @@ class BookingController extends Controller
 
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        //  Rooms
-        // $listroom     = new RoomService;
-        // $viewListRoom = $listroom->listroom(3);
+        $viewDetailRoom = null;
+        $checkuser = null;
+        if ($request->session()->exists('maphong'))
+        {
+            $maphong = $request->session()->get('maphong');
+            $detailroom     = new RoomService;
+            $viewDetailRoom = $detailroom->detailroom($maphong);
+        }
+
+        if (Auth::check())
+        {
+            $id = Auth::id();
+            $checklogin = new LoginService;
+            $checkuser = $checklogin->checkUserByUserId($id);
+        }
 
         return view('feHotel.pages.booking-form', [
-            'title' => TITLE_FRONTEND_INDEX
+            'title' => TITLE_FRONTEND_INDEX,
+            'viewDetailRoom' => $viewDetailRoom,
+            'user' => $checkuser
         ]);
     }
 
@@ -41,46 +57,43 @@ class BookingController extends Controller
 
         $room     = new BookingService;
         $viewRoom = $room->getPrice($nameroom);
-        $priceroom = $viewRoom->gialoaiphong;
-
-        $numbernight = $request->input('numbernight');
+        $priceroom = $viewRoom['gialoaiphong'];
 
         $bookingdate = $request->input('bookingdate');
         $date = explode(" - ", $bookingdate);
         $fromdate = $date[0];
         $todate = $date[1];
+        $var1 = strtotime($fromdate);
+        $var2 = strtotime($todate);
+        // Use for loop to store dates into array
+        // 86400 sec = 24 hrs = 60*60*24 = 1 day
+        $numberofdate = [];
+        for ($currentDate = $var1;
+            $currentDate <= $var2;
+            $currentDate += (86400)) {
 
-        $total = $priceroom * $numbernight;
+            $store = date('Y-m-d', $currentDate);
+            $numberofdate[] = $store;
+        }
 
-        // $sessions = Session::put($booking, [[
-        //     'fullname' => $fullname,
-        //     'email' => $email,
-        //     'phone' => $phone,
-        //     'priceroom' => $priceroom,
-        //     'fromdate' => $fromdate,
-        //     'todate' => $todate,
-        // ]]);
-
+        $total = $priceroom * count($numberofdate);
         $request->session()->put('fullname', $fullname);
         $request->session()->put('email', $email);
         $request->session()->put('phone', $phone);
         $request->session()->put('nameroom', $nameroom);
         $request->session()->put('priceroom', $priceroom);
-        $request->session()->put('numbernight', $numbernight);
+        $request->session()->put('numberofdate', count($numberofdate));
+        $request->session()->put('fromdate', $fromdate);
+        $request->session()->put('todate', $todate);
+        $request->session()->put('bookingdate', $bookingdate);
         $request->session()->put('fromdate', $fromdate);
         $request->session()->put('todate', $todate);
 
-        // session(['danhsach' => $danhsach]);
-
         if ($request->session()->has('total')) {
-            var_dump('exist');
             $total = $total + $request->session()->get('total');
         }
 
         $request->session()->put('total', $total);
-
-        // var_dump($request->session()->get('total'));
-        // dd($request->session()->get('danhsach', $danhsach));
 
         return view('feHotel.pages.booking-check', [
             'title' => TITLE_FRONTEND_INDEX,
