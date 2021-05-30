@@ -44,6 +44,7 @@ class LoginService extends ServiceProvider
             'phanquyen.idphanquyen',
             'phanquyen.tenphanquyen',
             'users.id',
+            'users.name',
             'users.role'
         )
         ->where('users.id', '=', $id)

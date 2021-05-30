@@ -14,9 +14,16 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return view('auth.pages.login', [
-            'title' => TITLE_FRONTEND_INDEX,
-        ]);
+        if (Auth::check())
+        {
+            return redirect('list-room');
+        }
+        else
+        {
+            return view('auth.pages.login', [
+                'title' => TITLE_FRONTEND_INDEX,
+            ]);
+        }
     }
 
     public function register()
@@ -32,16 +39,21 @@ class LoginController extends Controller
         $password = $request->input('password');
         $checklogin = new LoginService;
 
+        // Nếu đăng nhập thành công
         if (Auth::attempt(['username' => $username, 'password' => $password]))
         {
             $id = Auth::id();
             $checkuser = $checklogin->checkUserRole($id);
             if ($checkuser->tenphanquyen == ROLE_ADMIN)
             {
+                // Role admin
                 return redirect('list-room');
             }
             else
             {
+                // Role user
+                // return redirect('list-room');
+                $request->session()->put('tennguoidung', $checkuser->name);
                 return redirect()->route('booking-form-fe');
             }
         }

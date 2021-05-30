@@ -19,7 +19,7 @@ class BookingController extends Controller
 {
     public function __construct()
     {
-
+        
     }
 
     public function index(Request $request)
@@ -33,17 +33,20 @@ class BookingController extends Controller
             $viewDetailRoom = $detailroom->detailroom($maphong);
         }
 
+        $tennguoidung = null;
         if (Auth::check())
         {
             $id = Auth::id();
             $checklogin = new LoginService;
             $checkuser = $checklogin->checkUserByUserId($id);
+            $tennguoidung = $checkuser->name;
         }
 
         return view('feHotel.pages.booking-form', [
             'title' => TITLE_FRONTEND_INDEX,
             'viewDetailRoom' => $viewDetailRoom,
-            'user' => $checkuser
+            'user' => $checkuser,
+            'tennguoidung' => $tennguoidung
         ]);
     }
 

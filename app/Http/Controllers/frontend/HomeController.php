@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Services\auth\LoginService;
 use App\Services\frontend\feHotel\RoomService;
 use App\Services\frontend\feHotel\ServicesService;
 use DB;
@@ -17,7 +18,7 @@ class HomeController extends Controller
 
     }
 
-    public function index()
+    public function index(Request $request)
     {
         //  Rooms
         $listroom     = new RoomService;
@@ -28,12 +29,22 @@ class HomeController extends Controller
         $viewListService = $listservice->listservice();
         $viewListServiceSlider = $listservice->listserviceslider();
 
+        $tennguoidung = "";
+        if (Auth::check())
+        {
+            $id = Auth::id();
+            $checklogin = new LoginService;
+            $checkuser = $checklogin->checkUserByUserId($id);
+            $request->session()->put('tennguoidung', $checkuser->name);
+        }
+
         return view('feHotel.pages.home', [
             'title'             => TITLE_FRONTEND_INDEX,
 
             'listroom'          => $viewListRoom,
             'listservice'       => $viewListService,
             'listserviceslider' => $viewListServiceSlider,
+            'tennguoidung' => $tennguoidung
         ]);
     }
 
