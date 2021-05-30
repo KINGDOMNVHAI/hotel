@@ -44,8 +44,17 @@
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('list-room')}}">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Profile</span>
+                </a>
+                <a class="nav-link" href="{{route('list-room')}}">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>List Room</span></a>
+                    <span>List Room</span>
+                </a>
+                <a class="nav-link" href="{{route('list-booking')}}">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>List Booking</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -114,7 +123,7 @@
                             </div>
                         </li>
 
-                        
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 

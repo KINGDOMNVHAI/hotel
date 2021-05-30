@@ -43,12 +43,11 @@ class RoomService extends ServiceProvider
                 'phong.maphong', 'phong.tenphong'
                 ,'phong.kichthuoc','phong.mota','phong.noidung'
                 ,'phong.urlloaiphong','phong.phongnoibat','phong.thumbnailphong'
-                ,'loaiphong.gialoaiphong'
+                ,'loaiphong.gialoaiphong', 'loaiphong.urlloaiphong'
             )
             ->where('phong.enablephong', '=', 1)
             ->where('phong.maphong', '=', $idRoom)
             ->first();
-
         return $query;
     }
 

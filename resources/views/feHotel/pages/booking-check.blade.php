@@ -57,7 +57,7 @@
                                 <input type="hidden" id="todate" value="{{session('todate')}}">
                                 <input type="text" class="datepicker form-control" id="bdate" name="bookingdate" readonly="readonly" value="{{session('bookingdate')}}">
                             </div>
-                        </div> -->
+                        </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Loại phòng</label>
@@ -85,19 +85,51 @@
                                     @endif
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Your Comments</label>
                                 <textarea class="form-control" name="booking-comments" placeholder="Your Comments..."></textarea>
                             </div>
                         </div>
+
+                        <h4>Phòng bạn đã chọn</h4>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <figure class="gradient-overlay-hover link-icon">
+                                    <a href="{{route('room-fe', $viewDetailRoom->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="room-info">
+                                    <h3 class="room-title">
+                                        <a href="{{route('room-fe', $viewDetailRoom->maphong)}}">{{$viewDetailRoom->tenphong}}</a>
+                                    </h3>
+                                    <p>{{$viewDetailRoom->mota}}</p>
+                                    <div class="room-services">
+                                        <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
+                                        <span>Beds: 1 King</span>
+                                        <span>Max Guests: 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="room-price">
+                                    <span class="price">{{$viewDetailRoom->gialoaiphong}} VND / night</span>
+                                    <a href="{{route('room-fe', $viewDetailRoom->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="tenphong" value="{{$viewDetailRoom->tenphong}}">
+                        <input type="hidden" name="urlloaiphong" value="{{$viewDetailRoom->urlloaiphong}}">
+                        <input type="hidden" name="maphong" value="{{$viewDetailRoom->maphong}}">
                         <div class="col-md-12">
                             <p><b>Ngày đến:</b> {{session('fromdate')}}</p>
                             <p><b>Ngày về:</b> {{session('todate')}}</p>
                             <p><b>Tổng tiền:</b> {{session('total')}}</p>
-                            <p><b>
-                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTAzLjgzOSwzOTUuMzc5bC0xOTUuNy0zMzguOTYyQzI5Ny4yNTcsMzcuNTY5LDI3Ny43NjYsMjYuMzE1LDI1NiwyNi4zMTVjLTIxLjc2NSwwLTQxLjI1NywxMS4yNTQtNTIuMTM5LDMwLjEwMg0KCQkJTDguMTYyLDM5NS4zNzhjLTEwLjg4MywxOC44NS0xMC44ODMsNDEuMzU2LDAsNjAuMjA1YzEwLjg4MywxOC44NDksMzAuMzczLDMwLjEwMiw1Mi4xMzksMzAuMTAyaDM5MS4zOTgNCgkJCWMyMS43NjUsMCw0MS4yNTYtMTEuMjU0LDUyLjE0LTMwLjEwMUM1MTQuNzIyLDQzNi43MzQsNTE0LjcyMiw0MTQuMjI4LDUwMy44MzksMzk1LjM3OXogTTQ3Ny44NjEsNDQwLjU4Ng0KCQkJYy01LjQ2MSw5LjQ1OC0xNS4yNDEsMTUuMTA0LTI2LjE2MiwxNS4xMDRINjAuMzAxYy0xMC45MjIsMC0yMC43MDItNS42NDYtMjYuMTYyLTE1LjEwNGMtNS40Ni05LjQ1OC01LjQ2LTIwLjc1LDAtMzAuMjA4DQoJCQlMMjI5Ljg0LDcxLjQxNmM1LjQ2LTkuNDU4LDE1LjI0LTE1LjEwNCwyNi4xNjEtMTUuMTA0YzEwLjkyLDAsMjAuNzAxLDUuNjQ2LDI2LjE2MSwxNS4xMDRsMTk1LjcsMzM4Ljk2Mg0KCQkJQzQ4My4zMjEsNDE5LjgzNiw0ODMuMzIxLDQzMS4xMjgsNDc3Ljg2MSw0NDAuNTg2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyNDEuMDAxIiB5PSIxNzYuMDEiIHdpZHRoPSIyOS45OTYiIGhlaWdodD0iMTQ5Ljk4MiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjU2LDM1NS45OWMtMTEuMDI3LDAtMTkuOTk4LDguOTcxLTE5Ljk5OCwxOS45OThzOC45NzEsMTkuOTk4LDE5Ljk5OCwxOS45OThjMTEuMDI2LDAsMTkuOTk4LTguOTcxLDE5Ljk5OC0xOS45OTgNCgkJCVMyNjcuMDI3LDM1NS45OSwyNTYsMzU1Ljk5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width="20px" height="20px"/>
+                            <p><b><i class="fa fa-info-circle"></i>
                                 Lưu ý: Nếu bạn muốn đăng ký phòng mới, bạn phải tạo đơn hàng mới.
                             </b></p>
                         </div>

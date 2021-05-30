@@ -56,6 +56,8 @@
                 <p class="mb30">Hãy điền đầy đủ thông tin của bạn</p>
                 <form action="{{route('booking-check-fe')}}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
+                    <input type="hidden" name="tenphong" value="{{$viewDetailRoom->tenphong}}">
+                    <input type="hidden" name="maphong" value="{{$viewDetailRoom->maphong}}">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

@@ -119,35 +119,31 @@
                     <i class="fa fa-exclamation-triangle"></i> Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
                     @csrf
                     <div class="input-group row">
-
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Name
-                                    <a href="#" title="Your Name" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type your first name and last name">
+                                <label>Từ khóa tên phòng
+                                    <a href="#" title="Từ khóa tên phòng" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type your first name and last name">
                                     <i class="fa fa-info-circle"></i>
                                     </a>
                                 </label>
-                                <input class="form-control" name="keyword" type="text" data-trigger="hover" placeholder="Write Your Name">
+                                <input class="form-control" name="keyword" type="text" data-trigger="hover" placeholder="Từ khóa tên phòng">
                             </div>
                         </div>
-
                         <div class="col-md-5">
                             <div class="form-group">
-                            <label>Room Type
+                            <label>Loại phòng
                                 <a href="#" title="Room Type" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select room type">
                                 <i class="fa fa-info-circle"></i>
                                 </a>
                             </label>
-                                <select class="form-control" name="loaiphong" title="Select Room Type" data-header="Room Type">
-                                    <option value="Single">Single Room</option>
-                                    <option value="Double">Double Room</option>
-                                    <option value="Deluxe">Deluxe Room</option>
+                                <select class="form-control" name="loaiphong" title="Chọn loại phòng">
+                                    <option value="phong-co-gac">Phòng có gác</option>
+                                    <option value="phong-khong-co-gac">Phòng không có gác</option>
                                 </select>
                             </div>
                         </div>
-
                         <div class="col-md-3">
-                            <input type="submit" class="btn btn-primary" value="search">
+                            <input type="submit" class="btn btn-primary" value="tìm kiếm">
                         </div>
                     </div>
                 </form>

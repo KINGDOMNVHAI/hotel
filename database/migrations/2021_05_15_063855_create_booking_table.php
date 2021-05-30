@@ -18,8 +18,10 @@ class CreateBookingTable extends Migration
             $table->string('fullname');
             $table->string('email');
             $table->string('phone');
-            $table->string('room');
-            $table->integer('giaphong');
+            $table->integer('maphong');
+            $table->string('tenphong');
+            $table->string('tenloaiphong');
+            $table->integer('gialoaiphong');
             $table->date('fromdate');
             $table->date('todate');
             $table->integer('night');

@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
@@ -53,7 +52,8 @@ class BookingController extends Controller
         $fullname = $request->input('fullname');
         $email = $request->input('email');
         $phone = $request->input('phone');
-        $nameroom = $request->input('nameroom');
+        $nameroom = $request->input('tenphong');
+        $idroom = $request->input('maphong');
 
         $room     = new BookingService;
         $viewRoom = $room->getPrice($nameroom);
@@ -80,6 +80,7 @@ class BookingController extends Controller
         $request->session()->put('fullname', $fullname);
         $request->session()->put('email', $email);
         $request->session()->put('phone', $phone);
+        $request->session()->put('idroom', $idroom);
         $request->session()->put('nameroom', $nameroom);
         $request->session()->put('priceroom', $priceroom);
         $request->session()->put('numberofdate', count($numberofdate));
@@ -87,7 +88,6 @@ class BookingController extends Controller
         $request->session()->put('todate', $todate);
         $request->session()->put('bookingdate', $bookingdate);
         $request->session()->put('fromdate', $fromdate);
-        $request->session()->put('todate', $todate);
 
         if ($request->session()->has('total')) {
             $total = $total + $request->session()->get('total');
@@ -95,8 +95,13 @@ class BookingController extends Controller
 
         $request->session()->put('total', $total);
 
+        $maphong = $request->session()->get('maphong');
+        $detailroom     = new RoomService;
+        $viewDetailRoom = $detailroom->detailroom($maphong);
+
         return view('feHotel.pages.booking-check', [
             'title' => TITLE_FRONTEND_INDEX,
+            'viewDetailRoom' => $viewDetailRoom,
         ]);
     }
 
@@ -109,7 +114,7 @@ class BookingController extends Controller
 
         Mail::to($to_email)->send(new FirstEmail);
 
-        $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'numbernight', 'fromdate', 'todate']);
+        $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
 
         return view('feHotel.pages.booking-final', [
             'title' => TITLE_FRONTEND_INDEX,

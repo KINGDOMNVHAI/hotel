@@ -9,5 +9,7 @@ class booking extends Model
 
     public $timestamps=false;
 
-    protected $fillable=['idbooking','fullname','email','phone','room','gialoaiphong','fromdate', 'todate','night'];
+    protected $fillable=['idbooking','fullname','email','phone'
+    ,'maphong','tenphong','tenloaiphong'
+    ,'gialoaiphong','fromdate', 'todate','night'];
 }
