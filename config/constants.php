@@ -35,9 +35,13 @@ define('USERNAME_IS_NOT_EXIST', 'Tên đăng nhập sai');
 
 // === User's Role ===
 
-define('ROLE_MEMBER', 'user');
-define('ROLE_EDITOR', 'editor');
-define('ROLE_ADMIN', 'admin');
+define('ROLE_NAME_ADMIN', 'admin');
+define('ROLE_NAME_EDITOR', 'editor');
+define('ROLE_NAME_MEMBER', 'user');
+
+define('ROLE_ID_ADMIN', 1);
+define('ROLE_ID_EDITOR', 2);
+define('ROLE_ID_MEMBER', 3);
 
 // === Paginate ===
 

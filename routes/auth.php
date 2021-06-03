@@ -12,6 +12,10 @@ Route::get('/register','auth\LoginController@register')->name('register');
 
 Route::post('/check-register','auth\LoginController@checkregister')->name('check-register');
 
+Route::get('/forgot-password','auth\LoginController@forgotpassword')->name('forgot-password');
+
+Route::get('/send-email-forgot-password','auth\LoginController@checkEmailForgotPassword')->name('send-email-forgot-password');
+
 // ======================= Logout =======================
 
 Route::get('/logout','auth\LoginController@logout')->name('logout');

@@ -123,5 +123,4 @@ class BookingController extends Controller
             'title' => TITLE_FRONTEND_INDEX,
         ]);
     }
-
 }

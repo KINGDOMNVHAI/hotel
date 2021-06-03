@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\FirstEmail;
 use App\Services\auth\LoginService;
 use App\Services\all\UserService;
 use App\Services\frontend\feHotel\RoomService;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class LoginController extends Controller
 {
@@ -44,7 +46,7 @@ class LoginController extends Controller
         {
             $id = Auth::id();
             $checkuser = $checklogin->checkUserRole($id);
-            if ($checkuser->tenphanquyen == ROLE_ADMIN)
+            if ($checkuser->tenphanquyen == ROLE_NAME_ADMIN)
             {
                 // Role admin
                 return redirect('list-room');
@@ -74,20 +76,69 @@ class LoginController extends Controller
 
     public function checkregister(Request $request)
     {
+        // $request->validate([
+        //     'name' => 'required|max:120',
+        //     'email' => 'required|email|unique:users',
+        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+        // ]);
+
+        // $datas = $request->all();
+        // unset($datas['_token']);
+
+        // $rules = [
+        //     'name' => 'required|max:120',
+        //     'email' => 'required|email|unique:users',
+        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:11',
+        // ];
+
+        // $messages = [
+        //     'name' => 'A name is required',
+        //     'phone' => 'A phone is required',
+        // ];
+
+        // $validator = \Validator::make($datas, $rules, $messages);
+
+        // if ($validator->fails()) {
+        //     // var_dump('<pre>','jha');die;
+        //     return \Redirect::back()->withInput()->withErrors($validator->errors());
+        // }
+
         $user = new UserService;
         $insert = $user->insert($request);
-
         return redirect('login');
+    }
+
+    public function forgotpassword()
+    {
+        return view('auth.pages.forgot-password', [
+            'title' => TITLE_FRONTEND_INDEX,
+        ]);
+    }
+
+    public function checkEmailForgotPassword(Request $request)
+    {
+        //check email
+        $user = new UserService;
+        $email = $user->checkemail($request->email);
+
+        if ($email->email != null)
+        {
+            $to_email = $email->email;
+            Mail::to($to_email)->send(new FirstEmail);
+            return redirect('login');
+        }
+        else
+        {
+
+        }
+
     }
 
     public function logout(Request $request)
     {
         Auth::logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
         return redirect('login');
     }
 }

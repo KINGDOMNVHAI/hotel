@@ -12,13 +12,13 @@ class PhanquyenSeeder extends Seeder
     public function run()
     {
         phanquyen::create([
-            'tenphanquyen'  => ROLE_ADMIN,
+            'tenphanquyen'  => ROLE_NAME_ADMIN,
         ]);
         phanquyen::create([
-            'tenphanquyen'  => ROLE_EDITOR,
+            'tenphanquyen'  => ROLE_NAME_EDITOR,
         ]);
         phanquyen::create([
-            'tenphanquyen'  => ROLE_MEMBER,
+            'tenphanquyen'  => ROLE_NAME_MEMBER,
         ]);
     }
 }

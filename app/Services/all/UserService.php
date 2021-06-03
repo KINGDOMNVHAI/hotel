@@ -29,13 +29,26 @@ class UserService extends ServiceProvider
         $username = $request->username;
         $password = $request->password;
         $email = $request->email;
+        $phone = $request->phone;
 
         $query = User::insert([
             'name' => $name,
             'username'  => $username,
             'password'  => Hash::make($password),
             'email'     => $email,
+            'phone'     => $phone,
+            'role'      => ROLE_ID_MEMBER,
         ]);
+
+        return $query;
+    }
+
+    public function checkemail($email)
+    {
+        $query = DB::table('users')
+            ->select('email')
+            ->where('email', 'like', $email)
+            ->first();
 
         return $query;
     }

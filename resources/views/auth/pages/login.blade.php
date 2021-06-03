@@ -39,14 +39,13 @@
                                 <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                     <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                 </a> -->
-
-                                @if (session('message'))
-                                    <p><b>{{ session('message') }}</b></p>
+                                @if (session('messageWarning'))
+                                    <p><b>{{ session('messageWarning') }}</b></p>
                                 @endif
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                <a class="small" href="{{route('forgot-password')}}">Forgot Password?</a>
                             </div>
                             <div class="text-center">
                                 <a class="small" href="{{route('register')}}">Create an Account!</a>
