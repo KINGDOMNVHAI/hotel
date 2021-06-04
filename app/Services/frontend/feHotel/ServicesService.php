@@ -52,6 +52,18 @@ class ServicesService extends ServiceProvider
         return $query;
     }
 
+    public function listserviceHavePagination($limit = NULL)
+    {
+        $query = DB::table('dichvu')->where('enabledichvu', '=', 1);
+
+        if ($limit != null) {
+            $query = $query->paginate($limit);
+        } else {
+            $query = $query->paginate(15);
+        }
+        return $query;
+    }
+
     public function listserviceslider()
     {
         // ORM Laravel
