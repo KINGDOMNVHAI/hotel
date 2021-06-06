@@ -4,6 +4,7 @@ namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
 use App\Mail\FirstEmail;
+use App\Mail\ForgotPasswordEmail;
 use App\Services\auth\LoginService;
 use App\Services\all\UserService;
 use App\Services\frontend\feHotel\RoomService;
@@ -124,7 +125,10 @@ class LoginController extends Controller
         if ($email != null)
         {
             $to_email = $email->email;
-            Mail::to($to_email)->send(new FirstEmail);
+            $password = 'AXBYCZ123';
+            $email = $user->changePasswordById($email->id, $password);
+
+            Mail::to($to_email)->send(new ForgotPasswordEmail($password));
             return redirect()->route('login')->with('message', __(EMAIL_IS_SENT));
         }
         else

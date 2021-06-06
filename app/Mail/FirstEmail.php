@@ -25,8 +25,18 @@ class FirstEmail extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build($password)
     {
-        return $this->from("nvhai2306@gmail.com")->view('feHotel.pages.email-template');
+        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.forgot-password-email')->compact(['password' => $password]);
+    }
+
+    /**
+     * Email forgot password
+     *
+     * @return $this
+     */
+    public function forgotpassword($password)
+    {
+        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.forgot-password-email')->compact(['password' => $password]);
     }
 }
