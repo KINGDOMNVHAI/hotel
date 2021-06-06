@@ -302,15 +302,13 @@
 <section class="rooms gray">
     <div class="container">
         <div class="section-title">
-            <h4>OUR ROOMS</h4>
-            <p class="section-subtitle">Our favorite rooms</p>
-            <a href="rooms-list.html" class="view-all">View all rooms</a>
+            <h4>PHÒNG CỦA CHÚNG TÔI</h4>
         </div>
         <div class="row">
 
             @foreach($listroom as $room)
 
-            @if($room->urlloaiphong == 'phong-don')
+            @if($room->urlloaiphong == 'giuong-don')
 
             <div class="col-md-4">
                 <div class="room-grid-item">
@@ -334,7 +332,7 @@
                 </div>
             </div>
 
-            @elseif($room->urlloaiphong == 'phong-doi')
+            @elseif($room->urlloaiphong == 'giuong-doi')
 
             <div class="col-md-4">
                 <div class="room-grid-item">
@@ -368,7 +366,7 @@
 <section class="gallery">
     <div class="container">
         <div class="section-title">
-            <h4>SUNLINE. GALLERY</h4>
+            <h4>HÌNH ẢNH CỦA SUNLINE</h4>
             <p class="section-subtitle">Bộ sưu tập ảnh thư viện về phòng trọ SUNLINE</p>
 
         </div>
@@ -824,15 +822,15 @@
         <div id="sl1" class="sl1" style="top: 210px; position: fixed; right: 50%; margin-right: 500px; bottom: 0px;">
         <a rel="nofollow" href="https://www.facebook.com/ShopeeVN/posts/2768242140098921" title="m88" target="_blank"><img src="{{asset('feHotel/images/banner/banner1.png')}}" alt="m88" border="0" width="120" height="280">
         </a>
-        <br>	
+        <br>
         <a rel="nofollow" href="https://shopee.vn/Gi%E1%BA%A3m-gi%C3%A1-hosting-75-Nhanh-tay-s%E1%BB%91-l%C6%B0%E1%BB%A3ng-c%C3%B3-h%E1%BA%A1n-i.21636914.364126184" target="_blank">
             <img border="0" alt="sbobb" src="{{asset('feHotel/images/banner/banner3.jpg')}}" width="120" height="269">
-        </a>        
+        </a>
         </div>
         <div id="sl2" style="top: 210px; position: fixed; left: 50%; margin-left: 500px; bottom: 0px;">
         <a rel="nofollow" href="https://zingmp3.vn/" target="_blank">
             <img border="0" alt="mibet" src="{{asset('feHotel/images/banner/banner2.jpg')}}" width="120" height="269">
-        </a>				
+        </a>
         </div>
     </div>
 </section>
