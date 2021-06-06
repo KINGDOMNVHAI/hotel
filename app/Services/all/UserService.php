@@ -43,13 +43,9 @@ class UserService extends ServiceProvider
         return $query;
     }
 
-    public function checkemail($email)
+    public function checkUserByEmail($email)
     {
-        $query = DB::table('users')
-            ->select('email')
-            ->where('email', 'like', $email)
-            ->first();
-
+        $query = User::where('email', $email)->first();
         return $query;
     }
 }

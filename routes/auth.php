@@ -14,7 +14,7 @@ Route::post('/check-register','auth\LoginController@checkregister')->name('check
 
 Route::get('/forgot-password','auth\LoginController@forgotpassword')->name('forgot-password');
 
-Route::get('/send-email-forgot-password','auth\LoginController@checkEmailForgotPassword')->name('send-email-forgot-password');
+Route::post('/send-email-forgot-password','auth\LoginController@checkEmailForgotPassword')->name('send-email-forgot-password');
 
 // ======================= Logout =======================
 

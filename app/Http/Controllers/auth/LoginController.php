@@ -119,19 +119,18 @@ class LoginController extends Controller
     {
         //check email
         $user = new UserService;
-        $email = $user->checkemail($request->email);
+        $email = $user->checkUserByEmail($request->email);
 
-        if ($email->email != null)
+        if ($email != null)
         {
             $to_email = $email->email;
             Mail::to($to_email)->send(new FirstEmail);
-            return redirect('login');
+            return redirect()->route('login')->with('message', __(EMAIL_IS_SENT));
         }
         else
         {
-
+            return redirect()->route('forgot-password')->with('message', __(EMAIL_IS_NOT_EXIST));
         }
-
     }
 
     public function logout(Request $request)
