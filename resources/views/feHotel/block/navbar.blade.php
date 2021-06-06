@@ -48,14 +48,12 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="menu-item active">
+                <li class="menu-item active">
                     <a href="{{route('list-services-fe')}}">Dịch vụ</a>
-                </li> -->
-
+                </li>
                 <li class="menu-item active">
                     <a href="{{route('contact')}}">Liên hệ</a>
                 </li>
-
                 <li class="menu-item menu-btn">
                     <a href="{{route('booking-form-fe')}}" class="btn">
                         <i class="fa fa-calendar"></i>Đặt phòng
