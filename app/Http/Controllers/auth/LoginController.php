@@ -121,7 +121,7 @@ class LoginController extends Controller
         //check email
         $user = new UserService;
         $email = $user->checkUserByEmail($request->email);
-
+        
         if ($email != null)
         {
             $to_email = $email->email;

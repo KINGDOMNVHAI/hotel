@@ -11,6 +11,14 @@
                 <li><a href="{{route('home')}}">Trang chủ</a></li>
                 <li>Danh sách dịch vụ</li>
             </ol>
+            <h6>
+                Khi bạn cần sử dụng một trong các dịch vụ, xin vui lòng liên hệ với chúng tôi thông qua Số Điện Thoại hoặc gửi tin nhắn qua Messenger để chúng tôi liên hệ với các bạn sớm nhất
+            </h6>
+
+            
+            
+
+
         </div>
     </div>
 </div>

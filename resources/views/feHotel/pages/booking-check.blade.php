@@ -20,8 +20,8 @@
         <div class="row">
             <div class="col-lg-9 col-12">
                 <div class="section-title">
-                    <h4>ĐƠN HÀNG CỦA BẠN</h4>
-                    <p class="section-subtitle">Xin hãy kiểm tra lại đơn hàng trước khi đặt!</p>
+                    <h4>ĐƠN ĐẶT PHÒNG CỦA BẠN</h4>
+                    <p class="section-subtitle">Xin bạn vui lòng kiểm tra lại ở bước cuôi của đơn đặt phòng trước khi đặt!</p>
                 </div>
 
                 <form action="{{route('booking-final-fe')}}" method="post" enctype="multipart/form-data">
@@ -30,19 +30,19 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tên người đặt</label>
-                                <input type="text" class="form-control" name="fullname" placeholder="Your Name" value="{{session('fullname')}}">
+                                <input type="text" class="form-control" name="fullname" placeholder="Họ và tên của bạn" value="{{session('fullname')}}">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="email" placeholder="Your Email Address" value="{{session('email')}}">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="{{session('email')}}">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Số điện thoại</label>
-                                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" value="0833999693">
+                                <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" value="0833999693">
                             </div>
                         </div>
                         <!-- <div class="col-md-6">
@@ -87,14 +87,12 @@
                             </div>
                         </div> -->
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Your Comments</label>
-                                <textarea class="form-control" name="booking-comments" placeholder="Your Comments..."></textarea>
-                            </div>
+                            <h4>Phòng bạn đã chọn</h4>
                         </div>
 
-                        <h4>Phòng bạn đã chọn</h4>
+                        
                         <div class="row">
+                        
                             <div class="col-lg-4">
                                 <figure class="gradient-overlay-hover link-icon">
                                     <a href="{{route('room-fe', $viewDetailRoom->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
@@ -127,10 +125,10 @@
                         <input type="hidden" name="maphong" value="{{$viewDetailRoom->maphong}}">
                         <div class="col-md-12">
                             <p><b>Ngày đến:</b> {{session('fromdate')}}</p>
-                            <p><b>Ngày về:</b> {{session('todate')}}</p>
+                            <p><b>Ngày trả:</b> {{session('todate')}}</p>
                             <p><b>Tổng tiền:</b> {{session('total')}}</p>
                             <p><b><i class="fa fa-info-circle"></i>
-                                Lưu ý: Nếu bạn muốn đăng ký phòng mới, bạn phải tạo đơn hàng mới.
+                                Lưu ý: Tiền phòng của bạn sẽ được trả vào từng tháng. Sau mỗi tháng, bạn chỉ cần đóng theo phương thức thanh toán: Tiền mặt hoặc chuyển khoản, thì bạn sẽ được tiếp tục mướn phòng theo thời điểm ban đầu bạn đã chọn. 
                             </b></p>
                         </div>
                         <div class="col-md-12">

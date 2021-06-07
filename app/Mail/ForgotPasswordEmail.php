@@ -28,6 +28,7 @@ class ForgotPasswordEmail extends Mailable
      */
     public function build()
     {
-        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.forgot-password-email')->with(['password' => $this->password]);
+        // Sửa chỗ này đi
+        return $this->from("sarangthunguyen@gmail.com")->view('feHotel.email.forgot-password-email')->with(['password' => $this->password]);
     }
 }

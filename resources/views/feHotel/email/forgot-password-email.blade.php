@@ -14,11 +14,11 @@
                 <h3> Send Email Forgot Password </h3>
                 <p> Hey, </p>
                 <p> Welcome to Programming Fields </p>
-                <p> Email mới của bạn là: {{$password}}</p>
+                <p> Password mới của bạn là: {{$password}}</p>
                 <br/>
                 <br/>
                 <p> Best Regards</p>
-                <p> Team, Programming Fields </p>
+                <p> Sunline </p>
             </div>
         </div>
     </div>

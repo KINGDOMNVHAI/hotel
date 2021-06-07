@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-9 col-12">
                 <div class="section-title">
-                    <h4 style="font-size:30px;">ĐƠN HÀNG CỦA BẠN ĐÃ HOÀN TẤT</h4>
+                    <h4 style="font-size:30px;">ĐƠN ĐẶT PHÒNG CỦA BẠN ĐÃ HOÀN TẤT</h4>
                     <p class="section-subtitle">Rất cảm ơn bạn đã đặt phòng tại SUNLINE! Xin vui lòng kiểm tra email của bạn để nhận thông tin từ chúng tôi.</p>
                 </div>
             </div>
