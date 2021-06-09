@@ -26,6 +26,7 @@
 
                 <form action="{{route('booking-final-fe')}}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
+                    <input type="hidden" name="gialoaiphong" value="{{$viewDetailRoom->gialoaiphong}}">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

@@ -10,14 +10,21 @@ class FirstEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $tenphong;
+    public $gialoaiphong;
+    public $fromdate;
+    public $todate;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->tenphong = $data['tenphong'];
+        $this->gialoaiphong = $data['gialoaiphong'];
+        $this->fromdate = $data['fromdate'];
+        $this->todate = $data['todate'];
     }
 
     /**
@@ -25,18 +32,14 @@ class FirstEmail extends Mailable
      *
      * @return $this
      */
-    public function build($password)
+    public function build()
     {
-        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.forgot-password-email')->compact(['password' => $password]);
-    }
-
-    /**
-     * Email forgot password
-     *
-     * @return $this
-     */
-    public function forgotpassword($password)
-    {
-        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.forgot-password-email')->compact(['password' => $password]);
+        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.email-template')
+            ->with([
+                'tenphong' => $this->tenphong,
+                'gialoaiphong' => $this->gialoaiphong,
+                'fromdate' => $this->fromdate,
+                'todate' => $this->todate
+            ]);
     }
 }

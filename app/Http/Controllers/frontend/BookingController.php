@@ -19,7 +19,7 @@ class BookingController extends Controller
 {
     public function __construct()
     {
-        
+
     }
 
     public function index(Request $request)
@@ -79,7 +79,7 @@ class BookingController extends Controller
             $numberofdate[] = $store;
         }
 
-        $total = $priceroom * count($numberofdate);
+        $total = $priceroom; // * count($numberofdate);
         $request->session()->put('fullname', $fullname);
         $request->session()->put('email', $email);
         $request->session()->put('phone', $phone);
@@ -90,13 +90,12 @@ class BookingController extends Controller
         $request->session()->put('fromdate', $fromdate);
         $request->session()->put('todate', $todate);
         $request->session()->put('bookingdate', $bookingdate);
-        $request->session()->put('fromdate', $fromdate);
 
         if ($request->session()->has('total')) {
             $total = $total + $request->session()->get('total');
+        } else {
+            $request->session()->put('total', $total);
         }
-
-        $request->session()->put('total', $total);
 
         $maphong = $request->session()->get('maphong');
         $detailroom     = new RoomService;
@@ -114,8 +113,14 @@ class BookingController extends Controller
         $viewRoom = $room->create($request);
 
         $to_email = $request->email;
-
-        Mail::to($to_email)->send(new FirstEmail);
+        $data = [
+            'tenphong' => $request->session()->get('nameroom'),
+            'gialoaiphong' => $request->session()->get('priceroom'),
+            'fromdate' => $request->session()->get('fromdate'),
+            'todate' => $request->session()->get('todate')
+        ];
+        Mail::to($to_email)->send(new FirstEmail($data));
+        return redirect()->route('login')->with('message', __(EMAIL_IS_SENT));
 
         $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
 
