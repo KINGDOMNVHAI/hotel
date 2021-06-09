@@ -135,25 +135,16 @@
                         </div>
                         <div class="col-md-6">
                             <div class="social-media">
-                                <a class="facebook" data-original-title="Facebook" data-toggle="tooltip" href="#">
+                                <a class="facebook" data-original-title="Facebook" data-toggle="tooltip" href="https://www.facebook.com/NhaTroSunLine">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                                 <a class="twitter" data-original-title="Twitter" data-toggle="tooltip" href="#">
                                     <i class="fa fa-twitter"></i>
                                 </a>
-                                <a class="googleplus" data-original-title="Google Plus" data-toggle="tooltip" href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a class="pinterest" data-original-title="Pinterest" data-toggle="tooltip" href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a class="linkedin" data-original-title="Linkedin" data-toggle="tooltip" href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a class="youtube" data-original-title="Youtube" data-toggle="tooltip" href="#">
+                                <a class="youtube" data-original-title="Youtube" data-toggle="tooltip" href="https://www.youtube.com/watch?v=vMpA6cRjlN0">
                                     <i class="fa fa-youtube"></i>
                                 </a>
-                                <a class="instagram" data-original-title="Instagram" data-toggle="tooltip" href="#">
+                                <a class="instagram" data-original-title="Instagram" data-toggle="tooltip" href="https://www.instagram.com/pagesunline/">
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </div>

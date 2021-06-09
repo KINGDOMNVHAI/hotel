@@ -162,12 +162,12 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-md-12">
+                        <!-- <div class="col-md-12">
                             <div class="form-group">
                                 <label>Bình luận</label>
                                 <textarea class="form-control" name="booking-comments" placeholder="Bình luận của bạn..."></textarea>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-12">
                             <input type="submit" class="btn mt50 float-right" value="Đặt phòng ngay!">
                         </div>

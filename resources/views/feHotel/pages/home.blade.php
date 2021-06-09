@@ -5,12 +5,58 @@
     <section class="video np parallax gradient-overlay op6" data-src="{{asset('feHotel/images/video.jpg')}}" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
         <div class="inner gradient-overlay">
             <div class="container">
-            <center><iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <center>
+                <iframe width="860" height="415" src="https://www.youtube.com/embed/vMpA6cRjlN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
             </div>
         </div>
     </section>
 
+    
     <div class="horizontal-booking-form">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+                <style type="text/css">
+                    #popup-giua-man-hinh .headerContainer,#popup-giua-man-hinh .bodyContainer,#popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
+                    #popup-giua-man-hinh .padding{padding:20px}
+                    #popup-giua-man-hinh .bodyContainer{min-height:500px}
+                    #popup-giua-man-hinh .popUpBannerBox{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:100%;top:0;left:0;color:#FFF;z-index:999999;display:none}
+                    #popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
+                    #popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
+                    #popup-giua-man-hinh .closeButton{color:red;text-decoration:none;font-size:18px}
+                    #popup-giua-man-hinh a.closeButton{float:right}
+                </style>
+                <div id="popup-giua-man-hinh">
+                    <div class="popUpBannerBox">
+                        <div class="popUpBannerInner">
+                            <div class="popUpBannerContent">
+                            <p><a href="#" class="closeButton">Close</a></p>
+
+                            <!-- ==================== CODE HIỂN THỊ QUẢNG CÁO ====================-->
+
+                                    <a href="http://www.kingdomnvhai.info/"><img src="{{asset('feHotel/images/banner/5ccuoj.gif')}}"/></a>
+
+                            <!-- ==================== END HIỂN THỊ QUẢNG CÁO ====================-->
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function showPopUpBanner() {
+                        $('.popUpBannerBox').fadeIn("2000");
+                        }
+                        setTimeout(showPopUpBanner, 1000); //thời gian popup bắt đầu hiển thị
+
+                        $('.popUpBannerBox').click(function(e) {
+                        if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
+                        $('.popUpBannerBox').fadeOut("2000");
+                        return false;
+                        }
+                        });
+                        $('.closeButton').click(function() {
+                        $('.popUpBannerBox').fadeOut("2000");
+                        return false;
+                        });
+                    </script>
+                </div>
         <div class="container">
             <div class="inner box-shadow-007" style="margin:auto">
                 <!-- <div id="booking-notification" class="notification"></div> -->
@@ -815,7 +861,7 @@
     <div id="instafeed-gallery" class="owl-carousel instagram-owl"></div>
 </section>
 
-
+<!-- 
 <section class="banner">
     <div class="container">
 
@@ -833,7 +879,7 @@
         </a>
         </div>
     </div>
-</section>
+</section> -->
 
 <style>
 .fb-livechat, .fb-widget{display: none}

@@ -34,7 +34,7 @@ class FirstEmail extends Mailable
      */
     public function build()
     {
-        return $this->from("nvhai2306@gmail.com")->view('feHotel.email.email-template')
+        return $this->from("sarangthunguyen@gmail.com")->view('feHotel.email.email-template')
             ->with([
                 'tenphong' => $this->tenphong,
                 'gialoaiphong' => $this->gialoaiphong,
