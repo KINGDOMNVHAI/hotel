@@ -18,19 +18,19 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Image</th>
+                        <th>Tên user</th>
+                        <th>Hình ảnh</th>
                         <th>Mô tả</th>
-                        <th>Edit | Delete</th>
+                        <th>Sửa | Xóa</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Image</th>
+                        <th>Tên user</th>
+                        <th>Hình ảnh</th>
                         <th>Mô tả</th>
-                        <th>Edit | Delete</th>
+                        <th>Sửa | Xóa</th>
                     </tr>
                 </tfoot>
                 <tbody>

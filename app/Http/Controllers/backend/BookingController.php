@@ -22,12 +22,12 @@ class BookingController extends Controller
     {
         if (Auth::check())
         {
+            $username = Auth::user()->username;
             $booking = new BookingService;
             $viewBooking = $booking->listBookingHavePagination(20);
-            dd($viewBooking);
-
             return view('backend.pages.list-booking', [
                 'title' => TITLE_FRONTEND_INDEX,
+                'username'  => $username,
                 'listbooking' => $viewBooking
             ]);
         }

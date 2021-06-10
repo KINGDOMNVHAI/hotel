@@ -50,7 +50,7 @@ class LoginController extends Controller
             if ($checkuser->tenphanquyen == ROLE_NAME_ADMIN)
             {
                 // Role admin
-                return redirect('list-room');
+                return redirect()->route('list-room');
             }
             else
             {
@@ -66,11 +66,11 @@ class LoginController extends Controller
 
             if ($checkuser == '')
             {
-                return redirect()->route('login')->with('message', __(USERNAME_IS_NOT_EXIST));
+                return redirect()->route('login')->with('messageWarning', __(USERNAME_IS_NOT_EXIST));
             }
             else
             {
-                return redirect()->route('login')->with('message', __(WRONG_PASSWORD));
+                return redirect()->route('login')->with('messageWarning', __(WRONG_PASSWORD));
             }
         }
     }
@@ -121,7 +121,7 @@ class LoginController extends Controller
         //check email
         $user = new UserService;
         $email = $user->checkUserByEmail($request->email);
-        
+
         if ($email != null)
         {
             $to_email = $email->email;

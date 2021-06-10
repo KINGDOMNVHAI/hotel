@@ -21,7 +21,10 @@ class BookingService extends ServiceProvider
 
     public function listBookingHavePagination($limit)
     {
-        $query = booking::where('idbooking', '=', $id)->paginate($limit);
+        $query = DB::table('booking')
+            ->join('phong','phong.maphong', '=', 'booking.maphong')
+            ->where('enablephong', '=', 1)
+            ->paginate($limit);
 
         return $query;
     }

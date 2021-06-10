@@ -49,7 +49,7 @@
                 </a>
                 <a class="nav-link" href="{{route('list-booking')}}">
                     <i class="fas fa-ticket-alt"></i>
-                    <span>Quản lý người đặt</span>
+                    <span>Quản lý đơn đặt phòng</span>
                 </a>
             </li>
 

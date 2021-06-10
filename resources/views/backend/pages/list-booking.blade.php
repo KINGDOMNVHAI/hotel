@@ -2,10 +2,8 @@
 @section("NoiDung")
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Danh sách phòng</h1>
-<p class="mb-4">Lấy dữ liệu từ database</p>
-
-<a href="{{route('create-room')}}" class="btn btn-success pull-right">Tạo phòng mới</a><br><br>
+<h1 class="h3 mb-2 text-gray-800">Danh sách đơn đặt phòng</h1>
+<p class="mb-4"></p>
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
@@ -19,8 +17,10 @@
                     <tr>
                         <th>ID</th>
                         <th>Tên khách hàng</th>
-                        <th>Email</th>
-                        <th>Số điện thoại</th>
+                        <th>Loại phòng</th>
+                        <th>Giá</th>
+                        <th>Từ ngày</th>
+                        <th>Đến ngày</th>
                         <!-- <th>Edit | Delete</th> -->
                     </tr>
                 </thead>
@@ -28,8 +28,10 @@
                     <tr>
                         <th>ID</th>
                         <th>Tên khách hàng</th>
-                        <th>Email</th>
-                        <th>Số điện thoại</th>
+                        <th>Loại phòng</th>
+                        <th>Giá</th>
+                        <th>Từ ngày</th>
+                        <th>Đến ngày</th>
                     </tr>
                 </tfoot>
                 <tbody>
@@ -37,15 +39,10 @@
                     <tr>
                         <td>{{ $booking->idbooking }}</td>
                         <td>{{ $booking->fullname }}</td>
-                        <td>{{ $booking->email }}</td>
-                        <td>{{ $booking->phone }}</td>
-                        <!-- <td>{{ $booking->tenphong }}</td>
-                        <td><img src="{{ asset('upload/rooms/deluxe/' . $room->thumbnailphong) }}" width="150px;"></td>
-                        <td>{{ $room->noidung }}</td>
-                        <td>
-                            <a href="{{route('update', $room->maphong)}}" class="btn btn-primary">Edit</a> ||
-                            <a href="{{route('delete', $room->maphong)}}" class="btn btn-danger">Delete</a>
-                        </td> -->
+                        <td>{{ $booking->tenloaiphong }}</td>
+                        <td>{{ $booking->gialoaiphong }}</td>
+                        <td>{{ $booking->fromdate }}</td>
+                        <td>{{ $booking->todate }}</td>
                     </tr>
                     @endforeach
                 </tbody>
