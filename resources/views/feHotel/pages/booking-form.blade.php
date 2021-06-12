@@ -58,6 +58,7 @@
                     {{ csrf_field() }}
                     <input type="hidden" name="tenphong" value="{{$viewDetailRoom->tenphong}}">
                     <input type="hidden" name="maphong" value="{{$viewDetailRoom->maphong}}">
+                    <input type="hidden" name="urlloaiphong" value="{{$viewDetailRoom->urlloaiphong}}">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

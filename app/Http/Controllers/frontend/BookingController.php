@@ -56,11 +56,12 @@ class BookingController extends Controller
         $email = $request->input('email');
         $phone = $request->input('phone');
         $nameroom = $request->input('tenphong');
+        $urlloaiphong = $request->input('urlloaiphong');
         $idroom = $request->input('maphong');
 
         $room     = new BookingService;
-        $viewRoom = $room->getPrice($nameroom);
-        $priceroom = $viewRoom['gialoaiphong'];
+        $viewRoom = $room->getPrice($urlloaiphong);
+        $priceroom = $viewRoom->gialoaiphong;
 
         $bookingdate = $request->input('bookingdate');
         $date = explode(" - ", $bookingdate);
@@ -122,7 +123,8 @@ class BookingController extends Controller
         Mail::to($to_email)->send(new FirstEmail($data));
         return redirect()->route('login')->with('message', __(EMAIL_IS_SENT));
 
-        $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
+        $request->session()->forget(['fullname']);
+        // $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
 
         return view('feHotel.pages.booking-final', [
             'title' => TITLE_FRONTEND_INDEX,
