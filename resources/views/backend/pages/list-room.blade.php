@@ -48,8 +48,7 @@
                     @endforeach
                 </tbody>
             </table>
-
-            {{$listroom->links()}}
+            {!! $listroom->links() !!}
         </div>
     </div>
 </div>

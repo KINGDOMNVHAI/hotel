@@ -28,7 +28,7 @@ class RoomController extends Controller
 
             // Public Services
             $listroom     = new RoomService;
-            $viewListRoom = $listroom->listRoomHavePaginate(20, 'all', $keyword);
+            $viewListRoom = $listroom->listRoomHavePaginate(10, 'all', $keyword);
 
             return view('backend.pages.list-room', [
                 'title'     => TITLE_FRONTEND_INDEX,

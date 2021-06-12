@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <figure class="gradient-overlay-hover link-icon">
-                        <a href="{{route('room-fe', $room->maphong)}}"><img src="{{asset('upload/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image"></a>
+                        <a href="{{route('room-fe', $room->maphong)}}"><img src="{{asset('upload/rooms/deluxe/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image"></a>
                     </figure>
                 </div>
                 <div class="col-lg-6">

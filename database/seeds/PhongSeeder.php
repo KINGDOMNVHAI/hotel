@@ -75,6 +75,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'urlloaiphong'      => PHONG_DOI,
+            'gacxep'            => true,
             'thumbnailphong'    => 'double.jpg',
         ]);
 
@@ -85,7 +86,7 @@ class PhongSeeder extends Seeder
             'noidung'           => 'noi dung phong',
             // 'thoigian'          => '',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'thumbnailphong'    => 'single1.jpg',
         ]);
 
         phong::create([
@@ -104,7 +105,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'thumbnailphong'    => 'king.jpg',
         ]);
 
         phong::create([
@@ -113,7 +114,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'thumbnailphong'    => 'king.jpg',
         ]);
 
         phong::create([
@@ -122,6 +123,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DON,
+            'gacxep'            => true,
             'phongnoibat'       => 1,
             'thumbnailphong'    => 'single1.jpg',
         ]);
@@ -150,7 +152,9 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'gacxep'            => true,
+            'phongnoibat'       => 1,
+            'thumbnailphong'    => 'family.jpg',
         ]);
 
         phong::create([
@@ -159,6 +163,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DON,
+            'gacxep'            => true,
             'thumbnailphong'    => 'single1.jpg',
         ]);
 
@@ -168,7 +173,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'thumbnailphong'    => 'family.jpg',
         ]);
 
         phong::create([
@@ -177,7 +182,7 @@ class PhongSeeder extends Seeder
             'mota'              => 'Bai viet mo ta ngan',
             'noidung'           => 'noi dung phong',
             'urlloaiphong'      => PHONG_DOI,
-            'thumbnailphong'    => 'double.jpg',
+            'thumbnailphong'    => 'family.jpg',
         ]);
 
         phong::create([

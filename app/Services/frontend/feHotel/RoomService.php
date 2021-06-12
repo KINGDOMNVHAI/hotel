@@ -74,9 +74,9 @@ class RoomService extends ServiceProvider
             )
             ->where('enablephong', '=', 1);
 
-        if ($urlListRoom = 'phong-co-gac') {
+        if ($urlListRoom == 'phong-co-gac') {
             $query = $query->where('phong.gacxep', '=', true);
-        } else if ($urlListRoom = 'phong-khong-co-gac') {
+        } else if ($urlListRoom == 'phong-khong-co-gac') {
             $query = $query->where('phong.gacxep', '=', false);
         }
 
@@ -107,7 +107,8 @@ class RoomService extends ServiceProvider
             'mota'      => $request->present,
             'noidung'   => $request->content,
             // 'date_post' => date("Y-m-d"),
-            'maloaiphong' => 1,
+            'urlloaiphong' => PHONG_DON,
+            'gacxep' => false,
             'thumbnailphong' => $namefile, // Lấy tên file,
         ]);
 
