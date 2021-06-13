@@ -2,15 +2,15 @@
 @section("NoiDung")
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Edit User</h1>
+<h1 class="h3 mb-2 text-gray-800">Edit Room</h1>
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Edit User</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Edit Room</h6>
     </div>
     <div class="card-body">
-        <h2>Edit User</h2>
+        <h2>Edit Room</h2>
         <form class="form-horizontal" action="{{route('edit', $room->maphong)}}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group">
