@@ -121,12 +121,22 @@ class BookingController extends Controller
             'todate' => $request->session()->get('todate')
         ];
         Mail::to($to_email)->send(new FirstEmail($data));
-
-        // $request->session()->forget(['fullname']);
         $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
 
-        return view('feHotel.pages.booking-final', [
-            'title' => TITLE_FRONTEND_INDEX,
-        ]);
+        $id = Auth::id();
+        $checklogin = new LoginService;
+        $checkuser = $checklogin->checkUserRole($id);
+        if ($checkuser->tenphanquyen == ROLE_NAME_ADMIN)
+        {
+            // Role admin
+            return redirect()->route('list-booking');
+        }
+        else
+        {
+            // Role user
+            return view('feHotel.pages.booking-final', [
+                'title' => TITLE_FRONTEND_INDEX,
+            ]);
+        }
     }
 }
