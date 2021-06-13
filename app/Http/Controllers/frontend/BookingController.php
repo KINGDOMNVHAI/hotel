@@ -121,10 +121,9 @@ class BookingController extends Controller
             'todate' => $request->session()->get('todate')
         ];
         Mail::to($to_email)->send(new FirstEmail($data));
-        return redirect()->route('login')->with('message', __(EMAIL_IS_SENT));
 
-        $request->session()->forget(['fullname']);
-        // $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
+        // $request->session()->forget(['fullname']);
+        $request->session()->forget(['fullname', 'email', 'phone', 'nameroom', 'priceroom', 'fromdate', 'todate', 'numberofdate']);
 
         return view('feHotel.pages.booking-final', [
             'title' => TITLE_FRONTEND_INDEX,
