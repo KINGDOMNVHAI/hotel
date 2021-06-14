@@ -20,15 +20,15 @@ class RoomController extends Controller
         {
             $username = Auth::user()->username;
 
-            $keyword = "";
-            // luôn search dữ liệu
-            if ($request->keyword != null) {
-                $keyword = $request->keyword;
-            }
+            $datas = [
+                'keyword' => $request->keyword,
+                'phongcogac' => $request->phongcogac,
+                'phongkhongcogac' => $request->phongkhongcogac,
+            ];
 
             // Public Services
             $listroom     = new RoomService;
-            $viewListRoom = $listroom->listRoomHavePaginate(10, 'all', $keyword);
+            $viewListRoom = $listroom->listRoomHavePaginate(10, $datas);
 
             return view('backend.pages.list-room', [
                 'title'     => TITLE_FRONTEND_INDEX,

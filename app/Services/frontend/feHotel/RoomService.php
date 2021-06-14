@@ -51,7 +51,7 @@ class RoomService extends ServiceProvider
         return $query;
     }
 
-    public function listRoomHavePaginate($limit, $urlListRoom, $keyword)
+    public function listRoomHavePaginate($limit, $datas)
     {
         $giuongdon = PHONG_DON;
         $giuongdoi = PHONG_DOI;
@@ -74,13 +74,13 @@ class RoomService extends ServiceProvider
             )
             ->where('enablephong', '=', 1);
 
-        if ($urlListRoom == 'phong-co-gac') {
+        if ($datas['phongcogac'] != null) {
             $query = $query->where('phong.gacxep', '=', true);
-        } else if ($urlListRoom == 'phong-khong-co-gac') {
+        } else if ($datas['phongkhongcogac'] != null) {
             $query = $query->where('phong.gacxep', '=', false);
         }
 
-        $query = $query->where('phong.tenphong', 'like', "%{$keyword}%")
+        $query = $query->where('phong.tenphong', 'like', "%{$datas['keyword']}%")
             ->paginate($limit);
 
         return $query;
