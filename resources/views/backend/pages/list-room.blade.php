@@ -5,17 +5,14 @@
 <h1 class="h3 mb-2 text-gray-800">Danh sách phòng</h1>
 <p class="mb-4">Lấy dữ liệu từ database</p>
 
-<!-- Content Row -->
+<!--
 <div class="row">
-
-    <!-- Grow In Utility -->
     <div class="col-lg-6">
         <div class="card position-relative">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Tìm kiếm</h6>
             </div>
             <div class="card-body">
-                <!-- Topbar Search -->
                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
                     action="{{route('list-room')}}" method="GET">
 
@@ -35,7 +32,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <a href="{{route('create-room')}}" class="btn btn-success pull-right" style="margin-top:5px;">Tạo phòng mới</a><br><br>
 
