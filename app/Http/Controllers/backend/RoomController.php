@@ -22,8 +22,7 @@ class RoomController extends Controller
 
             $datas = [
                 'keyword' => $request->keyword,
-                'phongcogac' => $request->phongcogac,
-                'phongkhongcogac' => $request->phongkhongcogac,
+                'loaiphong' => $request->loaiphong,
             ];
 
             // Public Services

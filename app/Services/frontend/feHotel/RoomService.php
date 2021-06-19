@@ -68,10 +68,12 @@ class RoomService extends ServiceProvider
             )
             ->where('enablephong', '=', 1);
 
-        if ($datas['loaiphong'] == 'phong-co-gac') {
-            $query = $query->where('phong.gacxep', '=', true);
-        } else if ($datas['loaiphong'] == 'phong-khong-co-gac') {
-            $query = $query->where('phong.gacxep', '=', false);
+        if ($datas['loaiphong'] != null) {
+            if ($datas['loaiphong'] == 'phong-co-gac') {
+                $query = $query->where('phong.gacxep', '=', true);
+            } else if ($datas['loaiphong'] == 'phong-khong-co-gac') {
+                $query = $query->where('phong.gacxep', '=', false);
+            }
         }
 
         $query = $query->where('phong.tenphong', 'like', "%{$datas['keyword']}%")

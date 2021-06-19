@@ -5,7 +5,6 @@
 <h1 class="h3 mb-2 text-gray-800">Danh sách phòng</h1>
 <p class="mb-4">Lấy dữ liệu từ database</p>
 
-<!--
 <div class="row">
     <div class="col-lg-6">
         <div class="card position-relative">
@@ -25,14 +24,14 @@
                             </div>
                         </div>
                         <br>
-                        <input type="checkbox" id="phongcogac" name="phongcogac" value="true"> Phòng có gác &nbsp; &nbsp;
-                        <input type="checkbox" id="phongkhongcogac" name="phongkhongcogac" value="true"> Phòng không có gác
+                        <input type="radio" id="phongcogac" name="loaiphong" value="phong-co-gac"> Phòng có gác
+                        <input type="radio" id="phongkhongcogac" name="loaiphong" value="phong-khong-co-gac"> Phòng không có gác
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <a href="{{route('create-room')}}" class="btn btn-success pull-right" style="margin-top:5px;">Tạo phòng mới</a><br><br>
 
