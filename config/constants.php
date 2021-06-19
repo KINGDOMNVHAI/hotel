@@ -24,7 +24,7 @@ define('ENABLE', true);
 
 // === Auth ===
 define('WRONG_USERNAME', 'Tên đăng nhập sai');
-define('WRONG_PASSWORD', 'Mật khẩu sau');
+define('WRONG_PASSWORD', 'Mật khẩu sai');
 define('USERNAME_IS_NOT_EXIST', 'Tên đăng nhập không tồn tại');
 define('EMAIL_IS_NOT_EXIST', 'Email không tồn tại');
 define('EMAIL_IS_SENT', 'Email đã được gửi');

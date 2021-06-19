@@ -53,12 +53,6 @@ class RoomService extends ServiceProvider
 
     public function listRoomHavePaginate($limit, $datas)
     {
-        $giuongdon = PHONG_DON;
-        $giuongdoi = PHONG_DOI;
-        $haigiuongdon = HAI_GIUONG_DON;
-        $haigiuongdoi = HAI_GIUONG_DOI;
-        // $giuongtang = GIUONG_TANG;
-
         $query = DB::table('phong')
             ->join('loaiphong', 'phong.urlloaiphong', '=', 'loaiphong.urlloaiphong')
             ->select(
@@ -74,14 +68,40 @@ class RoomService extends ServiceProvider
             )
             ->where('enablephong', '=', 1);
 
-        if ($datas['phongcogac'] != null) {
+        if ($datas['loaiphong'] == 'phong-co-gac') {
             $query = $query->where('phong.gacxep', '=', true);
-        } else if ($datas['phongkhongcogac'] != null) {
+        } else if ($datas['loaiphong'] == 'phong-khong-co-gac') {
             $query = $query->where('phong.gacxep', '=', false);
         }
 
         $query = $query->where('phong.tenphong', 'like', "%{$datas['keyword']}%")
             ->paginate($limit);
+
+        return $query;
+    }
+
+    /**
+     * Get random room
+     */
+    public function listRandomRoom($limit)
+    {
+        $query = DB::table('phong')
+            ->join('loaiphong', 'phong.urlloaiphong', '=', 'loaiphong.urlloaiphong')
+            ->select(
+                'phong.maphong',
+                'phong.urlloaiphong as urlloaiphong',
+                'phong.gacxep as gacxep',
+                'phong.tenphong as tenphong',
+                'phong.mota',
+                'phong.thumbnailphong',
+                'phong.noidung',
+                'loaiphong.tenloaiphong as tenloaiphong',
+                'loaiphong.gialoaiphong as gialoaiphong'
+            )
+            ->where('enablephong', '=', 1)
+            ->orderBy(DB::raw('RAND()'))
+            ->take($limit)
+            ->get();
 
         return $query;
     }

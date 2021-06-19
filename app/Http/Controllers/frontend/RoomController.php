@@ -37,12 +37,14 @@ class RoomController extends Controller
         // Public Services
         $detailroom     = new RoomService;
         $viewDetailRoom = $detailroom->detailroom($idRoom);
+        $randomRoom = $detailroom->listRandomRoom(3);
 
         return view('feHotel.pages.room', [
-            'title'      => TITLE_FRONTEND_INDEX,
+            'title'       => TITLE_FRONTEND_INDEX,
 
-            'detailroom' => $viewDetailRoom,
-            'listservice'   => $viewListService,
+            'detailroom'  => $viewDetailRoom,
+            'listservice' => $viewListService,
+            'randomRoom'  => $randomRoom,
         ]);
     }
 
@@ -52,10 +54,15 @@ class RoomController extends Controller
         //lay tu listRoomHavePaginate
         //loaiphong lay tu home.blade.php cua name="keyword"
         //keyword tuongtu
-        $viewRoom = $room->listRoomHavePaginate(20, $request->loaiphong, $request->keyword);
+
+        $datas = [
+            'keyword' => $request->keyword,
+            'loaiphong' => $request->loaiphong,
+        ];
+        $viewRoom = $room->listRoomHavePaginate(20, $datas);
 
         return view('feHotel.pages.listroom', [ // sau khi chay viewRoom xong thi tra ve return
-            'title'      => TITLE_FRONTEND_INDEX, // ten tab tren trinh duyet
+            'title'    => TITLE_FRONTEND_INDEX, // ten tab tren trinh duyet
             'listroom' => $viewRoom,
         ]);
     }

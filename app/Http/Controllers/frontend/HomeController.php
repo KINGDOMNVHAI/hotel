@@ -15,7 +15,7 @@ class HomeController extends Controller
 {
     public function __construct()
     {
-
+        // Hàm khởi tạo
     }
 
     public function index(Request $request)
@@ -57,7 +57,7 @@ class HomeController extends Controller
         return view('feHotel.pages.about', [
             'title' => TITLE_FRONTEND_INDEX,
 
-            'listservice'   => $viewListService,
+            'listservice' => $viewListService,
         ]);
     }
 

@@ -77,33 +77,6 @@ class LoginController extends Controller
 
     public function checkregister(Request $request)
     {
-        // $request->validate([
-        //     'name' => 'required|max:120',
-        //     'email' => 'required|email|unique:users',
-        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-        // ]);
-
-        // $datas = $request->all();
-        // unset($datas['_token']);
-
-        // $rules = [
-        //     'name' => 'required|max:120',
-        //     'email' => 'required|email|unique:users',
-        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:11',
-        // ];
-
-        // $messages = [
-        //     'name' => 'A name is required',
-        //     'phone' => 'A phone is required',
-        // ];
-
-        // $validator = \Validator::make($datas, $rules, $messages);
-
-        // if ($validator->fails()) {
-        //     // var_dump('<pre>','jha');die;
-        //     return \Redirect::back()->withInput()->withErrors($validator->errors());
-        // }
-
         $user = new UserService;
         $insert = $user->insert($request);
         return redirect('login');
