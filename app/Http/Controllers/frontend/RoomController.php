@@ -17,9 +17,14 @@ class RoomController extends Controller
         $service     = new ServicesService;
         $viewListService = $service->listservice();
 
+        $datas = [
+            'keyword' => '',
+            'loaiphong' => $urlListRoom,
+        ];
+
         // Public Services
         $listroom     = new RoomService;
-        $viewListRoom = $listroom->listRoomHavePaginate(10, $urlListRoom, null);
+        $viewListRoom = $listroom->listRoomHavePaginate(10, $datas);
 
         return view('feHotel.pages.listroom', [
             'title'         => TITLE_FRONTEND_INDEX,
