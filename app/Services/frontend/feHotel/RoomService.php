@@ -51,7 +51,7 @@ class RoomService extends ServiceProvider
         return $query;
     }
 
-    public function listRoomHavePaginate($limit, $datas)
+    public function listRoomHavePaginate($limit, $datas) //cũng dùng cho function listroom trong RoomControll
     {
         $query = DB::table('phong')
             ->join('loaiphong', 'phong.urlloaiphong', '=', 'loaiphong.urlloaiphong')
@@ -61,23 +61,25 @@ class RoomService extends ServiceProvider
                 'phong.gacxep as gacxep',
                 'phong.tenphong as tenphong',
                 'phong.mota',
-                'phong.thumbnailphong',
+                'phong.thumbnailphong', //thumnail là hình đại diện của phòng
                 'phong.noidung',
                 'loaiphong.tenloaiphong as tenloaiphong',
                 'loaiphong.gialoaiphong as gialoaiphong'
             )
-            ->where('enablephong', '=', 1);
+            ->where('enablephong', '=', 1); //enable là kích hoạt, dùng khi xóa phòng, nếu cần xóa phòng thì enable lúc này = 1
 
-        if ($datas['loaiphong'] != null) {
+        if ($datas['loaiphong'] != null) { //kiểm tra loại phòng
             if ($datas['loaiphong'] == 'phong-co-gac') {
                 $query = $query->where('phong.gacxep', '=', true);
+                //áp dụng một câu lệnh where khi có giá trị tìm kiếm thuộc phòng có gác
             } else if ($datas['loaiphong'] == 'phong-khong-co-gac') {
                 $query = $query->where('phong.gacxep', '=', false);
+                //áp dụng một câu lệnh where khi có giá trị tìm kiếm thuộc phòng không có gác
             }
         }
 
-        $query = $query->where('phong.tenphong', 'like', "%{$datas['keyword']}%")
-            ->paginate($limit);
+        $query = $query->where('phong.tenphong', 'like', "%{$datas['keyword']}%") //WHERE phong.tenphong like %keyword%
+            ->paginate($limit);//Tìm bất kỳ giá trị nào có từ "keyword" ở bất kỳ vị trí nào
 
         return $query;
     }

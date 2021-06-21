@@ -363,11 +363,13 @@
                                         <img src="images/rooms/single/single1.jpg" class="img-fluid" alt="Image">
                                     </a>
                                     <div class="room-services">
-                                        <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                                        <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="right" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
                                     </div>
-                                    <div class="room-price">€89 / night</div>
+                                    <div class="room-price">€89</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">
@@ -385,11 +387,13 @@
                                         <img src="images/rooms/double/double.jpg" class="img-fluid" alt="Image">
                                     </a>
                                     <div class="room-services">
-                                        <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                                        <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="right" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
                                     </div>
-                                    <div class="room-price">€129 / night</div>
+                                    <div class="room-price">€129</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">
@@ -407,12 +411,13 @@
                                         <img src="images/rooms/deluxe/deluxe.jpg" class="img-fluid" alt="Image">
                                     </a>
                                     <div class="room-services">
-                                        <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="2 Bathrooms" data-original-title="Bathroom"></i>
-                                        <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
                                     </div>
-                                    <div class="room-price">€189 / night</div>
+                                    <div class="room-price">€189</div>
                                 </figure>
                                 <div class="room-info">
                                     <h2 class="room-title">

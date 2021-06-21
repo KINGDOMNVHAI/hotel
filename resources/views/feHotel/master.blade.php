@@ -58,13 +58,13 @@
                                             <a href="about-us.html">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="contact.html">Contact Us</a>
+                                            <a href="{{route('contact')}}">Contact Us</a>
                                         </li>
                                         <li>
-                                            <a href="gallery.html">Đăng ký phòng</a>
+                                            <a href="{{route('booking-form-fe')}}">Đăng ký phòng</a>
                                         </li>
                                         <li>
-                                            <a href="location.html">Danh sách dịch vụ</a>
+                                            <a href="{{route('list-services-fe')}}">Danh sách dịch vụ</a>
                                         </li>
                                     </ul>
                                 </div>

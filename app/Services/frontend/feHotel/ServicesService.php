@@ -19,21 +19,21 @@ class ServicesService extends ServiceProvider
 
     }
 
-    /**
+    /*
      *
      *
      * @return void
      */
-    public function listservice($limit = NULL)
+    public function listservice($limit = NULL) //function này cũng dùng cho listroom
     {
         // ORM Laravel
-        $query = DB::table('dichvu')
-            ->where('enabledichvu', '=', 1);
+        $query = DB::table('dichvu') // lấy database bảng dịch vụ
+            ->where('enabledichvu', '=', 1); //lấy tất cả những dịch vụ ko bị xóa. Còn nếu xóa đi thì vào database chỉnh enabledichvu = 0
 
         if ($limit != null) {
-            $query = $query->limit($limit);
+            $query = $query->limit($limit); // nếu nhập giới hạn thì sẽ trả về dsach giới hạn limit dịch vụ
         }
-        $query = $query->get();
+        $query = $query->get(); // nếu mình ko nhập giới hạn thì ko có giới hạn số lượng kết quả trả về
 
         return $query;
     }
