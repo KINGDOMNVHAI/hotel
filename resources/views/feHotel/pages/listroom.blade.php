@@ -17,6 +17,7 @@
 
 <main class="rooms-list-view">
     <div class="container">
+        <!--lặp hết danh sách room-->
         @foreach($listroom as $room)
         <div class="room-list-item">
             <div class="row">
@@ -32,17 +33,17 @@
                         </h3>
                         <p>{{$room->mota}}</p>
                         <div class="room-services">
-                            <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                            <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                            <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                            <span>Beds: 1 King</span>
-                            <span>Max Guests: 2</span>
-                        </div>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="right" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
+                                    </div>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="room-price">
-                        <span class="price">{{$room->gialoaiphong}} VND / night</span>
+                        <span class="price">{{$room->gialoaiphong}} VND</span>
                         <a href="{{route('room-fe', $room->maphong)}}" class="btn btn-sm">XEM CHI TIẾT</a>
                     </div>
                 </div>

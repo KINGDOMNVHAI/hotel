@@ -10,13 +10,17 @@ Route::get('/about','frontend\HomeController@about')->name('about');
 
 Route::get('/contact','frontend\HomeController@contact')->name('contact');
 
-Route::get('/blog/{urlBlog}','frontend\PostController@blog')->name('blog');
+// Route::get('/blog/{urlBlog}','frontend\PostController@blog')->name('blog');
 
-Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
+// Route::get('/post/{urlPost}','frontend\PostController@post')->name('post');
+
+//phòng
 
 Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room-fe');
 
 Route::get('/room/{idRoom}','frontend\RoomController@room')->name('room-fe');
+
+//dịch vụ
 
 Route::get('/list-services','frontend\ServiceController@listservice')->name('list-services-fe');
 

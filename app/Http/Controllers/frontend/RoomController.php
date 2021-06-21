@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Auth;
 
 class RoomController extends Controller
 {
-    public function listroom($urlListRoom)
+    public function listroom($urlListRoom) //tương ứng urlListRoom cho Route::get('/list-room/{urlListRoom}','frontend\RoomController@listroom')->name('list-room-fe');
     {
         $service     = new ServicesService;
-        $viewListService = $service->listservice();
+        $viewListService = $service->listservice(); //gọi đến function listservice của ServicesService
 
         $datas = [
             'keyword' => '',
@@ -24,20 +24,20 @@ class RoomController extends Controller
 
         // Public Services
         $listroom     = new RoomService;
-        $viewListRoom = $listroom->listRoomHavePaginate(10, $datas);
+        $viewListRoom = $listroom->listRoomHavePaginate(10, $datas); //gọi đến function listRoomHavePaginate của RoomService
 
-        return view('feHotel.pages.listroom', [
+        return view('feHotel.pages.listroom', [ // sẽ trả về listroom trong listroom.blade.php
             'title'         => TITLE_FRONTEND_INDEX,
 
-            'listroom'      => $viewListRoom,
-            'listservice'   => $viewListService,
+            'listroom'      => $viewListRoom, // giới hạn phòng trong 1 danh sách
+            'listservice'   => $viewListService, //thực hiện function nào thì gọi function đó ra 'function đó' => tên biến
         ]);
     }
 
     public function room($idRoom)
     {
         $service     = new ServicesService;
-        $viewListService = $service->listservice();
+        $viewListService = $service->listservice();  //gọi đến function listservice của ServicesService
 
         // Public Services
         $detailroom     = new RoomService;

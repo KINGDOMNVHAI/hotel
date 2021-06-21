@@ -12,51 +12,51 @@
         </div>
     </section>
 
-    
-    <div class="horizontal-booking-form">
+    <!--Popup-->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-                <style type="text/css">
-                    #popup-giua-man-hinh .headerContainer,#popup-giua-man-hinh .bodyContainer,#popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
-                    #popup-giua-man-hinh .padding{padding:20px}
-                    #popup-giua-man-hinh .bodyContainer{min-height:500px}
-                    #popup-giua-man-hinh .popUpBannerBox{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:100%;top:0;left:0;color:#FFF;z-index:999999;display:none}
-                    #popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
-                    #popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
-                    #popup-giua-man-hinh .closeButton{color:red;text-decoration:none;font-size:18px}
-                    #popup-giua-man-hinh a.closeButton{float:right}
-                </style>
-                <div id="popup-giua-man-hinh">
-                    <div class="popUpBannerBox">
-                        <div class="popUpBannerInner">
-                            <div class="popUpBannerContent">
-                            <p><a href="#" class="closeButton">Close</a></p>
+    <style type="text/css">
+        #popup-giua-man-hinh .headerContainer,#popup-giua-man-hinh .bodyContainer,#popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
+        #popup-giua-man-hinh .padding{padding:20px}
+        #popup-giua-man-hinh .bodyContainer{min-height:500px}
+        #popup-giua-man-hinh .popUpBannerBox{position:fixed;  background-image: linear-gradient(180deg, #F0E1CE 10%, #EDE9C1 100%);width:100%;height:100%;top:0;left:0;z-index:999999;display:none}
+        #popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
+        #popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
+        #popup-giua-man-hinh .closeButton{color:black;text-decoration:none;font-size:14px}
+        #popup-giua-man-hinh a.closeButton{float:top}
+    </style>
+    <div id="popup-giua-man-hinh">
+        <div class="popUpBannerBox">
+            <div class="popUpBannerInner">
+                <div class="popUpBannerContent">
+                    <p><a href="#" class="closeButton">Close</a></p>
 
-                            <!-- ==================== CODE HIỂN THỊ QUẢNG CÁO ====================-->
+                    <!-- ==================== CODE HIỂN THỊ QUẢNG CÁO ====================-->
 
-                                    <a href="http://www.kingdomnvhai.info/"><img src="{{asset('feHotel/images/banner/5ccuoj.gif')}}"/></a>
+                    <a href="https://vnvc.vn/cam-nang-tiem-chung/quy-trinh-tiem-chung/"><img src="{{asset('/feHotel/images/covid19abc.gif')}}" width="65%" height="65%"/></a>
 
-                            <!-- ==================== END HIỂN THỊ QUẢNG CÁO ====================-->
-                            </div>
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                        function showPopUpBanner() {
-                        $('.popUpBannerBox').fadeIn("2000");
-                        }
-                        setTimeout(showPopUpBanner, 1000); //thời gian popup bắt đầu hiển thị
-
-                        $('.popUpBannerBox').click(function(e) {
-                        if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
-                        $('.popUpBannerBox').fadeOut("2000");
-                        return false;
-                        }
-                        });
-                        $('.closeButton').click(function() {
-                        $('.popUpBannerBox').fadeOut("2000");
-                        return false;
-                        });
-                    </script>
+                    <!-- ==================== END HIỂN THỊ QUẢNG CÁO ====================-->
                 </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function showPopUpBanner() {
+                $('.popUpBannerBox').fadeIn("2000");
+                }
+                setTimeout(showPopUpBanner, 1000); //thời gian popup bắt đầu hiển thị
+                $('.popUpBannerBox').click(function(e) {
+                    if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
+                        $('.popUpBannerBox').fadeOut("2000");
+                        return false;
+                    }
+                });
+                $('.closeButton').click(function() {
+                $('.popUpBannerBox').fadeOut("2000");
+                    return false;
+                });
+        </script>
+    </div>
+
+    <div class="horizontal-booking-form">
         <div class="container">
             <div class="inner box-shadow-007" style="margin:auto">
                 <!-- <div id="booking-notification" class="notification"></div> -->
@@ -160,6 +160,8 @@
                         <input type="text" name="keyword" placeholder="Tìm kiếm..."  aria-label="Search" aria-describedby="basic-addon2">
                         <input type="submit" class="btn btn-primary" value="search">
                     </from> -->
+
+                    
                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
                     action="{{route('search-room-fe')}}" method="GET">
                     <i class="fa fa-exclamation-triangle"></i> Lưu ý: Bạn có thể nhập một trong hai " Tên phòng " hoặc " Loại phòng "
@@ -175,6 +177,7 @@
                                 <input class="form-control" name="keyword" type="text" data-trigger="hover" placeholder="Từ khóa tên phòng">
                             </div>
                         </div>
+
                         <div class="col-md-5">
                             <div class="form-group">
                             <label>Loại phòng
@@ -188,11 +191,14 @@
                                 </select>
                             </div>
                         </div>
+                        
                         <div class="col-md-3">
                             <input type="submit" class="btn btn-primary" value="tìm kiếm">
                         </div>
                     </div>
                 </form>
+
+
             </div>
         </div>
     </div>
@@ -360,14 +366,16 @@
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="{{route('room-fe', $room->maphong)}}">
-                            <img src="{{asset('upload/rooms/single/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('/feHotel/images/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
-                            <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                            <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                            <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                        </div>
-                        <div class="room-price">€89 / night</div>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
+                                    </div>
+                        <div class="room-price">300000 VND</div>
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">
@@ -384,14 +392,16 @@
                 <div class="room-grid-item">
                     <figure class="gradient-overlay-hover link-icon">
                         <a href="{{route('room-fe', $room->maphong)}}">
-                            <img src="{{asset('upload/rooms/double/' . $room->thumbnailphong)}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('/feHotel/images/rooms/single/single1.jpg')}}" class="img-fluid" alt="Image">
                         </a>
                         <div class="room-services">
-                            <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                            <i class="fa fa-wifi" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                            <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Plasma TV with cable channels" data-original-title="TV"></i>
-                        </div>
-                        <div class="room-price">€89 / night</div>
+                                        <!-- <i class="fa fa-coffee" aria-hidden="true" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> -->
+                                        <i class="fa fa-bath" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Sử dụng nhà tắm - nhà vệ sinh trong phòng" data-original-title="Toilet - Bathroom "></i>
+                                        <i class="fa fa-wifi" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Sử dụng Internet WiFi trong phòng" data-original-title="WiFi"></i>
+                                        <i class="fa fa-television" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Bạn được cung câp truyền hình cáp trong phòng" data-original-title="TV"></i>
+                                        <i class="fa fa-cutlery" aria-hidden="true" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Phòng của bạn sẽ có một phòng bếp để tiện lợi việc nấu ăn và sinh hoạt" data-original-title="Bathroom"></i>
+                                    </div>
+                        <div class="room-price">300000 VND</div>
                     </figure>
                     <div class="room-info">
                         <h2 class="room-title">

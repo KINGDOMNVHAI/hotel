@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/profile','backend\ProfileController@index')->name('profile');
 
-Route::get('/list-room','backend\RoomController@listroom')->name('list-room');
+Route::get('/list-room','backend\RoomController@listroom')->name('list-room'); //có dùng để search phòng
 
 Route::match(['GET', 'POST'], '/create-room', 'backend\RoomController@createroom')->name('create-room');
 

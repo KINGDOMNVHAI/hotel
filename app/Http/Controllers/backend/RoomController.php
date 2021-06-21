@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Auth;
 
 class RoomController extends Controller
 {
-    public function listroom(Request $request)
+    public function listroom(Request $request) //nằm trong master-backend.blade cho tìm kiếm
     {
-        if (Auth::check())
+        if (Auth::check()) //Auth::check() kiểm tra đăng nhập chưa
         {
-            $username = Auth::user()->username;
+            $username = Auth::user()->username; //lấy thông tin hiện tại của user vừa đăng nhập
 
             $datas = [
                 'keyword' => $request->keyword,
@@ -27,13 +27,13 @@ class RoomController extends Controller
 
             // Public Services
             $listroom     = new RoomService;
-            $viewListRoom = $listroom->listRoomHavePaginate(10, $datas);
+            $viewListRoom = $listroom->listRoomHavePaginate(10, $datas); //thực hiện function listRoomHavePaginate của RoomService
 
-            return view('backend.pages.list-room', [
+            return view('backend.pages.list-room', [ //sau khi thực hiện xong, thì trả về kết quả ở view của backend.pages.listroom
                 'title'     => TITLE_FRONTEND_INDEX,
 
-                'username'  => $username,
-                'listroom'  => $viewListRoom,
+                'username'  => $username, //trả về user vừa nhập xong
+                'listroom'  => $viewListRoom, //trả về danh sách kết quả theo kết quả tìm kiếm
             ]);
         }
         else {

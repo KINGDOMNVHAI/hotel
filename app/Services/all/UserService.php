@@ -26,16 +26,17 @@ class UserService extends ServiceProvider
      */
     public function insert($request)
     {
-        $name = $request->lastname . $request->firstname;
+        $name = $request->lastname . $request->firstname; //do lấy từ bên register.blade.php 
+                                                        //nối chuôi
         $username = $request->username;
         $password = $request->password;
         $email = $request->email;
         $phone = $request->phone;
 
-        $query = User::insert([
+        $query = User::insert([ //???
             'name' => $name,
             'username'  => $username,
-            'password'  => Hash::make($password),
+            'password'  => Hash::make($password), // dữ liệu được nhập được nhận; sau đó được băm và lưu vào csdl
             'email'     => $email,
             'phone'     => $phone,
             'role'      => ROLE_ID_MEMBER,
